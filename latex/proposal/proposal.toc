@@ -1,0 +1,27 @@
+\contentsline {section}{Table of Contents}{\@none \c@page }{figure.caption.2}%
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {section}{\numberline {2}Background, theory, related work, research gap and statement of the problem}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Background}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Theory}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Related work}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Research gap}{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Statement of the problem}{4}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Statement of the research question}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Research question}{4}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Project aims and objectives}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Project aims}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Objectives}{5}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Planned research approach and evaluation plan}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Planned research approach}{5}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Evaluation plan}{6}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Scope, delimitations and justifications}{6}{section.6}%
+\contentsline {subsection}{\numberline {6.1}In scope}{6}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Out of scope}{6}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Research contribution to Information Systems and benefits to the society}{7}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Research contribution to Information Systems}{7}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Significance of the project}{7}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Benefits to the society}{7}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Project timeline and current progress}{8}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Project timeline}{8}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Current progress}{8}{subsection.8.2}%
+\contentsline {section}{List of References }{9}{subsection.8.2}%

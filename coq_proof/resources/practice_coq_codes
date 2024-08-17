@@ -1,0 +1,106 @@
+//Proof that set intersection is correct
+
+(* Import the necessary libraries for arithmetic *)
+Require Import Coq.Arith.Arith.
+Require Import Coq.Arith.PeanoNat.
+
+(* Declare the cardinality values as parameters *)
+Variable nA : nat.
+Variable nB : nat.
+Variable nA_inter_B : nat.
+
+(* Define the cardinality of the union of A and B *)
+Definition nA_union_B := nA + nB - nA_inter_B.
+
+(* Prove that the definition of nA_union_B is correct *)
+Theorem calculate_nA_union_B :
+  nA_union_B = nA + nB - nA_inter_B.
+Proof.
+  (* Since the definition is straightforward, the proof is immediate *)
+  reflexivity.
+Qed.
+
+//Proof that a is in b, if a is already in (b intersection c)
+
+(* Import required libraries *)
+Require Import Coq.Arith.Arith.
+Require Import Coq.Arith.PeanoNat.
+Require Import Coq.Logic.Classical_Prop.
+
+(* Define the intersection of two sets b and c *)
+Definition intersection (b c : nat -> Prop) : nat -> Prop :=
+  fun x => b x /\ c x.
+
+(* Define the predicate that an element a is in the intersection of b and c *)
+Definition is_in_intersection (a : nat) (b c : nat -> Prop) : Prop :=
+  intersection b c a.
+
+(* Theorem: If a is in (b ∩ c), then a is in b *)
+Theorem in_intersection_implies_in_b :
+  forall (a : nat) (b c : nat -> Prop),
+  is_in_intersection a b c -> b a.
+Proof.
+  (* Introduce the variables *)
+  intros a b c H.
+  (* Unfold the definitions *)
+  unfold is_in_intersection, intersection in H.
+  (* Prove that b a holds *)
+  exact (proj1 H).
+Qed.
+
+// If a is not in b and a is not in c, then a is not in (b ∩ c)
+
+(* Import required libraries *)
+Require Import Coq.Arith.Arith.
+Require Import Coq.Arith.PeanoNat.
+Require Import Coq.Logic.Classical_Prop.
+
+(* Define the intersection of two sets b and c *)
+Definition intersection (b c : nat -> Prop) : nat -> Prop :=
+  fun x => b x /\ c x.
+
+(* Define that an element a is in b *)
+Definition is_in_b (a : nat) (b : nat -> Prop) : Prop :=
+  b a.
+
+(* Define that an element a is not in b *)
+Definition is_not_in_b (a : nat) (b : nat -> Prop) : Prop :=
+  ~ is_in_b a b.
+
+(* Define that an element a is in c *)
+Definition is_in_c (a : nat) (c : nat -> Prop) : Prop :=
+  c a.
+
+(* Define that an element a is not in c *)
+Definition is_not_in_c (a : nat) (c : nat -> Prop) : Prop :=
+  ~ is_in_c a c.
+
+(* Define the predicate that an element a is in the intersection of b and c *)
+Definition is_in_intersection (a : nat) (b c : nat -> Prop) : Prop :=
+  intersection b c a.
+
+(* Define that an element a is not in (b ∩ c) *)
+Definition is_not_in_intersection (a : nat) (b c : nat -> Prop) : Prop :=
+  ~ is_in_intersection a b c.
+
+(* Theorem: If a is not in b and a is not in c, then a is not in (b ∩ c) *)
+Theorem not_in_b_and_not_in_c_implies_not_in_intersection :
+  forall (a : nat) (b c : nat -> Prop),
+  is_not_in_b a b -> is_not_in_c a c -> is_not_in_intersection a b c.
+Proof.
+  (* Introduce the variables *)
+  intros a b c Hnb Hnc.
+  (* Unfold the definitions *)
+  unfold is_not_in_intersection, is_in_intersection, is_not_in_b, is_not_in_c in *.
+  unfold intersection in *.
+  (* Assume a is in (b ∩ c) and derive a contradiction *)
+  intro H.
+  (* H is of the form (b a /\ c a) *)
+  destruct H as [Hb Hc].
+  (* We know a is in c from Hc *)
+  apply Hnc.
+  exact Hc.
+Qed.
+
+
+

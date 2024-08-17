@@ -1,0 +1,644 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{arishina2022}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=59ba16b0dd7c40c943638f9f0af21024}{%
+           family={Arishina},
+           familyi={A\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f1a13f60ce0bc9cb5cd5b5a1988c3f02}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Y.F.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=847a82d9c4f222ca5f9773f53b4202d9}{%
+           family={Hoppa},
+           familyi={H\bibinitperiod},
+           given={M.A.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ff74b5e8c25761c11e793e4e121fbcbf}
+      \strng{fullhash}{ff74b5e8c25761c11e793e4e121fbcbf}
+      \strng{bibnamehash}{ff74b5e8c25761c11e793e4e121fbcbf}
+      \strng{authorbibnamehash}{ff74b5e8c25761c11e793e4e121fbcbf}
+      \strng{authornamehash}{ff74b5e8c25761c11e793e4e121fbcbf}
+      \strng{authorfullhash}{ff74b5e8c25761c11e793e4e121fbcbf}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of The Colloquium for Information Systems Security Education}
+      \field{title}{A Study of Video ConferencingSoftware Risks and Mitigation Strategies}
+      \field{volume}{09}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 10}
+      \range{pages}{10}
+      \verb{doi}
+      \verb https://doi.org/10.53735/cisse.v9i1.134
+      \endverb
+      \verb{urlraw}
+      \verb https://cisse.info/journal/index.php/cisse/article/view/134/134
+      \endverb
+      \verb{url}
+      \verb https://cisse.info/journal/index.php/cisse/article/view/134/134
+      \endverb
+    \endentry
+    \entry{bispham2021}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=cc1ac32daad026f48f27393a58779621}{%
+           family={Bispham},
+           familyi={B\bibinitperiod},
+           given={M.K.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=00dcb6e8ccac61c9daf84ea55267679a}{%
+           family={Creese},
+           familyi={C\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=297e7111a19a40998ec7f7248dfaa292}{%
+           family={Dutton},
+           familyi={D\bibinitperiod},
+           given={W.H.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2f812a41065472c07a20158a7833f1e5}{%
+           family={Esteve-Gonzalez},
+           familyi={E\bibinithyphendelim G\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=da8c25e144c42379c8e97c0e472e245a}{%
+           family={Goldsmith},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{74d080030ef7c8443222dba810cfb249}
+      \strng{fullhash}{cc6bd19c54ca06b362915361c3a86cf0}
+      \strng{bibnamehash}{cc6bd19c54ca06b362915361c3a86cf0}
+      \strng{authorbibnamehash}{cc6bd19c54ca06b362915361c3a86cf0}
+      \strng{authornamehash}{74d080030ef7c8443222dba810cfb249}
+      \strng{authorfullhash}{cc6bd19c54ca06b362915361c3a86cf0}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SSRN Electronic Journal}
+      \field{title}{Cybersecurity in Working from Home: An Exploratory Study}
+      \field{volume}{January 2021}
+      \field{year}{2021}
+      \field{pages}{1\bibrangedash 43}
+      \range{pages}{43}
+      \verb{doi}
+      \verb https://doi.org/10.2139/ssrn.3897380
+      \endverb
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/353661008_Cybersecurity_in_Working_from_Home_An_Exploratory_Study
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/353661008_Cybersecurity_in_Working_from_Home_An_Exploratory_Study
+      \endverb
+    \endentry
+    \entry{culafi2023}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f7ac7fb64f984bae2347ee2b41d1f313}{%
+           family={Culafi},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f7ac7fb64f984bae2347ee2b41d1f313}
+      \strng{fullhash}{f7ac7fb64f984bae2347ee2b41d1f313}
+      \strng{bibnamehash}{f7ac7fb64f984bae2347ee2b41d1f313}
+      \strng{authorbibnamehash}{f7ac7fb64f984bae2347ee2b41d1f313}
+      \strng{authornamehash}{f7ac7fb64f984bae2347ee2b41d1f313}
+      \strng{authorfullhash}{f7ac7fb64f984bae2347ee2b41d1f313}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{TechTarget}
+      \field{title}{Microsoft AI researchers mistakenly expose 38 TB of data}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.techtarget.com/searchsecurity/news/366552399/Microsoft-AI-researchers-mistakenly-expose-38-TB-of-data
+      \endverb
+      \verb{url}
+      \verb https://www.techtarget.com/searchsecurity/news/366552399/Microsoft-AI-researchers-mistakenly-expose-38-TB-of-data
+      \endverb
+    \endentry
+    \entry{golkarnarenji2012}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=c300f2f1ebdea6b73277f67e67d5a471}{%
+           family={Golkarnarenji},
+           familyi={G\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dc235af9a4d84ca9c7d4cfcb855d4dde}{%
+           family={Ali},
+           familyi={A\bibinitperiod},
+           given={U.},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c7fe2dbd9effb95a95c6e5470d400a03}
+      \strng{fullhash}{c7fe2dbd9effb95a95c6e5470d400a03}
+      \strng{bibnamehash}{c7fe2dbd9effb95a95c6e5470d400a03}
+      \strng{authorbibnamehash}{c7fe2dbd9effb95a95c6e5470d400a03}
+      \strng{authornamehash}{c7fe2dbd9effb95a95c6e5470d400a03}
+      \strng{authorfullhash}{c7fe2dbd9effb95a95c6e5470d400a03}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Department of Computer science, Electrical and Space Engineering, Lulea University of Technology}
+      \field{title}{Unified Communications Security : A study of IT personnel awareness on video conferencing security recommendations}
+      \field{year}{2012}
+      \field{pages}{1\bibrangedash 114}
+      \range{pages}{114}
+      \verb{urlraw}
+      \verb https://www.academia.edu/3056220/Unified_Communications_Security_A_study_of_IT_personnel_awareness_on_video_conferencing_security_recommendations
+      \endverb
+      \verb{url}
+      \verb https://www.academia.edu/3056220/Unified_Communications_Security_A_study_of_IT_personnel_awareness_on_video_conferencing_security_recommendations
+      \endverb
+    \endentry
+    \entry{hasan2021}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f114cda3d1821574c0b78311d0b5c117}{%
+           family={Hasan},
+           familyi={H\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f114cda3d1821574c0b78311d0b5c117}{%
+           family={Hasan},
+           familyi={H\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2c816e2fa4187ac1bd48e79a6a09b883}
+      \strng{fullhash}{2c816e2fa4187ac1bd48e79a6a09b883}
+      \strng{bibnamehash}{2c816e2fa4187ac1bd48e79a6a09b883}
+      \strng{authorbibnamehash}{2c816e2fa4187ac1bd48e79a6a09b883}
+      \strng{authornamehash}{2c816e2fa4187ac1bd48e79a6a09b883}
+      \strng{authorfullhash}{2c816e2fa4187ac1bd48e79a6a09b883}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Consumer Communications & Networking Conference (CCNC)}
+      \field{title}{Towards a Threat Model and Security Analysis of Video Conferencing Systems}
+      \field{volume}{01}
+      \field{year}{2021}
+      \field{pages}{1\bibrangedash 4}
+      \range{pages}{4}
+      \verb{doi}
+      \verb https://doi.org/10.1109/CCNC49032.2021.9369505
+      \endverb
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/349994212_Towards_a_Threat_Model_and_Security_Analysis_of_Video_Conferencing_Systems
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/349994212_Towards_a_Threat_Model_and_Security_Analysis_of_Video_Conferencing_Systems
+      \endverb
+    \endentry
+    \entry{condeco2024}{article}{}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Condeco}
+      \field{title}{How to Decide Who Should Attend Your Meeting?}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.cnbc.com/2021/08/01/zoom-reaches-85-million-settlement-over-user-privacy-and-hacker-zoombombing.html
+      \endverb
+      \verb{url}
+      \verb https://www.cnbc.com/2021/08/01/zoom-reaches-85-million-settlement-over-user-privacy-and-hacker-zoombombing.html
+      \endverb
+    \endentry
+    \entry{isobe2021}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=dccbb79d307aa93e56f681c6a17a360e}{%
+           family={Isobe},
+           familyi={I\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7a493d8e2f37bc925b40f3e94fabcc70}{%
+           family={Ito},
+           familyi={I\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ef5d53ca1ee341156186474c29ffa674}
+      \strng{fullhash}{ef5d53ca1ee341156186474c29ffa674}
+      \strng{bibnamehash}{ef5d53ca1ee341156186474c29ffa674}
+      \strng{authorbibnamehash}{ef5d53ca1ee341156186474c29ffa674}
+      \strng{authornamehash}{ef5d53ca1ee341156186474c29ffa674}
+      \strng{authorfullhash}{ef5d53ca1ee341156186474c29ffa674}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Security Analysis of End-to-End Encryption for Zoom Meetings}
+      \field{volume}{09}
+      \field{year}{2021}
+      \field{pages}{90677\bibrangedash 90689}
+      \range{pages}{13}
+      \verb{doi}
+      \verb https://doi.org/10.1109/ACCESS.2021.3091722
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/9462825?denied=
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/9462825?denied=
+      \endverb
+    \endentry
+    \entry{jennings2021}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c9a2d7665b916608204e27993b0a0462}{%
+           family={Jennings},
+           familyi={J\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c9a2d7665b916608204e27993b0a0462}
+      \strng{fullhash}{c9a2d7665b916608204e27993b0a0462}
+      \strng{bibnamehash}{c9a2d7665b916608204e27993b0a0462}
+      \strng{authorbibnamehash}{c9a2d7665b916608204e27993b0a0462}
+      \strng{authornamehash}{c9a2d7665b916608204e27993b0a0462}
+      \strng{authorfullhash}{c9a2d7665b916608204e27993b0a0462}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{TechBeacon}
+      \field{title}{Zoom #fails grow: 530,000 passwords leaked, details for sale by hacker}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://techbeacon.com/security/zoom-fails-grow-530000-passwords-leaked-details-sale-hacker
+      \endverb
+      \verb{url}
+      \verb https://techbeacon.com/security/zoom-fails-grow-530000-passwords-leaked-details-sale-hacker
+      \endverb
+    \endentry
+    \entry{jo2021}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=3ccd4cf1a00e8f66eebef303d9190535}{%
+           family={Jo},
+           familyi={J\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85d7514e7939bea120731325f0e39adb}{%
+           family={Chae},
+           familyi={C\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=66eb92efa30f64d8a6df8aea9edae349}{%
+           family={Jang},
+           familyi={J\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1d36808ff241cb19af93a8b8045cf645}{%
+           family={Kong},
+           familyi={K\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2a9c6432b9d0d0ebdc2e5c69eb093ee9}
+      \strng{fullhash}{707bba70711cc787fff4b9f1ab1e2de7}
+      \strng{bibnamehash}{707bba70711cc787fff4b9f1ab1e2de7}
+      \strng{authorbibnamehash}{707bba70711cc787fff4b9f1ab1e2de7}
+      \strng{authornamehash}{2a9c6432b9d0d0ebdc2e5c69eb093ee9}
+      \strng{authorfullhash}{707bba70711cc787fff4b9f1ab1e2de7}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Multidisciplinary Digital Publishing Institute (MDPI)}
+      \field{title}{Federated-Access Management System and Videoconferencing Applications: Results from a Pilot Service during COVID-19 Pandemic}
+      \field{volume}{Electronics 2021,10, 2239}
+      \field{year}{2021}
+      \field{pages}{1\bibrangedash 19}
+      \range{pages}{19}
+      \verb{doi}
+      \verb https://doi.org/10.3390/electronics10182239
+      \endverb
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/354545424_Federated-Access_Management_System_and_Videoconferencing_Applications_Results_from_a_Pilot_Service_during_COVID-19_Pandemic
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/354545424_Federated-Access_Management_System_and_Videoconferencing_Applications_Results_from_a_Pilot_Service_during_COVID-19_Pandemic
+      \endverb
+    \endentry
+    \entry{karl2021}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=896bf54c3872de98cd2925f55c259dc3}{%
+           family={Karl},
+           familyi={K\bibinitperiod},
+           given={K.A.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=21d157c8e01ff78561dbf0f4a2388265}{%
+           family={Peluchette},
+           familyi={P\bibinitperiod},
+           given={J.V.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e35b71a677f4537a6d64f8aebd92d036}{%
+           family={Aghakhani},
+           familyi={A\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ea6274197c8d6d991bbfcc16bf694b52}
+      \strng{fullhash}{ea6274197c8d6d991bbfcc16bf694b52}
+      \strng{bibnamehash}{ea6274197c8d6d991bbfcc16bf694b52}
+      \strng{authorbibnamehash}{ea6274197c8d6d991bbfcc16bf694b52}
+      \strng{authornamehash}{ea6274197c8d6d991bbfcc16bf694b52}
+      \strng{authorfullhash}{ea6274197c8d6d991bbfcc16bf694b52}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sage}
+      \field{title}{Virtual Work Meetings During the COVID-19 Pandemic: The Good, Bad, and Ugly}
+      \field{volume}{53(3)}
+      \field{year}{2021}
+      \field{pages}{343\bibrangedash 365}
+      \range{pages}{23}
+      \verb{doi}
+      \verb https://doi.org/10.1177/10464964211015286
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.sagepub.com/doi/full/10.1177/10464964211015286
+      \endverb
+      \verb{url}
+      \verb https://journals.sagepub.com/doi/full/10.1177/10464964211015286
+      \endverb
+    \endentry
+    \entry{kumar2017}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=a545bd13ef1e9c1672bfb284155fc1ad}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=124af9fd201c833023111725310333f2}{%
+           family={Mahajan},
+           familyi={M\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3d78e256768bf5fc359debe285d4897}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6f17389c29e4626bd9cf9d89a25cb915}{%
+           family={Khatri},
+           familyi={K\bibinitperiod},
+           given={S.K.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c206aa1e946cdbae49eee19da14d6082}
+      \strng{fullhash}{1702e4c28488dd6357ad77a538212f45}
+      \strng{bibnamehash}{1702e4c28488dd6357ad77a538212f45}
+      \strng{authorbibnamehash}{1702e4c28488dd6357ad77a538212f45}
+      \strng{authornamehash}{c206aa1e946cdbae49eee19da14d6082}
+      \strng{authorfullhash}{1702e4c28488dd6357ad77a538212f45}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE}
+      \field{title}{A study on web application security and detecting security vulnerabilities}
+      \field{volume}{09}
+      \field{year}{2017}
+      \field{pages}{451\bibrangedash 455}
+      \range{pages}{5}
+      \verb{doi}
+      \verb https://doi.org/10.1109/ICRITO.2017.8342469
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/8342469
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/8342469
+      \endverb
+    \endentry
+    \entry{ozer2024}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=c54528d759e225a65f3a93fe96c6a02b}{%
+           family={Ozer},
+           familyi={O\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=230dfb341e815ea3e556fc7f23adfaf7}{%
+           family={Kose},
+           familyi={K\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cce63da9e7ba46d1d3f30fc2f2aba5f3}{%
+           family={Kucukkaya},
+           familyi={K\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b285462d7c69c3ca518537eee061f55b}{%
+           family={Varlioglu},
+           familyi={V\bibinitperiod},
+           given={E.R.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9e8dc023ffbcb5c4353319f085e046f1}
+      \strng{fullhash}{537bb377fd438e26949d607e6521b3dd}
+      \strng{bibnamehash}{537bb377fd438e26949d607e6521b3dd}
+      \strng{authorbibnamehash}{537bb377fd438e26949d607e6521b3dd}
+      \strng{authornamehash}{9e8dc023ffbcb5c4353319f085e046f1}
+      \strng{authorfullhash}{537bb377fd438e26949d607e6521b3dd}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Computer Science and Computer Engineering (CSCE)}
+      \field{title}{The Shifting Landscape of Cybersecurity: The Impact of Remote Work and COVID-19 on Data Breach Trends}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://arxiv.org/html/2402.06650v2
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/html/2402.06650v2
+      \endverb
+    \endentry
+    \entry{salloum2021}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=3913119060750c8d8aeb6e8b3706f508}{%
+           family={Salloum},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc6fc385997a06c62af734fe43968108}{%
+           family={Gaber},
+           familyi={G\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0ef27750d615e37c214f9d8cccbe9b0}{%
+           family={Vadera},
+           familyi={V\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7fc9d442b7c31699b38620b3b3d2377e}{%
+           family={Shaalan},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fa3e0599cd644d84e1c1ec7a3d6ea572}
+      \strng{fullhash}{50959a5da384f5852b9d348e7a61cefb}
+      \strng{bibnamehash}{50959a5da384f5852b9d348e7a61cefb}
+      \strng{authorbibnamehash}{50959a5da384f5852b9d348e7a61cefb}
+      \strng{authornamehash}{fa3e0599cd644d84e1c1ec7a3d6ea572}
+      \strng{authorfullhash}{50959a5da384f5852b9d348e7a61cefb}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Procedia Computer Science}
+      \field{title}{Phishing Email Detection Using Natural Language Processing Techniques: A Literature Survey}
+      \field{volume}{189}
+      \field{year}{2021}
+      \field{pages}{19\bibrangedash 28}
+      \range{pages}{10}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.procs.2021.05.077
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1877050921011741
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1877050921011741
+      \endverb
+    \endentry
+    \entry{tondel2022}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5a83f9a44d179dbadf4fafcaeee50d72}{%
+           family={Tondel},
+           familyi={T\bibinitperiod},
+           given={I.A.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b813eee1301a35b6f075486fcbf725e9}{%
+           family={Cruzes},
+           familyi={C\bibinitperiod},
+           given={D.S.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{29d1d6aeeeb80465480efca5d1ee05c5}
+      \strng{fullhash}{29d1d6aeeeb80465480efca5d1ee05c5}
+      \strng{bibnamehash}{29d1d6aeeeb80465480efca5d1ee05c5}
+      \strng{authorbibnamehash}{29d1d6aeeeb80465480efca5d1ee05c5}
+      \strng{authornamehash}{29d1d6aeeeb80465480efca5d1ee05c5}
+      \strng{authorfullhash}{29d1d6aeeeb80465480efca5d1ee05c5}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Elsevier}
+      \field{title}{Continuous software security through security prioritisation meetings}
+      \field{volume}{194}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 25}
+      \range{pages}{25}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jss.2022.111477
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0164121222001625
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0164121222001625
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

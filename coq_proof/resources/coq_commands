@@ -1,0 +1,4 @@
+1) Initialize opam environment
+- eval $(opam env)
+2) Check coq version
+- coqc --version

@@ -1,0 +1,5 @@
+DIGEST b72d18815f428cbaf8d46383399da634
+Fset_theory
+R15:37 Coq.FSets.FSetInterface <> <> lib
+R55:73 Coq.FSets.FSetFacts <> <> lib
+R91:114 Coq.FSets.FSetProperties <> <> lib

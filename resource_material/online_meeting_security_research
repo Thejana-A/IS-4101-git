@@ -1,0 +1,302 @@
+Online meetings & security violations
+
+1) https://www.azeusconvene.com/articles/advantages-and-disadvantages-of-virtual-meetings
+
+2) https://www.theguardian.com/commentisfree/2020/apr/01/do-you-know-how-zoom-is-using-your-data-heres-why-you-should
+
+3) https://www.ualberta.ca/information-services-and-technology/media-library/chief-information-security-officer/pdf/final-video-conferencing-for-virtual-meetingsessions.pdf#heading=h.gjdgxs
+
+4) https://www.ualberta.ca/information-services-and-technology/security/online-meetings-and-classes/index.html
+
+5) https://scholar.google.com/scholar?as_ylo=2020&q=isuses+that+arose+with+online+meetings+regarding+the+privacy&hl=en&as_sdt=0,5#d=gs_qabs&t=1716026057290&u=%23p%3DnhLO0VmhMEAJ
+
+6) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7996672/
+Conclusion - Most of users consider that using webcam can violate privacy seriously, due to lack of security of online meeting platforms. (like ability to record meetings, without informing participants about it before starting recording)
+
+7) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9760085/
+Conclusion - There are differences in different versions (web/mobile) of same platorm as well. And, different software have significantly different options. Need to select most eligible one, based on options available, while being aware of security vulnerabilities of each software too.
+
+8) https://cloudsecurityalliance.org/blog/2022/03/13/an-analysis-of-the-2020-zoom-breach
+Conclusion - Due to poorly randomized meeting details & weak security mechanisms, zoom initially caused many security breaches. They lead to many social & financial losses as well. (Ex: Meeting ID related case of Boris Johnson, UK's Prime Minister)
+
+9) https://www.techtarget.com/searchsecurity/news/252513579/FBI-BEC-attacks-spreading-to-virtual-meetings
+Conclusion - Using AI generated voice or deepfake voice without a video, attackers can cheat victims in online meetings to exploit them financially. Due to users' unawareness, they get deceived usually by such criminals. 
+
+10) https://www.darkreading.com/cyberattacks-data-breaches/spoofed-zoom-google-skype-meetings-spread-corporate-rats
+Conclusion - Executable malware is distributred as meeting links nowadays. When unaware users click those fake meeting links, they are directed to malware hosted in internet, and then they are installed in user's device withoutt user's consent. These malware can steal user's data by methods like keylogging .
+
+11) https://www.zscaler.com/blogs/security-research/android-and-windows-rats-distributed-online-meeting-lures
+Conclusion - Malicious attackers have hosted RATs (Remote Access Trojan) in internet, in disguising way by decorating them as onine meeting platform websites. Victims who downloaded these RATs have undergone security threats and data breaches.
+
+12) https://www.tomsguide.com/news/zoom-security-privacy-woes
+Conclusion - Zoom has undegone many securiy flaws by now, including a less secure end-to-end encryption, fake zoom app used to distribute malware, possible remote access by attackers, ability to record screen without informing other participants etc. Therefore, it's impossible 
+to trust zoom and such other similar online conference apps 100%, in aspect of privacy & security.
+
+13) https://www.securityweek.com/vulnerability-allowed-attackers-join-zoom-meetings/ 
+Conclusion - Though now online meeting software have adapted many sophisticated security features, initially they were following very weak as well as easily exploitable security policies.
+
+14) https://www.zerify.com/how-secure-is-video-conferencing-survey/ - 
+Conclusion - Zerify has developed a video conferencing app, using zero trust architecture. This states that even employees can't be trusted. Therefore everything should be verified at all risky situations. Currently (by Sep of 2022), none of leading video conferencing tools hs applied this architecture.
+
+15) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9974380/
+Conclusion - Zoom company itself has accepted that it had many security flaws initially allowing attacks like zoom bombing. However, in marketing attempts, they have stated that such security flaws were addressed successfully. But still zoom invites 3rd parties and users openly to find out security flaws present in zoom, by researching. This means that, further research is required to enhance security & confidence regarding online meeting platforms like zoom. They can't be trusted 100%. Because using online meeting involves many other crucial 3rd parties suchas ISPs, hardware device producers etc.
+
+16) https://www.ohio.edu/oit/security/secure-workspaces/securing-virtual-meetings
+Conclusion - There are options to secure online meetings, when user is a security aware person who is literate in IT. But, for less IT literate, unaware users, still these available options in online meetings can be unfamiliar.
+
+17) https://help.ohio.edu/TDClient/30/Portal/Requests/ServiceDet?ID=134
+Conclusion - MS Teams has many options available, based on different user requirements. For a user to reap best output from MS Teams, it's needed to be familiar with such options in advance, before using the tool.
+
+18) https://www.upguard.com/security-report/zoom
+Conclusion - As per May 25, 2024, "Upgrade" has rated security level of zoom as 903/950. This means that, even now, after many updates, editions & upgrades of zoom, still we can't trust it 100%.
+
+19) https://techbeacon.com/security/zoom-fails-grow-530000-passwords-leaked-details-sale-hacker
+Conclusion - Zoom has reused many credential pairs compromising the user security, allowing attackers to reach their targets easily. Meanwhile, end-to-end encryption used in zoom is also said to be less secure.
+
+20) https://therecord.media/microsoft-exposed-terabytes-of-data
+Conclusion - Even MS employees themselves have experienced data exposure to outside, as a result of a mistake of an employee. So, at any time, such mistakes can be made by even experienced employees. Therefore, we can't guaranee that very sensitive data of customers will never be exposed to world. (If there are such sensitive details in MS Teams recordings and Teams chats). So, need to consider about using that mode for communicating sensitive messages.
+
+21) https://www.polymerhq.io/blog/microsoft-teams-vulnerabilities/
+Conclusion - Stronly configured security features by default, can still be broken while dynamically updating the source code by programmers. MS Teams has examples for this. Therefore, always it's better for an organization to use security settings available strictly, rather than trusting only default security features of online conference platforms.
+
+22) https://portswigger.net/daily-swig/vulnerability-in-microsoft-teams-granted-attackers-access-to-emails-messages-and-personal-files
+Conclusion - Not only Zoom, but also Teams had security vulnerabilities that allowed attackers to access Teams messages, chat channels & Onedrive files initially. These famous vulnerabilities have already been solved in Teams now.
+
+23) https://spectrum.ieee.org/data-privacy
+Conclusion - Zoom can be pevented from decrypting user's data by introducing decoupling policy. (Policy which provides service providers minimum permissions, required for providing services to customers). But, even government initiatives are required to implement this policy effectively, in worldwide manner.
+
+24) https://ieeexplore.ieee.org/document/9369505 OR https://www.researchgate.net/publication/349994212_Towards_a_Threat_Model_and_Security_Analysis_of_Video_Conferencing_Systems
+Conclusion - Based on STRIDE threat modeling, there are many possible threats against video conferences. Currently there are various solutions for minimizing those threats too. But, it's possible that current solutions will be bypassed by attackers in future. In addition, there will be new threats arising with time as well. Then, new solutions can be suggested based on STRIDE threat model.
+
+25) https://www.sciencedirect.com/science/article/pii/B978032390054600009X
+Conclusion - Based on STRIDE threat modeling, there are many possible threats against video conferences. Currently there are various solutions for minimizing those threats too. But, it's possible that current solutions will be bypassed by attackers in future. Then, new solutions will be required to protect video conferences, even from the same set of threats. In addition, there will be new threats arising with time as well.
+
+26) https://www.researchgate.net/publication/380447493_Analysis_of_the_Main_Security_Threats_of_Videoconferencing_Systems
+[ Still paper is unavailable. WIll be available soon. ]
+
+27) https://www.researchgate.net/publication/370645864_Status_Challenges_and_Trends_in_Videoconferencing_Platforms
+Conclusion - Videoconferencing apps have improved their features using AI. Further, interoperability between such videoconferencing apps is a prominent feature nowadays. Less awareness of users is a challenge, since users can't reap their best using the options available in apps.
+AI & IOT are expected to enhance features includinfg security, in videoconferencing apps in future.
+
+28) https://www.researchgate.net/publication/354545424_Federated-Access_Management_System_and_Videoconferencing_Applications_Results_from_a_Pilot_Service_during_COVID-19_Pandemic
+Conclusion - During covid-19, when social distancing was high, using videoconferencing has also been high among people in Korea. There are many videoconferencing software including open source too, other than few popular platforms in world. It's possible to build better identity management methods, to improve security of online conferencing systems. But balancing between usability & security is a crucial fact, since there can be people with different IT exposures.
+Inference - Proven high usage of videoconferencing platforms after 2020 may mean that, high number of security breaches recorded after 2020 includes a considerable portion of videoconferencing related issues also. (But not necessarily defects of apps, but sometimes human mistakes)
+
+29) https://people.clarkson.edu/~jmatthew/acm/SecurityPrivacyPrinciplesForVirtualMeetings_CURRENT.pdf
+Conclusion: Most of security, privacty issues recognized iniailly in online meeting platforms have been solved by now. But this may have provided unfair privileges to meeting hosts, over meeting participants. Meeting participants' issues also should be concerned actually. 
+When using online meeting tools, pivacy can be violated due to surrounding situation of meeting participants also.
+
+30) https://ieeexplore.ieee.org/document/8342469
+Conclusion: When a user logs into a meeting via browser, without using the relevant application (Ex: Zoom), meeting data at that user's end gets exposed to almost all browser vulnerabilities too. So, since we don't exactly know whether other participants use browsers or meeting applications to log into meeting, there is a gap about guaranteeing meeting risk 
+level as a numeric probability.
+
+31) https://www.nist.gov/blogs/cybersecurity-insights/preventing-eavesdropping-and-protecting-privacy-virtual-meetings
+Conclusion: Even though there are security mechanisms present in online meeting apps, still users may adopt them at various levels, with different knowledge levels. So, user's awareness is also an important fact to enhance security of online meetings.
+
+32) https://www.sciencedirect.com/science/article/pii/S0164121222001625
+Conclusion: Regarding software engineering firms, having SECURITY MEETINGS regularly is important to maintain the software security of products they build. Because, by bypassing their meetings, someone may track which security approaches they use in their software products. However, as future work, it's better to build a method to select the most appropriate meeting mode,
+based on not only security, but also other facts like invested amount, meeting goal and objectives, participant's IT literacy etc.
+
+33) https://www.researchgate.net/publication/380447493_Analysis_of_the_Main_Security_Threats_of_Videoconferencing_Systems
+[This research paper isn't yet available in internet]
+
+34) https://ieeexplore.ieee.org/document/9462825?denied=
+Conclusion: End To End Encryption (E2EE) of Zoom-version 2.3.1 had vulnerabilities allowing attackers to carry out impersonations, tampering and DOS attacks. This didn't incorporate any source code analysis, and proving was done theoretically only. Zoom had acepted those proofs.
+
+35) https://arxiv.org/pdf/2007.01059 or https://ieeexplore.ieee.org/document/10004842
+Conclusion: Zoom can cause privacy violations upto the level of revealing age, genger, social connections (when attackers cross search meeting partipants in social media platforms to get more details), location etc of users, when used withput concerning about self privacy. Therefore, even though security is facilitated by meeting platforms upto a certain level, users must be responsible enough about their privacy carefully.
+
+36) https://www.spiceworks.com/it-security/application-security/articles/video-conferencing-risks-and-best-practices/
+Conclusion: Even though video conferencing apps have many security options like 2FA, some users are unaware of them and some others reject those options considering as a burden. Therefore, it's better to impose security approaches like 2FA, zero trust architecture to video conferencing apps by default, rather than introducing them as complex optional facilities. (suggested in 2022)
+
+37) https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0065520
+Conclusion: Even in the same version of Zoom (Ex: 6.0.11), there are differences between features of Apple desktop client & Windows desktop client. Examples are live transcription, language interpretation etc. 
+
+38) https://www.google.com/search?channel=fs&client=ubuntu-sn&q=zoom+download
+Conclusion: Some versions of Zoom are exclusively only for a particular OS. As example, 6.0.12 is only for Linux OS, while 6.0.11 are for Apple & Windows OS. So, when concerning the app features based on version number, it's needed to remember that some OS will be neglected.
+
+39) https://journals.sagepub.com/doi/full/10.1177/10464964211015286
+Conclusion: When selecting the meeting mode, it's needed to concern facts in Meeting Science and Media Naturalness Theory. (Ex: whether participants expect to see each other's facial expression & body movements). There are pros & cons both regarding online meetings, over onsite meetings. Therefore, correct mode should be selected carefully, based on exact situational requirements.
+
+40) https://www.cisecurity.org/insights/blog/top-videoconferencing-attacks-and-security-best-practices
+Conclusion: There are many security options provided in meeting platforms to be configured by users. Meeting security can be enhanced upto a generic level by using these security options appropriately, with good awareness.
+
+41) https://learn.cisecurity.org/l/799323/2020-10-26/32c9x/799323/1603722374m8WV8G5s/CIS_Videoconferencing_Security_Guide.pdf?_gl=1*1mzwupd*_ga*MjM2MTkxODg1LjE3MTczNDA5ODE.*_ga_3FW1B1JC98*MTcxNzM0MDk4MS4xLjEuMTcxNzM0MTEzOS4wLjAuMA..*_ga_N70Z2MKMD7*MTcxNzM0MDk4MS4xLjEuMTcxNzM0MTEzOS42MC4wLjA.
+Conclusion: [This is a guide for applying security options available in online platforms appropriately, based on requirements]
+
+42) https://www.sciencedirect.com/science/article/pii/B978032390054600009X = 24) present above
+Conclusion - Based on STRIDE threat modeling, there are many possible threats against video conferences. Currently there are various solutions for minimizing those threats too. But, it's possible that current solutions will be bypassed by attackers in future. In addition, there will be new threats arising with time as well. Then, new solutions can be suggested based on STRIDE threat model.
+
+43) https://cisse.info/journal/index.php/cisse/article/view/134/134
+Conclusion: Online meeting security must be concerned actually before starting each online meeting, because they can be recorded by attackers based on sutuational vulnerabilities. That's not an afterthought. To use available security options for minimizing attacks as mucha as possible, users should be aware & trained enough from their end, instead of expecting security from default configurations.
+
+44) https://www.academia.edu/3056220/Unified_Communications_Security_A_study_of_IT_personnel_awareness_on_video_conferencing_security_recommendations
+
+45) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9299235/
+
+46) https://link.springer.com/article/10.1365/s43439-020-00013-4
+
+47) https://medlearn.com/why-even-vpn-encryption-can-be-hacked-and-how-huge-insurance-providers-can-still-have-phi-data-stolen/
+Conclusion: Even VPNs can be still attcked by attckers due to facts like weak encryption algorithms, malicious insiders etc. Therefore, trusting VPNs 100% is a critical, risky action.
+
+48) https://www.kaspersky.com/blog/defcon30-zoom-vulnerability/45420/
+Conclusion: There can be meeting platform vulnerabilities which are specific only to some environments, but not to every envioronmnet. This blog points out a vulnerability of Zoom client, in MacOS. Therefore, we have to think twice, when we trust their general marketing tricks stating in overall that security will be highly maintained.
+
+49) https://kadence.co/news/hybrid-meetings/
+Conclusion: Organizing a hybrid meeting should be done very carefully, since a clear discrimination can take place between 2 participant groups, due to numerous reasons. In aspect of management, properly organized hybrid meetings can be very helpful.
+
+49) https://www.vipav.com/blog/understanding-the-difference-between-virtual-and-hybrid-events
+Conclusion: Earlier preparation and careful management are essentail factors to make hybrid meetings more successful, by avoiding discrimination on remote participants. Since many participants can attend a hybrid meeting via online platform, this can be used as a highly effective tool for communication, when arranged properly.
+
+50) https://www.lri.fr/~mbl/ENS/CSCW/2012/papers/Saatci-CTSC19.pdf
+Conclusion: It has been found out that hybrid meetings are a good communication tool to cooperate with team members, when required resources and trainings are conducted well. If hybrid meetings aren't managed properly, they can lead to many issues through inequality & discrimination.
+
+51) https://mgrush.com/blog/meeting-participants/
+Conclusion: Participants' preparation and readiness before starting a meeting & fulfilling their due duties after meetings are crucial facts to make the meetings successful. Specially these 2 should be concerned in financial, profit oriented business environments. But for voluntary work meetings and not-for profit meetings, these facts may mot be as critical as that much.
+
+52) https://www.indeed.com/career-advice/career-development/meeting-participants
+Conclusion: Selecting meeting participants & assigning roles should be done in most optimum manner, for getting best outcome from meetings. Readiness of participants also causes big contribution towards the success of the meeting. Unless, meeting focus and objectives can be violated, and as the result less productive outcome will be produced by the meeting.
+
+53) https://www.letsdive.io/blog/how-to-pick-the-right-meeting-participants-and-assign-roles
+Conclusion: Not only selecting right participants, but also obtaining best contribution from them during & after the meeting is also important. It's needed to assign meeting roles appropriately, get participants' involvement effectively(through tools like polls maybe, based on situation) and communicate clearly among meeting participants, for achieving best outcome from a meeting.
+
+54) https://inevent.com/blog/others/how-to-improve-security-for-your-virtual-meetings.html
+Conclusion: There are many actions that online meeting participants can follow, in order to increase security level of online meetings. Some of them are habits like refraining from sharing meeting links in public, using strong passwords etc. Other actions are security related measures like using firewalls, antivirus software, network monitoring tools etc.
+
+55) https://krisp.ai/blog/virtual-meeting-security/
+Conclusion: There are many actions that online meeting participants can follow, in order to increase security level of online meetings. Some of them are habits like refraining from sharing meeting links in public, using strong passwords etc. Other actions are security related measures like using firewalls, antivirus software, network monitoring tools etc.
+
+56) https://community.zoom.com/t5/Zoom-Meetings/Several-people-physically-in-same-room-each-on-own-device/td-p/85961
+Conclusion: Smart usage of online devices is very important, when numerous participants join online meetings from the same location. (Ex: Using headsets, muting when not talking). In addition, at such situations, special concern should be paid regarding the bandwidth of that place, if they all share the same wifi connection.
+
+57) https://study.com/academy/lesson/what-is-a-virtual-meeting-technology-strategies-quiz.html
+Conclusion: An online/virtual meeting means a verbal/video based communication taking place between 2 people, with ability to share ideas real time, without waiting. (Even though evry participant may not use that full-duplex communication facility throughout whole meeting time duration)
+
+58) https://www.cyberdb.co/the-essential-role-of-isps-in-cybersecurity/
+Conclusion: ISPs focus not only on providing internet connection, but also on analyzing data traffic to reduce the data traffic blocks, enhancing security by applying firewalls, rerouting to prevent DDOS attacks, implementing Intrusion Detection Systems(IDS) to detect unusually suspicious data traffic within network etc.
+
+59) https://security.stackexchange.com/questions/51300/does-isp-have-control-on-all-routers-in-their-network
+Conclusion: Some people use an intermediate router between ISPs router and personal devices, to increase the level of control within personal network (Maybe at home/office, as u wish).
+
+60) https://www.quora.com/Will-I-be-more-secure-with-my-own-router-behind-my-ISPs-router
+Conclusion: Some people use an intermediate router between ISPs router and personal devices, to increase the level of control within personal network (Maybe at home/office, as u wish).
+
+61) https://www.researchgate.net/publication/366813533_Zooming_Into_Video_Conferencing_Privacy
+Conclusion: Video conferencing apps can lead to numerous privacy issues such as social engineering attacks. In addition, there are attcks like zoom bombing, cyber bullying etc. These issues can be minimized upto a certain level, by user awareness on cyber security. That awareness will reduce user actions that allow video-conferencing related attacks to take place.
+
+62) https://www.pluralsight.com/resources/blog/guides/hypothesis-testing-interpreting-data-statistical-models
+Conclusion: By using hypothesis testing including null hypothesis and alternate hypothesis, it's possible to test whether an alternate hypothesis is true or false. Here null hypothesis is neglected in case its significance level resides in region of rejection (Upper tail or lower tail of distribution). Chi-square test seems to satisfy our evaluation requirements.
+
+63) https://towardsdatascience.com/understanding-hypothesis-testing-65f9b3e9ab1f
+Conclusion: By using hypothesis testing including null hypothesis and alternate hypothesis, it's possible to test whether an alternate hypothesis is true or false. Here null hypothesis is neglected in case its significance level resides in region of rejection (Upper tail or lower tail of distribution).
+
+64) https://www.researchgate.net/publication/222528298_Constraint-based_reasoning_and_privacyefficiency_tradeoffs_in_multi-agent_problem_solving
+
+65) https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=7934a0ea2832c509d2e46bd847d1945866d97f30
+
+66) https://www.sciencedirect.com/science/article/pii/S0004370204001535
+
+67) https://www.researchgate.net/publication/2941272_Possibilistic_Reasoning_and_PrivacyEfficiency_Tradeoffs_in_Multi-Agent_Systems
+
+68) https://www.geeksforgeeks.org/linear-programming/
+Conclusion: Linear programming can be used to solve problems associated with 2 linear equations and multiple constraints. In that, it's possible to identify the highest value that a certain expression can take, depending on 2 changing variables. Contstrainits available in form of inqualities are converted to equations for easy analysis. 
+
+69) https://www.researchgate.net/publication/321341662_Time_Table_and_Scheduled_Meetings_Problem_Constraint_Optimization_through_Evolutionary_Algorithm
+Conclusion: In this one, an algorithmic approach has been proposed to solve time table clashing issue of students in an Indian institute. But, in this research, location hasn't been concerned as a factor. Only time availability and few other constraints like not having multiple exam subjects on the same day have been concerend.
+
+70) https://ocw.mit.edu/courses/15-071-the-analytics-edge-spring-2017/pages/integer-optimization/sports-scheduling-an-introduction-to-integer-optimization/
+Conclusion: In this, sports scheduling is concerned, considering only time as a factor. But, no attention is paid regarding the locations. However, the simultaneous scheduling (organizing multiple meetings at the same time if possible, when other factors are also satisfied) can be adopted in our research, as an idea learned from this sports scheduling domain.
+
+71) https://dl.acm.org/doi/pdf/10.1613/jair.1.12670
+
+June 16 - 2024 (Psychology behind meetings and facts for effective meeting organization)
+1) https://www.psychologicalscience.org/news/releases/psychological-science-can-make-your-meetings-better.html
+Conclusion: It's psychologically proven that following pre-meeting, during meeting and post-meeting steps based on meeting science can make meetings more effective for almost all meeeting participants.
+
+2) https://www.meetingsnet.com/financialinsurance-meetings/brain-science-behind-meeting-breaks
+Conclusion: Psychologically it's found out that having breaks appropriately during meeting schedules is important to enhance the performcance and engagement of participants, rather than forcing participants to attend meetings continuously for numbers of hours. 
+
+3) https://www.radicalcandor.com/blog/effective-one-on-ones/
+Conclusion: Having effective 1-on-1 meetings between managers and employees regulartly can boost us employee performance, while increasing employee satisfaction and employee retention in organization both.
+
+4) https://www.radicalcandor.com/blog/leadership-resolutions-2017/
+Conclusion: Maintaining a close, regular, collaborative relationship with employees is a better way to get great outputs from them, rather than dominating them as a boss. And, organizing & conducting meetings should be done in time effective manner, to avoid unnecessary burdens on employees.
+
+5) https://hbr.org/2015/03/how-to-design-an-agenda-for-an-effective-meeting
+Conclusion: Preparing meeting agenda collaboratively with team members, and refining it carefully before proceeding the meeting can increase the value of meeting, by paving the way to get best outputs from meeting participants, rather than mentally exhausting them.
+
+6) https://www.stevenrogelberg.com/
+Conclusion: As managers, adopting meeting science to streamline the meetings in professional context can improve the quality of work carried out by employees. Meeting science has direct link to psychology, in order to extract best output from employees, with minimum burnouts.
+
+7) https://www.chilipiper.com/article/effective-meetings
+Conclusion: Effective meeting agenda and insightful post-meeting feedback from participnats can be used to improve the quality and productivity of meetings. However, these ideas also can be identified as guidelines/suggestions embedded in Meeting Science, when observed from high level.
+
+8) https://hbr.org/2017/07/stop-the-meeting-madness
+Conclusion: There are many evidences to prove that messed up meeting schedules can increase the pressure and stress of team memebers unnecessarily, while wasting valuable working hours as well. Therefore, managers should engage in frequent discussions with team members to measure the effectiveness of meetings, to re-engineer the schedules appropriately, whenever required.
+
+9) https://hypercontext.com/features/team-meetings/effective-meetings
+
+10) https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-an-effective-meeting 
+
+11) https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-decision-making
+
+12) https://medium.com/@alexarobinson19/how-to-have-an-effective-meeting-92391f34be45
+
+13) https://inevent.com/blog/others/how-to-improve-security-for-your-virtual-meetings.html
+
+14) https://www.nist.gov/blogs/cybersecurity-insights/preventing-eavesdropping-and-protecting-privacy-virtual-meetings
+Conclusion: There are video conferencing related best practices such as using strong passwords, changing passwords frequetly, using waiting room that help users to protect the security & privacy of meetings. Following these practices can enhance the privacy of discussions taking place in confidential online meetings.
+
+15) https://fortune.com/2023/07/11/eavesdropping-gossiping-work-benefits-getting-ahead/
+
+16) https://compliancetraininggroup.com/2013/08/27/whos-bugging-you-workplace-electronic-eavesdropping/
+
+17) https://www.taylorfrancis.com/books/mono/10.1201/9781003090441/security-risk-assessment-handbook-douglas-landoll
+
+18) https://books.google.lk/books?hl=en&lr=&id=5xAhp9B1264C&oi=fnd&pg=PT15&dq=Security+Analysis+%26+Risk+Management+Association&ots=3xRYwaOBu_&sig=anbTXD3jY0kKJB_SOIj9anXAXGc&redir_esc=y#v=onepage&q=Security%20Analysis%20%26%20Risk%20Management%20Association&f=false
+
+19) https://blog.tixeo.com/en/5-types-of-online-meetings-to-protect-more/
+
+20) https://fellow.app/blog/meetings/how-to-decide-between-in-person-and-virtual-meetings/
+
+21) https://www.parabol.co/resources/meeting-types/
+
+22) https://www.sherpany.com/en/resources/executive-meetings/how-to-assign-meeting-participants/
+Conclusion: Selecting meeting participants is a critical task, because having too many participants(usually more than 8 contributing participants) will reduce the effectiveness of meeting. Therefore, it's needed to select only essential participants for a meeting, concerning agenda items present, decision making power, impact of meeting decisions on people etc. In addition, there can be non-contributing roles like scribe, that can enhance the quality of meeting.
+
+23) https://www.verbally.io/post/maximize-meeting-efficiency-roles-responsibilities
+
+24) https://www.researchgate.net/publication/228968872_A_comparison_of_techniques_for_learning_and_using_mathematics_and_a_study_of_their_relationship_to_logical_principles
+
+25) https://ris.utwente.nl/ws/portalfiles/portal/5104576/Memo1826.pdf OR
+https://www.researchgate.net/publication/251430379_Classification_of_meetings_and_their_participants
+Conclusion: In a meeting, different activities can take place from time to time dynamically. Some may not be even included in agenda, but probably those facts would take few minutes (Ex: A short silence until presenter scroll up the slide set). Therefore, by observing only one or few activities carried out in a meeting, it's impossible to infer what kind of meeting it was. Upto a certain level, we can guess, by analyzing the way how time was distributed. But, still we need a better mechanism to evaluate such guesses, in real world scenarios.
+
+26) https://6q.io/blog/how-to-better-structure-team-meetings/
+Conclusion: There are meeting related best practices such as setting appropriate ground rules, adhering to agenda, making meeting dynamic and collaborative rather than dominant, in order to get best effective output from the meeting. And still there are enough situations where onsite meetings play better than online meetings. Accordingly, arranging meetings is a complex function, which should be done carefully, for getting best output from the meeting.
+
+27) https://blog.lucidmeetings.com/blog/16-types-of-business-meetings/
+Conclusion: Meetings can be categorized based on meeting intention, meeting format (i.e. whther ritualistic, whether surprises are acceptable, whether follows a sequence of practised actions continuously), and participants' group expected to attend. Based on these factors, but without specially focusiing on security and privacy related features, 16 meeting types have been identified in this blog article.
+
+28) https://www.researchgate.net/publication/243786033_PrivacyEfficiency_Tradeoffs_in_Distributed_Meeting_Scheduling_by_Constraint_Based_Agents_1
+Conclusion: When organizing meetings, trying to increase efficiency (Ex: By concerning time schedules of all participants) can cause a threat to the privacy of meeting participants. And, it's observed that, even without any attention on efficiency like that, still meeting organization can lead to loss of privacy of users more or less. There are many issues to address, regarding meeting organization, in futire research.
+
+29) https://www.researchgate.net/publication/220797059_Practical_Private_Set_Intersection_Protocols_with_Linear_Complexity
+Conclsuion: There is a theory as PSI (Private Set Intersection), for protecting privacy of data of 2 parties, when they need to interact with each other, maintaining a common intersection of data. Here, this theory suggests a solution to reveal only that intersection of data to both parties, while hiding other confidential data from the opposite party, during negotiations. Authorized PSI is an extended version of PSI.
+
+30) https://www.sciencedirect.com/science/article/abs/pii/S0164121211001026
+Conclusion: It's needed to concern about users' privacy as well, when developing meeting scheduling applications. Because usually users feed their personla details to these apps, for high efficiency in meeting scheduling functioanlity. In this research, 3 privacy preserving scheduling algorithms have been suggested for preserving privacy of users.
+
+31) https://link.springer.com/chapter/10.1007/11535218_15
+Conclusion: There is a theory as PSI (Private Set Intersection), for protecting privacy of data of 2 parties, when they need to interact with each other, maintaining a common intersection of data. Here, this theory suggests a solution to reveal only that intersection of data to both parties, while hiding other confidential data from the opposite party, during negotiations. 
+
+32) https://surface.syr.edu/cgi/viewcontent.cgi?article=1010&context=eecs
+Conclusion: When 2 parties negotiate for a certain requirement, those parties need to concern about common intersection of information, which should be known by both of them clearly. This problem is called Secure Multi-party Computation Problem (SMC). Algorithmic as well as set notation based solutions have been suggested to solve this problem, in past research.
+
+33) https://decentralizedthoughts.github.io/2020-03-29-private-set-intersection-a-soft-introduction/
+Conclusion: There are mechanisms to prevent the cheats conducted by a 3rd party involoving in PSI service facilitation between 2 entities. Those mechanisms can be explained using algebra, as explained in this article.
+
+34) https://www.scribbr.com/statistics/statistical-tests/
+Conclusion: There are various statistical test types for validating the relationships identified by analyzing data sets. Test used to evaluate the validity of relationship depends on whether data analyzed is quantitative or qualitative. 
+
+35) https://support.microsoft.com/en-us/office/restrict-access-to-documents-with-information-rights-management-in-word-94aa8ab1-465e-42d7-a323-d61f911b2d0f#:~:text=In%20the%20Permissions%20dialog%20box,you%20want%20for%20each%20user
