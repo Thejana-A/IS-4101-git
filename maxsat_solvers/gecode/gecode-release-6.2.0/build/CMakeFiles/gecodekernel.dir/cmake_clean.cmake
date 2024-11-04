@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/archive.cpp.o"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/archive.cpp.o.d"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/branch/action.cpp.o"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/branch/action.cpp.o.d"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/branch/afc.cpp.o"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/branch/afc.cpp.o.d"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/branch/chb.cpp.o"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/branch/chb.cpp.o.d"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/branch/function.cpp.o"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/branch/function.cpp.o.d"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/core.cpp.o"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/core.cpp.o.d"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/data/array.cpp.o"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/data/array.cpp.o.d"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/data/rnd.cpp.o"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/data/rnd.cpp.o.d"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/exception.cpp.o"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/exception.cpp.o.d"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/gpi.cpp.o"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/gpi.cpp.o.d"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/memory/manager.cpp.o"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/memory/manager.cpp.o.d"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/memory/region.cpp.o"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/memory/region.cpp.o.d"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/trace/filter.cpp.o"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/trace/filter.cpp.o.d"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/trace/general.cpp.o"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/trace/general.cpp.o.d"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/trace/recorder.cpp.o"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/trace/recorder.cpp.o.d"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/trace/tracer.cpp.o"
+  "CMakeFiles/gecodekernel.dir/gecode/kernel/trace/tracer.cpp.o.d"
+  "libgecodekernel.a"
+  "libgecodekernel.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/gecodekernel.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

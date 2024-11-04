@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/gecodesearch.dir/gecode/search/bab.cpp.o"
+  "CMakeFiles/gecodesearch.dir/gecode/search/bab.cpp.o.d"
+  "CMakeFiles/gecodesearch.dir/gecode/search/cpprofiler/tracer.cpp.o"
+  "CMakeFiles/gecodesearch.dir/gecode/search/cpprofiler/tracer.cpp.o.d"
+  "CMakeFiles/gecodesearch.dir/gecode/search/cutoff.cpp.o"
+  "CMakeFiles/gecodesearch.dir/gecode/search/cutoff.cpp.o.d"
+  "CMakeFiles/gecodesearch.dir/gecode/search/dfs.cpp.o"
+  "CMakeFiles/gecodesearch.dir/gecode/search/dfs.cpp.o.d"
+  "CMakeFiles/gecodesearch.dir/gecode/search/engine.cpp.o"
+  "CMakeFiles/gecodesearch.dir/gecode/search/engine.cpp.o.d"
+  "CMakeFiles/gecodesearch.dir/gecode/search/exception.cpp.o"
+  "CMakeFiles/gecodesearch.dir/gecode/search/exception.cpp.o.d"
+  "CMakeFiles/gecodesearch.dir/gecode/search/lds.cpp.o"
+  "CMakeFiles/gecodesearch.dir/gecode/search/lds.cpp.o.d"
+  "CMakeFiles/gecodesearch.dir/gecode/search/nogoods.cpp.o"
+  "CMakeFiles/gecodesearch.dir/gecode/search/nogoods.cpp.o.d"
+  "CMakeFiles/gecodesearch.dir/gecode/search/options.cpp.o"
+  "CMakeFiles/gecodesearch.dir/gecode/search/options.cpp.o.d"
+  "CMakeFiles/gecodesearch.dir/gecode/search/par/pbs.cpp.o"
+  "CMakeFiles/gecodesearch.dir/gecode/search/par/pbs.cpp.o.d"
+  "CMakeFiles/gecodesearch.dir/gecode/search/pbs.cpp.o"
+  "CMakeFiles/gecodesearch.dir/gecode/search/pbs.cpp.o.d"
+  "CMakeFiles/gecodesearch.dir/gecode/search/rbs.cpp.o"
+  "CMakeFiles/gecodesearch.dir/gecode/search/rbs.cpp.o.d"
+  "CMakeFiles/gecodesearch.dir/gecode/search/seq/dead.cpp.o"
+  "CMakeFiles/gecodesearch.dir/gecode/search/seq/dead.cpp.o.d"
+  "CMakeFiles/gecodesearch.dir/gecode/search/seq/pbs.cpp.o"
+  "CMakeFiles/gecodesearch.dir/gecode/search/seq/pbs.cpp.o.d"
+  "CMakeFiles/gecodesearch.dir/gecode/search/seq/rbs.cpp.o"
+  "CMakeFiles/gecodesearch.dir/gecode/search/seq/rbs.cpp.o.d"
+  "CMakeFiles/gecodesearch.dir/gecode/search/stop.cpp.o"
+  "CMakeFiles/gecodesearch.dir/gecode/search/stop.cpp.o.d"
+  "CMakeFiles/gecodesearch.dir/gecode/search/tracer.cpp.o"
+  "CMakeFiles/gecodesearch.dir/gecode/search/tracer.cpp.o.d"
+  "libgecodesearch.a"
+  "libgecodesearch.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/gecodesearch.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
