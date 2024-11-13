@@ -1,0 +1,537 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{florian2009}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=60825fbc22fe044d2bc268c165648ca5}{%
+           family={Berger},
+           familyi={B\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6e0356c3e2ccab08fd82a571d84aea65}{%
+           family={Klein},
+           familyi={K\bibinitperiod},
+           given={Rolf},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c1cadcd484f430dddb42b5928d79f50a}{%
+           family={Nussbaum},
+           familyi={N\bibinitperiod},
+           given={Doron},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=60e6ebfd58ae1b67c030be2e0ecb6f57}{%
+           family={Sack},
+           familyi={S\bibinitperiod},
+           given={Jörg-Rüdiger},
+           giveni={J\bibinithyphendelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c7adcce40f89810705770732684bb88f}{%
+           family={Yi},
+           familyi={Y\bibinitperiod},
+           given={Jiehua},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {USA}%
+      }
+      \list{publisher}{1}{%
+        {Kluwer Academic Publishers}%
+      }
+      \strng{namehash}{895fba99c5ebb1fa1642e87909643aca}
+      \strng{fullhash}{3783131ecf6a9b36f44dfc0931ae69bb}
+      \strng{bibnamehash}{3783131ecf6a9b36f44dfc0931ae69bb}
+      \strng{authorbibnamehash}{3783131ecf6a9b36f44dfc0931ae69bb}
+      \strng{authornamehash}{895fba99c5ebb1fa1642e87909643aca}
+      \strng{authorfullhash}{3783131ecf6a9b36f44dfc0931ae69bb}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1384-6175}
+      \field{journaltitle}{Geoinformatica}
+      \field{number}{4}
+      \field{title}{A meeting scheduling problem respecting time and space}
+      \field{volume}{13}
+      \field{year}{2009}
+      \field{pages}{453\bibrangedash 481}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1007/s10707-008-0053-4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10707-008-0053-4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10707-008-0053-4
+      \endverb
+    \endentry
+    \entry{bofill2022}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=86e80b45ac7dc0994e2ec21841c1370f}{%
+           family={Bofill},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=25b35cda54eafd5b60b3174361bae039}{%
+           family={Coll},
+           familyi={C\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b273f20864cfa43316162e96e285777e}{%
+           family={Garcia},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3406b7fb2d938143b8a66f1a6eebb9c7}{%
+           family={Giraldez-Cru},
+           familyi={G\bibinithyphendelim C\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ba004dd81ee89d68fc3b6a26d841976d}{%
+           family={Pesant},
+           familyi={P\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae0db3f37e30ffb801f64bdeed3ab3b3}{%
+           family={Suy},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e8f142eb168409ddc996d6bbe9eafca1}{%
+           family={Villaret},
+           familyi={V\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3d23e5f3b82f26b80b82c68dcc062250}
+      \strng{fullhash}{7d8ad3fcc57f3fed221bde7e363c5988}
+      \strng{bibnamehash}{7d8ad3fcc57f3fed221bde7e363c5988}
+      \strng{authorbibnamehash}{7d8ad3fcc57f3fed221bde7e363c5988}
+      \strng{authornamehash}{3d23e5f3b82f26b80b82c68dcc062250}
+      \strng{authorfullhash}{7d8ad3fcc57f3fed221bde7e363c5988}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Artificial Intelligence Research}
+      \field{title}{Constraint Solving Approaches to the Business-to-Business Meeting Scheduling Problem}
+      \field{volume}{74}
+      \field{year}{2022}
+      \field{pages}{263\bibrangedash 301}
+      \range{pages}{39}
+      \verb{doi}
+      \verb https://doi.org/10.1613/jair.1.12670
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/pdf/10.1613/jair.1.12670
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/pdf/10.1613/jair.1.12670
+      \endverb
+    \endentry
+    \entry{enembreck2012}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=985ed074f75ad797144b2eb7ff148f26}{%
+           family={Enembreck},
+           familyi={E\bibinitperiod},
+           given={Fabrício},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2351159dc76da2c0ebaaaec24db5cbe}{%
+           family={{André Barthès}},
+           familyi={A\bibinitperiod},
+           given={Jean-Paul},
+           giveni={J\bibinithyphendelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1377d4939988dc99426530b8f432748a}
+      \strng{fullhash}{1377d4939988dc99426530b8f432748a}
+      \strng{bibnamehash}{1377d4939988dc99426530b8f432748a}
+      \strng{authorbibnamehash}{1377d4939988dc99426530b8f432748a}
+      \strng{authornamehash}{1377d4939988dc99426530b8f432748a}
+      \strng{authorfullhash}{1377d4939988dc99426530b8f432748a}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1084-8045}
+      \field{journaltitle}{Journal of Network and Computer Applications}
+      \field{note}{Collaborative Computing and Applications}
+      \field{number}{1}
+      \field{title}{Distributed constraint optimization with MULBS: A case study on collaborative meeting scheduling}
+      \field{volume}{35}
+      \field{year}{2012}
+      \field{pages}{164\bibrangedash 175}
+      \range{pages}{12}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jnca.2011.02.016
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1084804511000543
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1084804511000543
+      \endverb
+    \endentry
+    \entry{golmohammadi2015}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=73329ced34657625400092c8f87eb462}{%
+           family={Golmohammadi},
+           familyi={G\bibinitperiod},
+           given={Davood},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{73329ced34657625400092c8f87eb462}
+      \strng{fullhash}{73329ced34657625400092c8f87eb462}
+      \strng{bibnamehash}{73329ced34657625400092c8f87eb462}
+      \strng{authorbibnamehash}{73329ced34657625400092c8f87eb462}
+      \strng{authornamehash}{73329ced34657625400092c8f87eb462}
+      \strng{authorfullhash}{73329ced34657625400092c8f87eb462}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0925-5273}
+      \field{journaltitle}{International Journal of Production Economics}
+      \field{title}{A study of scheduling under the theory of constraints}
+      \field{volume}{165}
+      \field{year}{2015}
+      \field{pages}{38\bibrangedash 50}
+      \range{pages}{13}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.ijpe.2015.03.015
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0925527315000833
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0925527315000833
+      \endverb
+    \endentry
+    \entry{marijn2011}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=7cf7dac921829287b8607bd4e25575ce}{%
+           family={Heule},
+           familyi={H\bibinitperiod},
+           given={Marijn\bibnamedelimb J.\bibnamedelimi H.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6a705d4f81bf4de9b4a9f22d64544ab7}{%
+           family={Kullmann},
+           familyi={K\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edfe271101f75541cf3c6fadb3a01bee}{%
+           family={Wieringa},
+           familyi={W\bibinitperiod},
+           given={Siert},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=22081d00e30965a89f413e528510617e}{%
+           family={Biere},
+           familyi={B\bibinitperiod},
+           given={Armin},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=7c6ad14b250cf6c8ba8e92e4ad94f196}{%
+           family={Eder},
+           familyi={E\bibinitperiod},
+           given={Kerstin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5421a89775ed8caf0451fec2cbd93cf2}{%
+           family={Lourenço},
+           familyi={L\bibinitperiod},
+           given={João},
+           giveni={J\bibinitperiod}}}%
+        {{hash=68d9e057c0556216b3d69b29c930954a}{%
+           family={Shehory},
+           familyi={S\bibinitperiod},
+           given={Onn},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{e081aa718f973198809862cec0a124c9}
+      \strng{fullhash}{5020ab311b4bf8f268f1d9bdb44a0c28}
+      \strng{bibnamehash}{5020ab311b4bf8f268f1d9bdb44a0c28}
+      \strng{authorbibnamehash}{5020ab311b4bf8f268f1d9bdb44a0c28}
+      \strng{authornamehash}{e081aa718f973198809862cec0a124c9}
+      \strng{authorfullhash}{5020ab311b4bf8f268f1d9bdb44a0c28}
+      \strng{editorbibnamehash}{db4c42cac6ee99f0e4b41b3dd0db92a4}
+      \strng{editornamehash}{db4c42cac6ee99f0e4b41b3dd0db92a4}
+      \strng{editorfullhash}{db4c42cac6ee99f0e4b41b3dd0db92a4}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Hardware and Software: Verification and Testing}
+      \field{isbn}{978-3-642-34187-8}
+      \field{title}{Cube and Conquer: Guiding CDCL SAT Solvers by Lookaheads}
+      \field{volume}{7261}
+      \field{year}{2012}
+      \field{pages}{50\bibrangedash 65}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/978-3-642-34188-5_8
+      \endverb
+    \endentry
+    \entry{peteghem2010}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1256fd8e484a2712d72c7790499fa57f}{%
+           family={Peteghem},
+           familyi={P\bibinitperiod},
+           given={Vincent\bibnamedelima Van},
+           giveni={V\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27cd638f93b277b9fd9605ddcd823524}{%
+           family={Vanhoucke},
+           familyi={V\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fbbef219e55fd0f01974289435680410}
+      \strng{fullhash}{fbbef219e55fd0f01974289435680410}
+      \strng{bibnamehash}{fbbef219e55fd0f01974289435680410}
+      \strng{authorbibnamehash}{fbbef219e55fd0f01974289435680410}
+      \strng{authornamehash}{fbbef219e55fd0f01974289435680410}
+      \strng{authorfullhash}{fbbef219e55fd0f01974289435680410}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0377-2217}
+      \field{journaltitle}{European Journal of Operational Research}
+      \field{number}{2}
+      \field{title}{A genetic algorithm for the preemptive and non-preemptive multi-mode resource-constrained project scheduling problem}
+      \field{volume}{201}
+      \field{year}{2010}
+      \field{pages}{409\bibrangedash 418}
+      \range{pages}{10}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.ejor.2009.03.034
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S037722170900191X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S037722170900191X
+      \endverb
+    \endentry
+    \entry{andrei2022}{article}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=4916c585d4c7d99f27aa6bb8ca2f890a}{%
+           family={Popescu},
+           familyi={P\bibinitperiod},
+           given={Andrei},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=90e112c3b32134504f8dddb2ec327fbc}{%
+           family={{Polat Erdeniz}},
+           familyi={P\bibinitperiod},
+           given={Seda},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81655836ef41c3264e367ccbbd394701}{%
+           family={Felfernig},
+           familyi={F\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eba449da8373eb50c829f9cf7b41467a}{%
+           family={Uta},
+           familyi={U\bibinitperiod},
+           given={Mathias},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d755b40958c1a915ed36bbcd8e8c2f09}{%
+           family={Atas},
+           familyi={A\bibinitperiod},
+           given={Müslüm},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=78b5759586d986da9a9b7990b0dda4f0}{%
+           family={Le},
+           familyi={L\bibinitperiod},
+           given={{Viet Man}},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=931139b8859435cc4cbb0966bfaf9bfa}{%
+           family={Pilsl},
+           familyi={P\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b396bd71d432d8af5056ab929e83dc22}{%
+           family={Enzelsberger},
+           familyi={E\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b9be32c601a787e0c23b9e0e8c46065}{%
+           family={Tran},
+           familyi={T\bibinitperiod},
+           given={Trang},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing AG}%
+      }
+      \strng{namehash}{f80ffc7b44ac5117bd7295a14176a2e7}
+      \strng{fullhash}{231ffff190a217875815cd91f91c6883}
+      \strng{bibnamehash}{231ffff190a217875815cd91f91c6883}
+      \strng{authorbibnamehash}{231ffff190a217875815cd91f91c6883}
+      \strng{authornamehash}{f80ffc7b44ac5117bd7295a14176a2e7}
+      \strng{authorfullhash}{231ffff190a217875815cd91f91c6883}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0925-9902}
+      \field{journaltitle}{Journal of Intelligent Information Systems}
+      \field{number}{1}
+      \field{title}{An overview of machine learning techniques in constraint solving}
+      \field{volume}{58}
+      \field{year}{2022}
+      \field{pages}{91\bibrangedash 118}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1007/s10844-021-00666-5
+      \endverb
+    \endentry
+    \entry{takuotsuruta}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=6256f6c0afe99931acd1f3e804f9272e}{%
+           family={Tsuruta},
+           familyi={T\bibinitperiod},
+           given={Takuo},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0dcec3fa83005393d4931c4dcb12b7c}{%
+           family={Shintani},
+           familyi={S\bibinitperiod},
+           given={Toramatsu},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{73cbb919a065edf571125b196c777507}
+      \strng{fullhash}{73cbb919a065edf571125b196c777507}
+      \strng{bibnamehash}{73cbb919a065edf571125b196c777507}
+      \strng{authorbibnamehash}{73cbb919a065edf571125b196c777507}
+      \strng{authornamehash}{73cbb919a065edf571125b196c777507}
+      \strng{authorfullhash}{73cbb919a065edf571125b196c777507}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Scheduling Meetings using Distributed Valued Constraint Satisfaction Algorithm}
+    \endentry
+    \entry{jiongzhi2024}{misc}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=8b2086465030c5ff77c6af1634798305}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Jiongzhi},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48c731464964d6c671b8384c3e00652c}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Zhuo},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43a015bcaa306bb18fd1f50b5e11d975}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Chu-Min},
+           giveni={C\bibinithyphendelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a328f63ba0e78525a27b105bb17fe87e}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Kun},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ebd96ce2a3b410d422c856b9482f2778}
+      \strng{fullhash}{4e285dc20ae9d4fc8c75369fd4231444}
+      \strng{bibnamehash}{4e285dc20ae9d4fc8c75369fd4231444}
+      \strng{authorbibnamehash}{4e285dc20ae9d4fc8c75369fd4231444}
+      \strng{authornamehash}{ebd96ce2a3b410d422c856b9482f2778}
+      \strng{authorfullhash}{4e285dc20ae9d4fc8c75369fd4231444}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.AI}
+      \field{eprinttype}{arXiv}
+      \field{title}{Rethinking the Soft Conflict Pseudo Boolean Constraint on MaxSAT Local Search Solvers}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2401.10589
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2401.10589
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2401.10589
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
