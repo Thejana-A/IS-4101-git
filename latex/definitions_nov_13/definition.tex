@@ -228,16 +228,20 @@ However, for discussing public documents in meeting, it is not required to perfo
 % Meeting quorum
 \section{Meeting quorum}
 \noindent
-We define \textbf{meeting quorum} as the minimum number of individuals ($i$) representing participant groups ($g$), required to attend a meeting, such that $g \in access(d)$ and $d$ is the meeting agenda. \\ \\
-\textbf{Now consider that document d is agenda}, for following description regarding the meeting quorum. In \textit{privacy preserved meeting} context, if a specific \textbf{meeting quorum} isn't defined in the agenda, other than $access(d)$ set, we assume that every $i$ representing at least one $g$, such that $g \in access(d)$, except $g = \textbf{public}$, is required for the meeting. Therefore, $|meeting\ quorum| \leq |access(d)|$, when $access(d)$ is defined in form of singleton subsets of $\mathcal{G}$.\\
-Because, it's possible that $|meeting\ quorum| < |access(d)|$, if a specific percentage based rule is defined in meeting agenda. \\ \\
-Since at least 2 individuals ($i$) are required for any meeting, $2 \leq |meeting\ quorum|$. \\ \\
-Accordingly, $2 \leq |meeting\ quorum| \leq |access(d)|$. \\ \\
-When $access(d)$ is defined in form of singleton subsets of $\mathcal{G}$, as we have already depicted earlier, $|access(d)| \leq |\mathcal{I}|$. By merging this inequality with above expression, theoretically we obtain following expression.\\ \\
-$2 \leq |meeting\ quorum| \leq |access(d)| \leq |\mathcal{I}|$  \\ \\
+We define \textbf{meeting quorum} as the minimum number of individuals ($i$) representing each participant group ($g$), required to attend a meeting, such that $g \in access(agenda)$. \\ \\
+In \textit{privacy preserved meeting} context, if a specific \textbf{meeting quorum} isn't defined in the agenda, other than $access(agenda)$ set, we assume that every $i$ such that, 
+\begin{itemize}
+    \item $i \in g$, and
+    \item $g \in access(agenda)$, for each group in which $i$ is present, as defined by meeting organization,
+\end{itemize}
 \noindent
-But, in real world, since all individuals of set $\mathcal{I}$ are never required for a single meeting, $|meeting\ quorum| < |\mathcal{I}|$. Therefore, we can express a practically valid expression, as mentioned below.\\ \\
-$\therefore 2 \leq |meeting\ quorum| < |\mathcal{I}|$ \\ \\
+is required for the meeting. But, it is not applicable for $g = \textbf{public}$. At this situation, $|meeting\ quorum| = |access(agenda)|$, when $access(agenda)$ is defined in form of singleton subsets of $\mathcal{G}$. \\ \\
+\noindent
+In addition, it is possible that $|meeting\ quorum| < |access(agenda)|$, if a specific percentage based rule is defined in meeting agenda. Therefore in overall, $|meeting\ quorum| \leq |access(agenda)|$, when $access(agenda)$ is defined in form of singleton subsets of $\mathcal{G}$. \\ \\
+Since at least 2 individuals ($i$) are required for any meeting, $2 \leq |meeting\ quorum|$. \\ \\
+Accordingly, $2 \leq |meeting\ quorum| \leq |access(agenda)|$. \\ \\
+When $access(agenda)$ is defined in form of singleton subsets of $\mathcal{G}$, as we have already depicted earlier, $|access(agenda)| \leq |\mathcal{I}|$. By merging this inequality with above expression, we obtain following expression theoretically.\\ \\
+$2 \leq |meeting\ quorum| \leq |access(agenda)| \leq |\mathcal{I}|$  \\ \\
 
 \end{document}
 
