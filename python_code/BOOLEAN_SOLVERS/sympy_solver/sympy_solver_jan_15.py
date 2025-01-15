@@ -17,17 +17,30 @@ availability_dictionary = [
     {"person": "i_1", "slot": "slot1", "location": "onsite"},
     {"person": "i_1", "slot": "slot2", "location": "onsite"},
     {"person": "i_1", "slot": "slot3", "location": "onsite"},
+    {"person": "i_1", "slot": "slot4", "location": "remote_private"},
+    {"person": "i_2", "slot": "slot1", "location": "onsite"},
     {"person": "i_2", "slot": "slot2", "location": "remote_private"},
-    {"person": "i_2", "slot": "slot3", "location": "onsite"},
+    {"person": "i_2", "slot": "slot3", "location": "remote_private"},
+    {"person": "i_2", "slot": "slot4", "location": "remote_public"},
+    {"person": "i_3", "slot": "slot1", "location": "onsite"},
     {"person": "i_3", "slot": "slot2", "location": "onsite"},
     {"person": "i_3", "slot": "slot3", "location": "onsite"},
+    {"person": "i_3", "slot": "slot4", "location": "onsite"},
     {"person": "i_4", "slot": "slot1", "location": "onsite"},
     {"person": "i_4", "slot": "slot2", "location": "onsite"},
     {"person": "i_4", "slot": "slot3", "location": "remote_private"},
+    {"person": "i_4", "slot": "slot4", "location": "remote_private"},
     {"person": "i_5", "slot": "slot2", "location": "remote_public"},
     {"person": "i_5", "slot": "slot3", "location": "remote_private"},
     {"person": "i_6", "slot": "slot2", "location": "onsite"},
-    {"person": "i_6", "slot": "slot3", "location": "onsite"}
+    {"person": "i_6", "slot": "slot3", "location": "onsite"},
+    {"person": "i_7", "slot": "slot5", "location": "onsite"},
+    {"person": "i_7", "slot": "slot6", "location": "onsite"},
+    {"person": "i_7", "slot": "slot7", "location": "onsite"},
+    {"person": "i_7", "slot": "slot8", "location": "onsite"},
+    {"person": "i_7", "slot": "slot9", "location": "onsite"},
+    {"person": "i_7", "slot": "slot10", "location": "onsite"},
+    {"person": "i_7", "slot": "slot11", "location": "onsite"}
 ]
 # End - data set
 
@@ -52,8 +65,11 @@ def doc_analysis_validation(doc_list):
     return participant_validity_doc_analysis
 
 def time_slot_and_participant_analysis(doc_list, participant_validity_doc_analysis, availability_dictionary, meeting_quorum):
-    meeting_publicity = And(*[("public" in doc) for doc in doc_list]) # Meeting Publicity - Check if "public" is in each document in doc_list
-    time_slots = sorted(set(entry["slot"] for entry in availability_dictionary)) # Extract distinct "slot" values from availability_dictionary
+    time_slots = sorted(set(entry["slot"] for entry in availability_dictionary if entry["person"] in participant_validity_doc_analysis)) # Extract distinct "slot" values from availability_dictionary for participants in doc_union
+    #time_slots = sorted(set(entry["slot"] for entry in availability_dictionary))
+    time_slots = sorted(time_slots, key=lambda x: int(x[4:]))  # Sorting based on numeric part after 'slot'
+
+
     time_slots_and_participants = {} # Initialize the time_slots_and_participants dictionary
     for slot in time_slots: # Process each time slot
         time_slot = {}  # Empty dictionary for the current time slot
@@ -67,7 +83,7 @@ def time_slot_and_participant_analysis(doc_list, participant_validity_doc_analys
 
             if individual_entries: # If individual is present in the current slot
                 location = individual_entries[0]["location"] # Check the location for this individual in the time slot
-                
+                meeting_publicity = And(*[("public" in doc) for doc in doc_list]) # Meeting Publicity - Check if "public" is in each document in doc_list 
                 # Create time_slot_for_individual_i condition:
                 # (AND(meeting_publicity, presence in slot) OR (presence in slot AND location))
                 presence_condition = Or(
@@ -113,6 +129,100 @@ def meeting_quorum_analysis(time_slots_and_participants, meeting_quorum):
     # Return the dictionary containing the satisfiability of each slot
     return quorum_satisfiability_of_slots, quorum_satisfiability_for_meeting
 
+#def earliest_slot_selection(quorum_satisfiability_of_slots):
+def find_earliest_eligible_slot(quorum_satisfiability_of_slots):
+    # Dynamically define symbols for slots based on the input dictionary keys
+    slots = symbols(list(quorum_satisfiability_of_slots.keys()))
+
+    # Map symbols to input values
+    symbol_values = {slot: quorum_satisfiability_of_slots[name] for slot, name in zip(slots, quorum_satisfiability_of_slots.keys())}
+
+    # Build the circuit logic dynamically
+    earliest_eligibles = []  # To store the earliest eligible conditions
+
+    for i, slot in enumerate(slots):
+        if i == 0:
+            # The first slot is directly eligible
+            earliest_eligibles.append(slot)
+        else:
+            # All previous slots must be false
+            previous_conditions = [Not(earliest_eligibles[j]) for j in range(i)]
+            # Current slot's condition
+            condition = And(And(*previous_conditions), slot)
+            earliest_eligibles.append(condition)
+
+    # Optionally, print each slot's eligibility
+    for i, condition in enumerate(earliest_eligibles, start=1):
+        print(f"Earliest Slot {i} Eligibility:", condition.subs(symbol_values))
+
+    # Combine all cases into a single result
+    result = Or(*earliest_eligibles)
+    # Evaluate the result with the input values
+    evaluated_result = result.subs(symbol_values)
+    # Print the evaluated result
+    print("Existence of an earliest elible time slot:", evaluated_result)
+
+def select_meeting_mode(time_slots_and_participants, quorum_satisfiability_of_slots):
+    availability_dict = {}
+    for entry in availability_dictionary:
+        availability_dict[(entry['person'], entry['slot'])] = entry['location']
+
+    results = {}
+
+    for slot_x, participants in time_slots_and_participants.items():
+        slot_x_onsite = {}
+        slot_x_online = {}
+
+        # Populate onsite and online dictionaries
+        for participant, eligibility in participants.items():
+            person = '_'.join(participant.split('_')[1:3])
+            if (person, slot_x) in availability_dict:
+                if availability_dict[(person, slot_x)] == 'onsite':
+                    onsite = True
+                else:
+                    onsite = False
+                slot_x_onsite[participant] = eligibility and onsite
+                slot_x_online[participant] = eligibility and not onsite
+            else:
+                slot_x_onsite[participant] = eligibility and False
+                slot_x_online[participant] = eligibility and False
+        
+
+        # Determine if the slot is onsite or hybrid
+        slot_x_is_onsite_or_hybrid = False
+        for comb in combinations(slot_x_onsite.values(), 2):
+            slot_x_is_onsite_or_hybrid = slot_x_is_onsite_or_hybrid or (comb[0] and comb[1])
+
+        # Eligibility for online meeting
+        eligibility_online = (not slot_x_is_onsite_or_hybrid) and quorum_satisfiability_of_slots[slot_x]
+
+        # Possibility for hybrid meeting
+        possibility_hybrid = False
+        quorum_hybrid_onsite = quorum_satisfiability_of_slots[slot_x] and slot_x_is_onsite_or_hybrid
+
+        for online_presence in slot_x_online.values():
+            possibility_hybrid = possibility_hybrid or online_presence
+
+        # Eligibility for hybrid meeting
+        eligibility_hybrid = possibility_hybrid and quorum_hybrid_onsite
+
+        # Eligibility for onsite meeting
+        eligibility_onsite = (not eligibility_hybrid) and quorum_hybrid_onsite
+
+        # Store results for the slot
+        results[slot_x] = {
+            'eligibility_online': eligibility_online,
+            'eligibility_hybrid': eligibility_hybrid,
+            'eligibility_onsite': eligibility_onsite
+        }
+    print("Meeting Slot Eligibility:")
+    for slot, eligibility in results.items():
+        print(f"{slot.capitalize()}:")
+        for mode, status in eligibility.items():
+            mode_formatted = mode.replace('_', ' ').capitalize()
+            print(f"  {mode_formatted}: {'Yes' if status else 'No'}")
+
+
 def execute_meeting_organizer():
     doc1 = {"public"}
     doc2 = {"i_2", "i_3", "i_4", "i_5", "i_6"}
@@ -137,7 +247,12 @@ def execute_meeting_organizer():
     quorum_satisfiability_of_slots, quorum_satisfiability_for_meeting = meeting_quorum_analysis(time_slots_and_participants, meeting_quorum)
     for slot, satisfiable in quorum_satisfiability_of_slots.items(): # Print the result
         print(f"Slot: {slot}, Quorum Satisfiability: {satisfiable}")
+    print("Quorum satisfiability of slots: ", quorum_satisfiability_of_slots)
     print("Quorum satisfiability for meeting: ", quorum_satisfiability_for_meeting)
+
+    find_earliest_eligible_slot(quorum_satisfiability_of_slots)
+
+    select_meeting_mode(time_slots_and_participants, quorum_satisfiability_of_slots)
 
 execute_meeting_organizer()
 
