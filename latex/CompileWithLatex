@@ -1,0 +1,9 @@
+To compile with reference list:
+
+pdflatex definition.tex
+biber definition
+makeindex definition.idx
+pdflatex definition.tex
+
+
+

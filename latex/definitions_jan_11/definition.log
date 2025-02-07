@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.1.11)  14 JAN 2025 16:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.1.11)  7 FEB 2025 21:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,10 +6,14 @@ entering extended mode
 (./definition.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
+
+LaTeX Info: File `definition.bib' already exists on the system.
+            Not generating it from this source.
+
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -23,13 +27,35 @@ File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count193
+\Gm@cntv=\count194
+\c@Gm@tempcnt=\count195
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 
@@ -44,17 +70,152 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen139
-\Gin@req@width=\dimen140
+\Gin@req@height=\dimen147
+\Gin@req@width=\dimen148
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen149
+\Hy@linkcounter=\count196
+\Hy@pagecounter=\count197
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count198
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count199
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen150
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count266
+\Field@Width=\dimen151
+\Fld@charsize=\dimen152
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring OFF on input line 6096.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count267
+\c@Item=\count268
+\c@Hfootnote=\count269
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count270
+\c@bookmark@seq@number=\count271
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip49
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen141
+\col@sep=\dimen153
 \ar@mcellbox=\box50
-\extrarowheight=\dimen142
-\NC@list=\toks17
-\extratabsurround=\skip49
-\backup@length=\skip50
+\extrarowheight=\dimen154
+\NC@list=\toks18
+\extratabsurround=\skip50
+\backup@length=\skip51
 \ar@cellbox=\box51
 )
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
@@ -63,7 +224,7 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2021/10/15 v2.17l AMS math features
-\@mathmargin=\skip51
+\@mathmargin=\skip52
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -71,51 +232,51 @@ Package: amstext 2021/08/26 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks18
-\ex@=\dimen143
+\@emptytoks=\toks19
+\ex@=\dimen155
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen144
+\pmbraise@=\dimen156
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2021/08/26 v2.02 operator names
 )
-\inf@bad=\count193
+\inf@bad=\count272
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count194
-\leftroot@=\count195
+\uproot@=\count273
+\leftroot@=\count274
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count196
-\DOTSCASE@=\count197
+\classnum@=\count275
+\DOTSCASE@=\count276
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
 \Mathstrutbox@=\box52
 \strutbox@=\box53
-\big@size=\dimen145
+\big@size=\dimen157
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count198
-\c@MaxMatrixCols=\count199
-\dotsspace@=\muskip16
-\c@parentequation=\count266
-\dspbrk@lvl=\count267
-\tag@help=\toks19
-\row@=\count268
-\column@=\count269
-\maxfields@=\count270
-\andhelp@=\toks20
-\eqnshift@=\dimen146
-\alignsep@=\dimen147
-\tagshift@=\dimen148
-\tagwidth@=\dimen149
-\totwidth@=\dimen150
-\lineht@=\dimen151
-\@envbody=\toks21
-\multlinegap=\skip52
-\multlinetaggap=\skip53
-\mathdisplay@stack=\toks22
+\macc@depth=\count277
+\c@MaxMatrixCols=\count278
+\dotsspace@=\muskip17
+\c@parentequation=\count279
+\dspbrk@lvl=\count280
+\tag@help=\toks20
+\row@=\count281
+\column@=\count282
+\maxfields@=\count283
+\andhelp@=\toks21
+\eqnshift@=\dimen158
+\alignsep@=\dimen159
+\tagshift@=\dimen160
+\tagwidth@=\dimen161
+\totwidth@=\dimen162
+\lineht@=\dimen163
+\@envbody=\toks22
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
 )
@@ -132,17 +293,17 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip54
-\multirow@cntb=\count271
-\multirow@dima=\skip55
-\bigstrutjot=\dimen152
+\multirow@colwidth=\skip55
+\multirow@cntb=\count284
+\multirow@dima=\skip56
+\bigstrutjot=\dimen164
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count272
-\float@exts=\toks23
+\c@float@type=\count285
+\float@exts=\toks24
 \float@box=\box54
-\@float@everytoks=\toks24
+\@float@everytoks=\toks25
 \@floatcapt=\box55
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
@@ -152,8 +313,8 @@ nment
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\@float@every@algorithm=\toks25
-\c@algorithm=\count273
+\@float@every@algorithm=\toks26
+\c@algorithm=\count286
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
@@ -162,54 +323,335 @@ Package: algpseudocode
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count274
-\c@ALG@rem=\count275
-\c@ALG@nested=\count276
-\ALG@tlm=\skip56
-\ALG@thistlm=\skip57
-\c@ALG@Lnr=\count277
-\c@ALG@blocknr=\count278
-\c@ALG@storecount=\count279
-\c@ALG@tmpcounter=\count280
-\ALG@tmplength=\skip58
+\c@ALG@line=\count287
+\c@ALG@rem=\count288
+\c@ALG@nested=\count289
+\ALG@tlm=\skip57
+\ALG@thistlm=\skip58
+\c@ALG@Lnr=\count290
+\c@ALG@blocknr=\count291
+\c@ALG@storecount=\count292
+\c@ALG@tmpcounter=\count293
+\ALG@tmplength=\skip59
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count281
-\l__pdf_internal_box=\box56
+) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2022/02/02 v3.17 programmable bibliographies (PK/MW)
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count294
 )
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count295
+
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+\c@tabx@nest=\count296
+\c@listtotal=\count297
+\c@listcount=\count298
+\c@liststart=\count299
+\c@liststop=\count300
+\c@citecount=\count301
+\c@citetotal=\count302
+\c@multicitecount=\count303
+\c@multicitetotal=\count304
+\c@instcount=\count305
+\c@maxnames=\count306
+\c@minnames=\count307
+\c@maxitems=\count308
+\c@minitems=\count309
+\c@citecounter=\count310
+\c@maxcitecounter=\count311
+\c@savedcitecounter=\count312
+\c@uniquelist=\count313
+\c@uniquename=\count314
+\c@refsection=\count315
+\c@refsegment=\count316
+\c@maxextratitle=\count317
+\c@maxextratitleyear=\count318
+\c@maxextraname=\count319
+\c@maxextradate=\count320
+\c@maxextraalpha=\count321
+\c@abbrvpenalty=\count322
+\c@highnamepenalty=\count323
+\c@lownamepenalty=\count324
+\c@maxparens=\count325
+\c@parenlevel=\count326
+\blx@tempcnta=\count327
+\blx@tempcntb=\count328
+\blx@tempcntc=\count329
+\c@blx@maxsection=\count330
+\c@blx@maxsegment@0=\count331
+\blx@notetype=\count332
+\blx@parenlevel@text=\count333
+\blx@parenlevel@foot=\count334
+\c@blx@sectionciteorder@0=\count335
+\blx@entrysetcounter=\count336
+\blx@biblioinstance=\count337
+\labelnumberwidth=\skip60
+\labelalphawidth=\skip61
+\biblabelsep=\skip62
+\bibitemsep=\skip63
+\bibnamesep=\skip64
+\bibinitsep=\skip65
+\bibparsep=\skip66
+\bibhang=\skip67
+\blx@bcfin=\read2
+\blx@bcfout=\write3
+\blx@langwohyphens=\language7
+\c@mincomprange=\count338
+\c@maxcomprange=\count339
+\c@mincompwidth=\count340
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2022/02/02 v3.17 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'authoryear.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count341
+\c@savedafterword=\count342
+\c@annotator=\count343
+\c@savedannotator=\count344
+\c@author=\count345
+\c@savedauthor=\count346
+\c@bookauthor=\count347
+\c@savedbookauthor=\count348
+\c@commentator=\count349
+\c@savedcommentator=\count350
+\c@editor=\count351
+\c@savededitor=\count352
+\c@editora=\count353
+\c@savededitora=\count354
+\c@editorb=\count355
+\c@savededitorb=\count356
+\c@editorc=\count357
+\c@savededitorc=\count358
+\c@foreword=\count359
+\c@savedforeword=\count360
+\c@holder=\count361
+\c@savedholder=\count362
+\c@introduction=\count363
+\c@savedintroduction=\count364
+\c@namea=\count365
+\c@savednamea=\count366
+\c@nameb=\count367
+\c@savednameb=\count368
+\c@namec=\count369
+\c@savednamec=\count370
+\c@translator=\count371
+\c@savedtranslator=\count372
+\c@shortauthor=\count373
+\c@savedshortauthor=\count374
+\c@shorteditor=\count375
+\c@savedshorteditor=\count376
+\c@labelname=\count377
+\c@savedlabelname=\count378
+\c@institution=\count379
+\c@savedinstitution=\count380
+\c@lista=\count381
+\c@savedlista=\count382
+\c@listb=\count383
+\c@savedlistb=\count384
+\c@listc=\count385
+\c@savedlistc=\count386
+\c@listd=\count387
+\c@savedlistd=\count388
+\c@liste=\count389
+\c@savedliste=\count390
+\c@listf=\count391
+\c@savedlistf=\count392
+\c@location=\count393
+\c@savedlocation=\count394
+\c@organization=\count395
+\c@savedorganization=\count396
+\c@origlocation=\count397
+\c@savedoriglocation=\count398
+\c@origpublisher=\count399
+\c@savedorigpublisher=\count400
+\c@publisher=\count401
+\c@savedpublisher=\count402
+\c@language=\count403
+\c@savedlanguage=\count404
+\c@origlanguage=\count405
+\c@savedoriglanguage=\count406
+\c@pageref=\count407
+\c@savedpageref=\count408
+\shorthandwidth=\skip68
+\shortjournalwidth=\skip69
+\shortserieswidth=\skip70
+\shorttitlewidth=\skip71
+\shortauthorwidth=\skip72
+\shorteditorwidth=\skip73
+\locallabelnumberwidth=\skip74
+\locallabelalphawidth=\skip75
+\localshorthandwidth=\skip76
+\localshortjournalwidth=\skip77
+\localshortserieswidth=\skip78
+\localshorttitlewidth=\skip79
+\localshortauthorwidth=\skip80
+\localshorteditorwidth=\skip81
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+\c@textcitecount=\count409
+\c@textcitetotal=\count410
+\c@textcitemaxnames=\count411
+\c@biburlbigbreakpenalty=\count412
+\c@biburlbreakpenalty=\count413
+\c@biburlnumpenalty=\count414
+\c@biburlucpenalty=\count415
+\c@biburllcpenalty=\count416
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count417
+)
+Package biblatex Info: Trying to load bibliography style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
+File: authoryear.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count418
+\c@bbx:relatedtotal=\count419
+))
+Package biblatex Info: Trying to load citation style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.cbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx
+File: authoryear.cbx 2022/02/02 v3.17 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-01-21 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count420
+\l__pdf_internal_box=\box56
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2022-01-21 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2022-01-12 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
+))
+\@indexfile=\write4
+\openout4 = `definition.idx'.
+
+
+Writing index file definition.idx
+\@quotelevel=\count421
+\@quotereset=\count422
 (./definition.aux)
 \openout1 = `definition.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(108.405pt, 416.83289pt, 72.26999pt)
+* v-part:(T,H,B)=(108.405pt, 664.37186pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=416.83289pt
+* \textheight=664.37186pt
+* \oddsidemargin=36.13501pt
+* \evensidemargin=36.13501pt
+* \topmargin=-0.86499pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count282
-\scratchdimen=\dimen153
+\scratchcounter=\count423
+\scratchdimen=\dimen165
 \scratchbox=\box57
-\nofMPsegments=\count283
-\nofMParguments=\count284
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count285
-\MPscratchDim=\dimen154
-\MPnumerator=\count286
-\makeMPintoPDFobject=\count287
-\everyMPtoPDFconversion=\toks27
+\nofMPsegments=\count424
+\nofMParguments=\count425
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count426
+\MPscratchDim=\dimen166
+\MPnumerator=\count427
+\makeMPintoPDFobject=\count428
+\everyMPtoPDFconversion=\toks28
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -219,226 +661,264 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 26
-.
+Package hyperref Info: Link coloring OFF on input line 66.
 
-(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count429
+)
+LaTeX Info: Redefining \ref on input line 66.
+LaTeX Info: Redefining \pageref on input line 66.
+LaTeX Info: Redefining \nameref on input line 66.
+
+(./definition.out) (./definition.out)
+\@outlinefile=\write5
+\openout5 = `definition.out'.
+
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `definition.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'definition.bbl' found.
+
+(./definition.bbl)
+Package biblatex Info: Reference section=0 on input line 66.
+Package biblatex Info: Reference segment=0 on input line 66.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 71
+.
+ (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 71.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 71.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 47--50
+Underfull \hbox (badness 10000) in paragraph at lines 72--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--61
+Underfull \hbox (badness 10000) in paragraph at lines 72--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--64
+Underfull \hbox (badness 10000) in paragraph at lines 72--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--64
+Underfull \hbox (badness 10000) in paragraph at lines 72--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--80
 
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 67--71
+Underfull \hbox (badness 10000) in paragraph at lines 83--90
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--71
+Underfull \hbox (badness 10000) in paragraph at lines 83--90
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--71
+Underfull \hbox (badness 10000) in paragraph at lines 91--98
 
  []
 
-<./image/document_puclic_vs_private_classification.png, id=13, 563.10374pt x 57
-3.14125pt>
-File: ./image/document_puclic_vs_private_classification.png Graphic file (type 
-png)
-<use ./image/document_puclic_vs_private_classification.png>
-Package pdftex.def Info: ./image/document_puclic_vs_private_classification.png 
- used on input line 83.
-(pdftex.def)             Requested size: 276.00105pt x 280.92038pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--98
+
+ []
+
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 88--92
+Underfull \hbox (badness 10000) in paragraph at lines 118--121
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--104
+Underfull \hbox (badness 10000) in paragraph at lines 128--132
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 133--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--104
+Underfull \hbox (badness 10000) in paragraph at lines 133--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--104
+Underfull \hbox (badness 10000) in paragraph at lines 138--142
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--104
+Underfull \hbox (badness 10000) in paragraph at lines 138--142
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--104
-
- []
-
-[3 <./image/document_puclic_vs_private_classification.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 114--129
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--129
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--129
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--129
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--129
+Underfull \hbox (badness 10000) in paragraph at lines 138--142
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 129--132
+<./image/document_puclic_vs_private_classification.png, id=159, 563.10374pt x 5
+73.14125pt>
+File: ./image/document_puclic_vs_private_classification.png Graphic file (type 
+png)
+<use ./image/document_puclic_vs_private_classification.png>
+Package pdftex.def Info: ./image/document_puclic_vs_private_classification.png 
+ used on input line 154.
+(pdftex.def)             Requested size: 333.46758pt x 339.40974pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--163
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--132
+Underfull \hbox (badness 10000) in paragraph at lines 167--175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--141
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 167--175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--150
+Underfull \hbox (badness 10000) in paragraph at lines 167--175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--158
+Underfull \hbox (badness 10000) in paragraph at lines 167--175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--158
+Underfull \hbox (badness 10000) in paragraph at lines 167--175
+
+ []
+
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.175     \[
+             M = < D, I, L, t > \] <./image/document_puclic_vs_private_classifi
+cation.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 185--200
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--158
+Underfull \hbox (badness 10000) in paragraph at lines 185--200
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--158
+Underfull \hbox (badness 10000) in paragraph at lines 185--200
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--164
+Underfull \hbox (badness 10000) in paragraph at lines 185--200
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--164
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--164
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 167--189
+Underfull \hbox (badness 10000) in paragraph at lines 185--200
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 191--194
+Underfull \hbox (badness 10000) in paragraph at lines 200--203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--194
+Underfull \hbox (badness 10000) in paragraph at lines 200--203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--194
+Underfull \hbox (badness 10000) in paragraph at lines 208--212
 
  []
 
-<./image/d1_intersection_d2.png, id=33, 412.54124pt x 231.86626pt>
-File: ./image/d1_intersection_d2.png Graphic file (type png)
-<use ./image/d1_intersection_d2.png>
-Package pdftex.def Info: ./image/d1_intersection_d2.png  used on input line 204
-.
-(pdftex.def)             Requested size: 241.49895pt x 135.73495pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--207
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--207
-
- []
-
-[7] [8 <./image/d1_intersection_d2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 218--222
+Underfull \hbox (badness 10000) in paragraph at lines 217--221
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--227
+Underfull \hbox (badness 10000) in paragraph at lines 224--229
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--229
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--229
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--229
 
  []
 
@@ -448,254 +928,822 @@ Underfull \hbox (badness 10000) in paragraph at lines 232--235
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--247
+Overfull \hbox (33.32391pt too wide) in paragraph at lines 232--235
+\OT1/cmr/m/n/12 On the other hand, if meet-ing agenda in-cludes group la-beled 
+as \OT1/cmr/bx/n/12 pub-lic \OT1/cmr/m/n/12 in $\OML/cmm/m/it/12 access\OT1/cmr
+/m/n/12 (\OML/cmm/m/it/12 agenda\OT1/cmr/m/n/12 )$,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--247
+Underfull \hbox (badness 10000) in paragraph at lines 232--235
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 238--260
 
  []
 
 
-Overfull \hbox (9.02512pt too wide) in paragraph at lines 239--247
-\OT1/cmr/m/n/10 Since at least 2 in-di-vid-u-als ($\OML/cmm/m/it/10 i$\OT1/cmr/
-m/n/10 ) are re-quired for any meet-ing, $2 \OMS/cmsy/m/n/10 ^^T j\OML/cmm/m/it
-/10 meeting quorum\OMS/cmsy/m/n/10 j$\OT1/cmr/m/n/10 . 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--247
+Underfull \hbox (badness 10000) in paragraph at lines 262--265
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--247
+Underfull \hbox (badness 10000) in paragraph at lines 262--265
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--247
+Underfull \hbox (badness 10000) in paragraph at lines 262--265
+
+ []
+
+<./image/d1_intersection_d2.png, id=182, 412.54124pt x 231.86626pt>
+File: ./image/d1_intersection_d2.png Graphic file (type png)
+<use ./image/d1_intersection_d2.png>
+Package pdftex.def Info: ./image/d1_intersection_d2.png  used on input line 275
+.
+(pdftex.def)             Requested size: 291.78174pt x 163.99641pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--247
+Underfull \hbox (badness 10000) in paragraph at lines 269--278
+
+ []
+
+[9pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.278 \end{figure}
+                  ] [10pdfTeX warning (ext4): destination with the same identif
+ier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.285 \[
+         access(agenda) \subseteq \{access(d_{1}) \cap access(d_{2}) \cap .....
+ <./image/d1_intersection_d2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 289--293
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--247
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 250--252
+Underfull \hbox (badness 10000) in paragraph at lines 296--298
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--252
+Underfull \hbox (badness 10000) in paragraph at lines 303--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--276
-
- []
-
-[10]
-<./image/circuit_diagram/1_participant_validation.png, id=50, 853.1875pt x 723.
-70375pt>
-File: ./image/circuit_diagram/1_participant_validation.png Graphic file (type p
-ng)
-<use ./image/circuit_diagram/1_participant_validation.png>
-Package pdftex.def Info: ./image/circuit_diagram/1_participant_validation.png  
-used on input line 283.
-(pdftex.def)             Requested size: 310.4979pt x 263.38219pt.
- [11]
-Underfull \hbox (badness 10000) in paragraph at lines 291--312
+Underfull \hbox (badness 10000) in paragraph at lines 310--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--312
+Underfull \hbox (badness 10000) in paragraph at lines 310--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--312
-
- []
-
-[12 <./image/circuit_diagram/1_participant_validation.png>]
-Underfull \hbox (badness 2503) in paragraph at lines 328--329
-[] \OT1/cmr/m/n/10 pub-lic-ity of meet-ing = $(\OML/cmm/m/it/10 doc[]\OT1/cmr/m
-/n/10 1 \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 public\OT1/cmr/m/n/10 )[]\OML/cmm
-/m/it/10 :::[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 doc[]n \OMS/cmsy/m/n/10 ^^@
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 314--339
+Underfull \hbox (badness 10000) in paragraph at lines 310--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--339
+Underfull \hbox (badness 10000) in paragraph at lines 310--318
 
  []
 
-[13]
-<./image/circuit_diagram/2_slot_n_i_n_eligibility.png, id=62, 934.49126pt x 427
-.5975pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--318
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--318
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--318
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 321--323
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--323
+
+ []
+
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 327.
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--347
+
+ []
+
+[12]
+<./image/circuit_diagram/1_participant_validation.png.png, id=204, 853.1875pt x
+ 723.70375pt>
+File: ./image/circuit_diagram/1_participant_validation.png.png Graphic file (ty
+pe png)
+<use ./image/circuit_diagram/1_participant_validation.png.png>
+Package pdftex.def Info: ./image/circuit_diagram/1_participant_validation.png.p
+ng  used on input line 354.
+(pdftex.def)             Requested size: 375.14705pt x 318.22081pt.
+ [13]
+Underfull \hbox (badness 10000) in paragraph at lines 362--383
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--383
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--383
+
+ []
+
+[14pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.383 \end{table}
+                  <./image/circuit_diagram/1_participant_validation.png.png>]
+Underfull \hbox (badness 5726) in paragraph at lines 399--400
+[] \OT1/cmr/m/n/12 pub-lic-ity of meet-ing = $(\OML/cmm/m/it/12 doc[]\OT1/cmr/m
+/n/12 1 \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 public\OT1/cmr/m/n/12 )[]\OML/cmm
+/m/it/12 :::[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 doc[]n \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--410
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--410
+
+ []
+
+[15pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.411 I
+       n above algorithm, time complexity of $union\ of\ time\ slots$ operat...
+]
+<./image/circuit_diagram/2_slot_n_i_n_eligibility.png, id=222, 934.49126pt x 42
+7.5975pt>
 File: ./image/circuit_diagram/2_slot_n_i_n_eligibility.png Graphic file (type p
 ng)
 <use ./image/circuit_diagram/2_slot_n_i_n_eligibility.png>
 Package pdftex.def Info: ./image/circuit_diagram/2_slot_n_i_n_eligibility.png  
-used on input line 344.
-(pdftex.def)             Requested size: 310.4979pt x 142.07324pt.
+used on input line 415.
+(pdftex.def)             Requested size: 375.14705pt x 171.6558pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--347
-
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 350--372
-
- []
-
-[15 <./image/circuit_diagram/2_slot_n_i_n_eligibility.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 374--378
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 374--378
+Underfull \hbox (badness 10000) in paragraph at lines 411--418
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 380--383
+Underfull \hbox (badness 10000) in paragraph at lines 421--443
+
+ []
+
+[17pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.444 S
+       imilar to previous algorithm, in above algorithm also, time complexit...
+ <./image/circuit_diagram/2_slot_n_i_n_eligibility.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 445--449
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 380--383
+Underfull \hbox (badness 10000) in paragraph at lines 445--449
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 451--454
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 380--383
+Underfull \hbox (badness 10000) in paragraph at lines 451--454
 
  []
 
-<./image/circuit_diagram/3_quorum_satisfying_slot_selection.png, id=74, 934.491
-26pt x 639.38875pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 451--454
+
+ []
+
+<./image/circuit_diagram/3_quorum_satisfying_slot_selection.png, id=241, 934.49
+126pt x 639.38875pt>
 File: ./image/circuit_diagram/3_quorum_satisfying_slot_selection.png Graphic fi
 le (type png)
 <use ./image/circuit_diagram/3_quorum_satisfying_slot_selection.png>
 Package pdftex.def Info: ./image/circuit_diagram/3_quorum_satisfying_slot_selec
-tion.png  used on input line 386.
-(pdftex.def)             Requested size: 310.4979pt x 212.44286pt.
+tion.png  used on input line 457.
+(pdftex.def)             Requested size: 375.14705pt x 256.67781pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 393--416
+Underfull \hbox (badness 1253) in paragraph at lines 480--481
+[] \OT1/cmr/m/n/12 whether slot[]$\OML/cmm/m/it/12 x$ \OT1/cmr/m/n/12 is ear-li
+-est meet-ing quo-rum sat-is-fy-ing time slot =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 464--487
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 393--416
+Underfull \hbox (badness 10000) in paragraph at lines 464--487
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 393--416
+Underfull \hbox (badness 10000) in paragraph at lines 464--487
 
  []
 
-[17 <./image/circuit_diagram/3_quorum_satisfying_slot_selection.png>] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 418--436
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 418--436
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 418--436
+[19pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.487 \end{algorithm}
+                      <./image/circuit_diagram/3_quorum_satisfying_slot_selecti
+on.png>] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 489--507
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--436
+Underfull \hbox (badness 10000) in paragraph at lines 489--507
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--436
+Underfull \hbox (badness 10000) in paragraph at lines 489--507
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--436
+Underfull \hbox (badness 10000) in paragraph at lines 489--507
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--436
+Underfull \hbox (badness 10000) in paragraph at lines 489--507
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--436
+Underfull \hbox (badness 10000) in paragraph at lines 489--507
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--436
+Underfull \hbox (badness 10000) in paragraph at lines 489--507
 
  []
 
-[19]
-<./image/circuit_diagram/4_earliest_slot_selection.png, id=86, 581.17125pt x 70
-3.62875pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 489--507
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 489--507
+
+ []
+
+[21]
+<./image/circuit_diagram/4_earliest_slot_selection.png, id=259, 581.17125pt x 7
+03.62875pt>
 File: ./image/circuit_diagram/4_earliest_slot_selection.png Graphic file (type 
 png)
 <use ./image/circuit_diagram/4_earliest_slot_selection.png>
 Package pdftex.def Info: ./image/circuit_diagram/4_earliest_slot_selection.png 
- used on input line 439.
-(pdftex.def)             Requested size: 310.4979pt x 375.92767pt.
- [20] [21 <./image/circuit_diagram/4_earliest_slot_selection.png>]
-(./definition.aux)
+ used on input line 510.
+(pdftex.def)             Requested size: 375.14705pt x 454.19673pt.
+ [22]
+<./image/meeting_mode_selection.png, id=264, 743.77875pt x 653.44125pt>
+File: ./image/meeting_mode_selection.png Graphic file (type png)
+<use ./image/meeting_mode_selection.png>
+Package pdftex.def Info: ./image/meeting_mode_selection.png  used on input line
+ 520.
+(pdftex.def)             Requested size: 375.14705pt x 329.59138pt.
+ [23pdfTeX warning (ext4): destination with the same identifier (name{figure.6}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.524 A
+       ccording to the logic, initially we check whether at least two eligib...
+ <./image/circuit_diagram/4_earliest_slot_selection.png>]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 5
+55.
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 555.
+
+Underfull \hbox (badness 10000) in paragraph at lines 524--561
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 524--561
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 524--561
+
+ []
+
+[24pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.562 W
+       hen considering the algorithm above, it is observed that it obtains m...
+ <./image/meeting_mode_selection.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 562--564
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 568--570
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 568--570
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 570--572
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 570--572
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--577
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--577
+
+ []
+
+[26]
+<./image/circuit_diagram/5_meeting_mode_selection.png, id=288, 944.52875pt x 90
+4.37875pt>
+File: ./image/circuit_diagram/5_meeting_mode_selection.png Graphic file (type p
+ng)
+<use ./image/circuit_diagram/5_meeting_mode_selection.png>
+Package pdftex.def Info: ./image/circuit_diagram/5_meeting_mode_selection.png  
+used on input line 582.
+(pdftex.def)             Requested size: 375.14705pt x 359.20595pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 577--585
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 577--585
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 577--585
+
+ []
+
+[27pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.612 \end{table}
+                  <./image/circuit_diagram/5_meeting_mode_selection.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 614--616
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 614--616
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 614--616
+
+ []
+
+<./image/np_p_problems.png, id=301, 432.61626pt x 201.75375pt>
+File: ./image/np_p_problems.png Graphic file (type png)
+<use ./image/np_p_problems.png>
+Package pdftex.def Info: ./image/np_p_problems.png  used on input line 623.
+(pdftex.def)             Requested size: 375.14705pt x 174.96097pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 618--626
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 618--626
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 618--626
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 618--626
+
+ []
+
+[28pdfTeX warning (ext4): destination with the same identifier (name{table.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.626 \end{figure}
+                  ]
+Underfull \hbox (badness 10000) in paragraph at lines 627--628
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 627--628
+
+ []
+
+[29pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.628 
+       <./image/np_p_problems.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 632--636
+
+ []
+
+
+Overfull \hbox (10.62796pt too wide) in paragraph at lines 632--636
+\OT1/cmr/m/n/12 After an-a-lyz-ing po-ten-tially el-i-gi-ble pro-gram-ming lan-
+guages and tech-nolo-gies, Python
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 632--636
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 632--636
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 638--659
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 662--673
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 662--673
+
+ []
+
+
+Overfull \hbox (9.24232pt too wide) in paragraph at lines 683--683
+[]            \OT1/cmtt/m/n/12 {"person": "i_1", "slot": "slot1", "location": "
+onsite"},[] 
+ []
+
+
+Overfull \hbox (58.64235pt too wide) in paragraph at lines 683--683
+[]            \OT1/cmtt/m/n/12 {"person": "i_1", "slot": "slot2", "location": "
+remote_private"},[] 
+ []
+
+
+Overfull \hbox (46.29234pt too wide) in paragraph at lines 683--683
+[]            \OT1/cmtt/m/n/12 {"person": "i_2", "slot": "slot1", "location": "
+remote_public"}[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 674--686
+
+ []
+
+[31pdfTeX warning (ext4): destination with the same identifier (name{table.4}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.687 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.687 
+      ]
+Underfull \hbox (badness 10000) in paragraph at lines 688--696
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 698--699
+
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 707--708
+[]|\OT1/cmr/m/n/12 Validity of each in-di-vid-ual for
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 709--710
+[]|\OT1/cmr/m/n/12 Validity of each in-di-vid-ual, in
+ []
+
+
+Overfull \hbox (8.74408pt too wide) in paragraph at lines 703--718
+ [][] 
+ []
+
+[32pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.721 A
+       s it is described in problem analysis section, $algorithm\ 3$ contain...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.721 A
+       s it is described in problem analysis section, $algorithm\ 3$ contain...
+]
+Underfull \hbox (badness 10000) in paragraph at lines 721--722
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 723--733
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 734--735
+
+ []
+
+[33pdfTeX warning (ext4): destination with the same identifier (name{table.5}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.750 A
+       bove section of output displays the eligibility of each individual to...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.750 A
+       bove section of output displays the eligibility of each individual to...
+]
+Underfull \hbox (badness 10000) in paragraph at lines 750--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 763--764
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 776--777
+
+ []
+
+[34pdfTeX warning (ext4): destination with the same identifier (name{figure.14}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.789 A
+       bove section of output depicts the eligible meeting mode for conducti...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.789 A
+       bove section of output depicts the eligible meeting mode for conducti...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.789 A
+       bove section of output depicts the eligible meeting mode for conducti...
+]
+Underfull \hbox (badness 10000) in paragraph at lines 789--791
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 789--791
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 789--791
+
+ []
+
+<./image/workflow_execution_result.png, id=347, 753.81625pt x 633.36626pt>
+File: ./image/workflow_execution_result.png Graphic file (type png)
+<use ./image/workflow_execution_result.png>
+Package pdftex.def Info: ./image/workflow_execution_result.png  used on input l
+ine 798.
+(pdftex.def)             Requested size: 375.14705pt x 315.2037pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 795--801
+
+ []
+
+[35pdfTeX warning (ext4): destination with the same identifier (name{figure.17}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.802 
+      ]
+Underfull \hbox (badness 10000) in paragraph at lines 809--811
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--811
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--811
+
+ []
+
+[36pdfTeX warning (ext4): destination with the same identifier (name{figure.18}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.811 
+       <./image/workflow_execution_result.png>]
+<./image/algo01_result_analysis.png, id=359, 633.36626pt x 763.85374pt>
+File: ./image/algo01_result_analysis.png Graphic file (type png)
+<use ./image/algo01_result_analysis.png>
+Package pdftex.def Info: ./image/algo01_result_analysis.png  used on input line
+ 816.
+(pdftex.def)             Requested size: 375.14705pt x 452.44142pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--819
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--819
+
+ []
+
+[37]
+<./image/algo02_result_analysis.drawio.png, id=365, 643.40375pt x 743.77875pt>
+File: ./image/algo02_result_analysis.drawio.png Graphic file (type png)
+<use ./image/algo02_result_analysis.drawio.png>
+Package pdftex.def Info: ./image/algo02_result_analysis.drawio.png  used on inp
+ut line 823.
+(pdftex.def)             Requested size: 375.14705pt x 433.6845pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--826
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--826
+
+ []
+
+[38pdfTeX warning (ext4): destination with the same identifier (name{figure.19}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.827 B
+       y observing these two segments of flow chart connected by a connector...
+ <./image/algo01_result_analysis.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 827--832
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 827--832
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 827--832
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 827--832
+
+ []
+
+[39pdfTeX warning (ext4): destination with the same identifier (name{figure.20}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.832 \subsection
+                 {Relationship between input and the result} <./image/algo02_re
+sult_analysis.drawio.png>] [40]
+
+Package biblatex Warning: Name format 'last-first' deprecated.
+(biblatex)                Please use 'family-given' instead.
+(biblatex)                Using 'family-given' now.
+
+[41] (./definition.aux)
+
+Package rerunfilecheck Warning: File `definition.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `definition.out':
+(rerunfilecheck)             Before: 8CC7E3ECA6E8346444BD835685B51252;6898
+(rerunfilecheck)             After:  5966069CBC0E81A67B9B473CC768A3C1;7184.
+Package logreq Info: Writing requests to 'definition.run.xml'.
+\openout1 = `definition.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 3455 strings out of 480171
- 54018 string characters out of 5894489
- 343763 words of memory out of 5000000
- 21361 multiletter control sequences out of 15000+600000
- 479065 words of font info for 68 fonts, out of 8000000 for 9000
+ 18525 strings out of 480171
+ 323549 string characters out of 5894489
+ 1025473 words of memory out of 5000000
+ 36132 multiletter control sequences out of 15000+600000
+ 481094 words of font info for 75 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 55i,14n,62p,1236b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/thejana/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.6
-00pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+ 60i,14n,68p,1236b,1272s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/thejana/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.6
+00pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy7.pfb>
-Output written on definition.pdf (21 pages, 397340 bytes).
+/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on definition.pdf (41 pages, 722690 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 487 PDF objects out of 1000 (max. 8388607)
+ 387 compressed objects within 4 object streams
+ 110 named destinations out of 1000 (max. 500000)
+ 325 words of extra memory for PDF output out of 10000 (max. 10000000)
 

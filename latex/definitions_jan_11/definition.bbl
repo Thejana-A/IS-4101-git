@@ -1,0 +1,175 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{bofill2022}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=86e80b45ac7dc0994e2ec21841c1370f}{%
+           family={Bofill},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=25b35cda54eafd5b60b3174361bae039}{%
+           family={Coll},
+           familyi={C\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b273f20864cfa43316162e96e285777e}{%
+           family={Garcia},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3406b7fb2d938143b8a66f1a6eebb9c7}{%
+           family={Giraldez-Cru},
+           familyi={G\bibinithyphendelim C\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ba004dd81ee89d68fc3b6a26d841976d}{%
+           family={Pesant},
+           familyi={P\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae0db3f37e30ffb801f64bdeed3ab3b3}{%
+           family={Suy},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e8f142eb168409ddc996d6bbe9eafca1}{%
+           family={Villaret},
+           familyi={V\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3d23e5f3b82f26b80b82c68dcc062250}
+      \strng{fullhash}{7d8ad3fcc57f3fed221bde7e363c5988}
+      \strng{bibnamehash}{7d8ad3fcc57f3fed221bde7e363c5988}
+      \strng{authorbibnamehash}{7d8ad3fcc57f3fed221bde7e363c5988}
+      \strng{authornamehash}{3d23e5f3b82f26b80b82c68dcc062250}
+      \strng{authorfullhash}{7d8ad3fcc57f3fed221bde7e363c5988}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Artificial Intelligence Research}
+      \field{title}{Constraint Solving Approaches to the Business-to-Business Meeting Scheduling Problem}
+      \field{volume}{74}
+      \field{year}{2022}
+      \field{pages}{263\bibrangedash 301}
+      \range{pages}{39}
+      \verb{doi}
+      \verb https://doi.org/10.1613/jair.1.12670
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/pdf/10.1613/jair.1.12670
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/pdf/10.1613/jair.1.12670
+      \endverb
+    \endentry
+    \entry{britannica_np}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b5b5d41e9deb4fed9ffa108254d8b7ad}{%
+           family={Hosch},
+           familyi={H\bibinitperiod},
+           given={William\bibnamedelima L.},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b5b5d41e9deb4fed9ffa108254d8b7ad}
+      \strng{fullhash}{b5b5d41e9deb4fed9ffa108254d8b7ad}
+      \strng{bibnamehash}{b5b5d41e9deb4fed9ffa108254d8b7ad}
+      \strng{authorbibnamehash}{b5b5d41e9deb4fed9ffa108254d8b7ad}
+      \strng{authornamehash}{b5b5d41e9deb4fed9ffa108254d8b7ad}
+      \strng{authorfullhash}{b5b5d41e9deb4fed9ffa108254d8b7ad}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Accessed 29-01-2025]}
+      \field{title}{{P} versus {N}{P} problem | {C}omplexity {T}heory \& {A}lgorithmic {S}olutions | {B}ritannica --- britannica.com}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb \url{https://www.britannica.com/science/P-versus-NP-problem}
+      \endverb
+      \verb{url}
+      \verb %5Curl%7Bhttps://www.britannica.com/science/P-versus-NP-problem%7D
+      \endverb
+    \endentry
+    \entry{pfleeger1996chapter3}{incollection}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f306bff4796cdbbe1195908fcabba7b6}{%
+           family={Pfleeger},
+           familyi={P\bibinitperiod},
+           given={Charles\bibnamedelima P.},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=f306bff4796cdbbe1195908fcabba7b6}{%
+           family={Pfleeger},
+           familyi={P\bibinitperiod},
+           given={Charles\bibnamedelima P.},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Upper Saddle River, NJ}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{f306bff4796cdbbe1195908fcabba7b6}
+      \strng{fullhash}{f306bff4796cdbbe1195908fcabba7b6}
+      \strng{bibnamehash}{f306bff4796cdbbe1195908fcabba7b6}
+      \strng{authorbibnamehash}{f306bff4796cdbbe1195908fcabba7b6}
+      \strng{authornamehash}{f306bff4796cdbbe1195908fcabba7b6}
+      \strng{authorfullhash}{f306bff4796cdbbe1195908fcabba7b6}
+      \strng{editorbibnamehash}{f306bff4796cdbbe1195908fcabba7b6}
+      \strng{editornamehash}{f306bff4796cdbbe1195908fcabba7b6}
+      \strng{editorfullhash}{f306bff4796cdbbe1195908fcabba7b6}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Security in Computing, Second Edition}
+      \field{chapter}{3}
+      \field{edition}{2}
+      \field{isbn}{9780133374865}
+      \field{title}{Chapter 3: Security encryption systems}
+      \field{year}{1996}
+      \field{pages}{69\bibrangedash 76}
+      \range{pages}{8}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

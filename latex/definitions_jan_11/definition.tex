@@ -1,7 +1,46 @@
-\documentclass{article}
+\begin{filecontents}{\jobname.bib}
+    % (\cite{bofill2022})
+    @article{bofill2022,
+        title = {Constraint Solving Approaches to the Business-to-Business Meeting Scheduling Problem},
+        journal = {Journal of Artificial Intelligence Research },
+        volume = {74},
+        pages = {263-301},
+        year = {2022},
+        doi = {https://doi.org/10.1613/jair.1.12670},
+        url = {https://dl.acm.org/doi/pdf/10.1613/jair.1.12670},
+        author = {Bofill,M. and Coll,C. and Garcia,M. and Giraldez-Cru,J. and Pesant,G. and Suy,J. and Villaret,M.}
+    }
+    % (\cite{britannica_np})
+    @article{britannica_np,
+	    title = {{P} versus {N}{P} problem | {C}omplexity {T}heory \& {A}lgorithmic {S}olutions | {B}ritannica --- britannica.com},
+	    url = {\url{https://www.britannica.com/science/P-versus-NP-problem}},
+	    author = {William L. Hosch},
+        year = {2024},
+	    note = {[Accessed 29-01-2025]},
+    }
+    % (\cite{pfleeger1996chapter3})
+    @incollection{pfleeger1996chapter3,
+        author = {Charles P. Pfleeger},
+        title = {Chapter 3: Security encryption systems},
+        booktitle = {Security in Computing, Second Edition},
+        editor = {Charles P. Pfleeger},
+        publisher = {Prentice Hall},
+        year = {1996},
+        chapter = {3},
+        edition = {2},
+        address = {Upper Saddle River, NJ},
+        pages = {69--76},
+        isbn = {9780133374865}
+    }
+\end{filecontents}
+
+\documentclass[a4paper, 12pt]{article}
+\usepackage[left=1.5in,right=1in,top=1.5in,bottom=1in]{geometry}
 %\setlength{\mathindent}{0pt}
 % Package for better handling of figures
 \usepackage{graphicx}
+\usepackage{makeidx}
+\usepackage{hyperref}
 % Package for better handling of tables
 \usepackage{array}
 % Package for better handling of mathematical symbols
@@ -13,7 +52,11 @@
 \usepackage{float}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
+\usepackage[backend=biber,style=authoryear,autocite=inline, maxbibnames=9 ]{biblatex}
+\DeclareNameAlias{sortname}{last-first}
+\addbibresource{\jobname.bib}
 
+\makeindex
 
 % Title and Author Information
 \title{Privacy-Preserved Meeting Organization}
@@ -24,6 +67,34 @@
 
 % Title Page
 \maketitle
+% Tentative Introduction
+\section{Introduction}
+\noindent
+Effective and privacy-preserved communication has received a significant concern in the world. As remote work, hybrid teams along with global collaboration has risen, the meetings are playing an important part in organizations. The shift to virtual and hybrid environments has created new and unique challenges when ensuring that meetings are privacy-preserved and inclusive. Meeting organizers face difficulties in allowing accessibility to participants while maintaining privacy of the meeting especially when sensitive meetings take place with sensitive documents and diverse participant roles. This brings our attention to the need for a better framework that can enhance the meeting scheduling process without compromising meeting privacy and efficiency.\\ \\
+When meetings are organized, it must be well planned ahead of what is being discussed and what needs to be achieved at the end of the meetings. If the right participants are not included or if inappropriate participants are included in the meeting, that can lead to privacy concerns and even to potential breaches of confidential information.\\ \\
+Before the COVID-19 pandemic, meeting security and privacy concerns were relatively minimal, as most discussions took place in controlled, onsite environments. But the pandemic reshaped how organizations conduct meetings increasing the reliance on online and hybrid formats. Since 2020, the adoption of virtual meeting platforms has raised to accommodate remote work and collaboration (Jo et al., 2021). While this shift has improved accessibility and flexibility, it has also introduced significant privacy challenges.\\ \\
+One of the major problems is in allowing only authorized participants to attend the meeting. Human cognitive biases and organizational pressures can lead to oversights in meeting privacy, which can result in financial losses, reputational damage, and unauthorized disclosure of sensitive information. Selecting the right participants and ensuring that meeting-related documents remain accessible only to authorized individuals are critical aspects of maintaining privacy and security. Existing tools lack the ability to cross-validate document permissions with participant roles and their joining locations. This leads to potential meeting privacy breaches. For instance, if participants are joining from insecure public locations, sensitive discussions may unintentionally become exposed. The inability to determine whether a meeting should be onsite, online, or hybrid based on such parameters increase organizational inefficiencies and privacy risks.\\ \\
+Research on meeting scheduling and efficiency has been conducted from a long time but no attention has been given to privacy-preserving meeting organization. Existing scheduling tools focus on preventing participant overlap or optimizing time slots but fail to consider how document permissions and participant roles influence meeting security.\\ \\
+Our research aims to explore the relationship between meeting privacy factors such as document access, participant roles, and meeting mode and develop a structured framework to ensure meeting privacy.
+The significance of this research is in its dual contribution. At first, the theoretical understanding of meeting scheduling complexity is studied in-depth, and next, a practical implementation using widely adopted tools is demonstrated. By combining algorithmic analysis with a working prototype, this study provides insights into the computational nature of meeting organization and offers a scalable, privacy-preserving approach to organize meetings efficiently. This thesis contributes to both academic and practical understanding of organizing privacy-preserved meeting organization.\\ \\
+
+% Tentative problem definition
+\section{Problem Definition}
+When multiple topics are to be discussed, it is challenging to determine the right participants for the meeting, and meeting organizers can include the wrong participants in the meeting. This can lead to two primary meeting privacy risks which we will be addressing when developing our framework:
+\\
+\\
+\textbf{Unauthorized Access to Confidential Information}: When the meeting organizer has invited unauthorized participants to the meeting, they may gain access to restricted documents and be exposed to sensitive discussions that they are not authorized to view or hear. Here we can see the need for a systematic approach to invite eligible participants or participants with access rights to the meeting.
+\\
+\\
+\textbf{Privacy-Violating Meeting Modes}: We often see how meetings are organized by meeting organizers based on their convenience or on the convenience of people in the upper hierarchy. This can lead sensitive discussions to be exposed to unauthorized individuals. The meeting mode decision-making process should be systematic based on the participants’ locations and the sensitivity of the meeting agenda. 
+
+Based on the above privacy concerns, a need for a more structured approach to meeting organization can be identified as a crucial need.
+\\
+\\
+In this research we assume that the meeting participant selection is primarily determined by ACLs of the documents to be discussed. Once the meeting organizer creates the meeting agenda with the participants, it is important to validate the participants based on the access controls to the documents that are being taken to the particular meeting. If the participants do not meet the required access permissions, the meeting cannot be scheduled as planned.
+\\
+\\
+Once participant selection is validated, the appropriate meeting mode is determined next. This decision depends on the locations of the eligible participants and the sensitivity of the meeting. Finally, the system selects the earliest possible time slot that allows all participants to join while maintaining meeting privacy. The research problem is therefore to determine the algorithms that schedule meetings while validating the participants and taking privacy-aware mode into consideration. 
 
 % Tentative basic definitions
 \section{Basic definitions}
@@ -250,7 +321,7 @@ $2 \leq |meeting\ quorum| \leq |access(agenda)| \leq |\mathcal{I}|$  \\ \\
 Our problem focused in organizing privacy-preserved meetings has few distinct steps, that can be clearly identified within it. Based on decision making points identified within the problem, this problem was mapped into a boolean circuit, following a union operation. Here, union operation can be introduced as a set related pre-processing operation, applied on the $access(d)$ sets of all documents of the meeting, including the $agenda$. Before applying this union operation, it is needed to make sure that, all groups except the $public$ group in those $access(d)$ sets are converted to singleton groups. Distinct sections of the problems are analyzed below, considering the circuit diagrams produced for them.\\ \\
 % Participant validation based on documents
 \subsection{Participant validation based on documents}
-After calculating the union of $access(d)$ sets of all documents to be discussed in the meeting, as $access(doc\_1) \cap ... \cap access(doc\_n)\} \cap access(agenda)$, $public$ group is subtracted, since our initial requirement is to identify all the individuals having access to at least one document. In addition, we identify all documents associated with meeting as $doc\_1, ..., doc\_n, agenda$, since we need to check whether each individual in the union of individuals identified, has access to all the documents, for discussing them in a meeting. In example depicted in the diagram, consider that there are only 3 individuals as $i\_1, i\_2, i\_3$ and only 4 documents as $doc\_1, doc\_2, doc\_3, agenda$.\\ \\
+After calculating the union of $access(d)$ sets of all documents to be discussed in the meeting, as $access(doc\_1) \cup ... \cup access(doc\_n) \cup access(agenda)$, $public$ group is subtracted, since our initial requirement is to identify all the individuals having access to at least one document. In addition, we identify all documents associated with meeting as $doc\_1, ..., doc\_n, agenda$, since we need to check whether each individual in the union of individuals identified, has access to all the documents, for discussing them in a meeting. In example depicted in the diagram, consider that there are only 3 individuals as $i\_1, i\_2, i\_3$ and only 4 documents as $doc\_1, doc\_2, doc\_3, agenda$.\\ \\
 Algorithm for participant validation section is explained below.
 \begin{algorithm}[H]
     \caption{Participant validation based on documents}
@@ -260,7 +331,7 @@ Algorithm for participant validation section is explained below.
         \State union of \(access(d)\) = \(access(doc\_1) \cup \dots \cup access(doc\_n) \cup access(agenda)\)
         \State union of individuals = union of \(access(d) - public \)
         \State set of documents = \(doc\_1, \dots , doc\_n , agenda\)
-        \For{each \(i\_n\) in (union of individuals)}
+        \For{each individual \(i\_n\) in (union of individuals)}
             \State validity of \(i\_n\) by doc analysis = true
             \For{each \(doc\_x\) in (set of documents)}
                 \If{\(doc\_x \neq agenda\)}
@@ -323,17 +394,17 @@ Algorithm for deciding the eligibility of each individual, to discuss the set of
         \State \textbf{Input 4:} Presence of \(public\) group in \(access(d)\) of each document, in set of documents, as $(doc\_1-public) , ... , (doc\_n-public) , (agenda-public)$
         \State \textbf{Output:} Eligibility of each individual, to discuss the set of documents, in each time slot \\
         \State union of time slots = \(availability(i\_1) \cup \dots \cup availability(i\_n)\)
-        \For{each slot\(x\) in (union of time slots)}
-            \For{each \(i\_y\) in (union of individuals)}
+        \For{each slot\_\(x\) in (union of time slots)}
+            \For{each individual \(i\_y\) in (union of individuals)}
                 \State publicity of meeting = \((doc\_1-public) \text{ AND } ... \text{ AND } (doc\_n-public) \text{ AND } (agenda-public)\)
-                \State slot\(x-i\_y\) = availability of \(i\_y\) in slot\(x\) at any location
-                \State slot\(x-i\_y\)\_remote\_public = whether \(i\_y\) is at remote\_public location in slot\(x\) 
-                \State availability of slot\(x-i\_y\) for public meeting = (publicity of meeting) AND (slot\(x-i\_y\))
-                \State availability of slot\(x-i\_y\) for private meeting = (slot\(x-i\_y\)) AND NOT(slot\(x-i\_y\)\_remote\_public)
-                \State availability of slot\(x-i\_y\) for meeting by time slot analysis = (availability of slot\(x-i\_y\) for public meeting) OR (availability of slot\(x-i\_y\) for private meeting)
-                \State slot\(x-i\_y\) eligibility for meeting = (Validity of \(i\_y\) by doc analysis) AND (availability of slot\(x-i\_y\) for meeting by time slot analysis)
+                \State slot\(\_x-i\_y\) = availability of \(i\_y\) in slot\_\(x\) at any location
+                \State slot\(\_x-i\_y\)\_remote\_public = whether \(i\_y\) is at remote\_public location in slot\_\(x\) 
+                \State availability of slot\(\_x-i\_y\) for public meeting = (publicity of meeting) AND (slot\(\_x-i\_y\))
+                \State availability of slot\(\_x-i\_y\) for private meeting = (slot\(\_x-i\_y\)) AND NOT(slot\(\_x-i\_y\)\_remote\_public)
+                \State availability of slot\(\_x-i\_y\) for meeting by time slot analysis = (availability of slot\(\_x-i\_y\) for public meeting) OR (availability of slot\(\_x-i\_y\) for private meeting)
+                \State slot\(\_x-i\_y\) eligibility for meeting = (Validity of \(i\_y\) by doc analysis) AND (availability of slot\(\_x-i\_y\) for meeting by time slot analysis)
             \EndFor
-            \State \textbf{Return} slot\(x-i\_y\) eligibility for meeting
+            \State \textbf{Return} slot\(\_x-i\_y\) eligibility for meeting
         \EndFor
     \end{algorithmic}
 \end{algorithm}
@@ -359,14 +430,14 @@ Algorithm for checking the quorum satisfiability of time slots is explained belo
         \State \textbf{Output:} Existence of quorum satisfying time slot/s, for the meeting \\
         \State union of time slots = \(availability(i\_1) \cup \dots \cup availability(i\_n)\)
         \State availability of a meeting quorum satisfying time slot = false
-        \For{each slot\(x\) in (union of time slots)}
-            \State meeting quorum satisfiability of slot\(x\) = false
-            \State combinations of individuals in slot\(x\) = combinations of individuals, with magnitude of meeting quorum size 
-            \For{each \(combination\) in (combinations of individuals in slot\(x\))}
+        \For{each slot\_\(x\) in (union of time slots)}
+            \State meeting quorum satisfiability of slot\_\(x\) = false
+            \State combinations of individuals in slot\_\(x\) = combinations of individuals, with magnitude of meeting quorum size 
+            \For{each \(combination\) in (combinations of individuals in slot\_\(x\))}
                 \State meeting quorum satisfiability of \(combination\) = AND operation (for all individuals in the \(combination\))
-                \State meeting quorum satisfiability of slot\(x\) = (meeting quorum satisfiability of slot\(x\)) OR (meeting quorum satisfiability of \(combination\))
+                \State meeting quorum satisfiability of slot\_\(x\) = (meeting quorum satisfiability of slot\_\(x\)) OR (meeting quorum satisfiability of \(combination\))
             \EndFor
-            \State \textbf{Return} availability of a meeting quorum satisfying time slot = (availability of a meeting quorum satisfying time slot) OR (meeting quorum satisfiability of slot\(x\))
+            \State \textbf{Return} availability of a meeting quorum satisfying time slot = (availability of a meeting quorum satisfying time slot) OR (meeting quorum satisfiability of slot\_\(x\))
         \EndFor
     \end{algorithmic}
 \end{algorithm}
@@ -374,11 +445,11 @@ Similar to previous algorithm, in above algorithm also, time complexity of $unio
 \[ n \text{C} r = \binom{n}{r} = \frac{n!}{r!(n-r)!} \]
 when n = number of individuals in union of individuals, and r = meeting quorum size.\\ \\
 Regarding $combination$ operation, highest number of combinations is obtained when $r = \frac{n}{2}$ or $r \approx \frac{n}{2}$. Number of possible combinations reduces, when $r$ is considerably small ($r \approx 1$), or when $r$ is approximately equal to $n$ ($r \approx n$). Due to this nature of $combination$ operation, maximum possible time complexity for creating $n \text{C} r$ number of combinations is $O(n \text{C} (n/2))$.\\ \\
-In the inner loop of above algorithm, since AND operation is applied for all individuals, in each $combination$ created, maximum time complexity associated with inner loop is $O(n \text{ x } n \text{C} (n/2))$. Because, number of individuals in each combination created, or the meeting quorum size, can be any positive integer. In addition, since inner loop is repeated by outer loop, where number of time slots also can be any positive integer, maximum possible time complexity of above algorithm is, 
+In the inner loop of above algorithm, since AND operation is applied for all individuals, in each $combination$ created, maximum time complexity associated with inner loop is $O(n \text{ x } n \text{C} (n/2))$. Because the number of individuals in each combination created, or the meeting quorum size, can be any positive integer. In addition, since inner loop is repeated by outer loop, where number of time slots also can be any positive integer, maximum possible time complexity of above algorithm is, 
 \[O(n \text{ x } n \text{ x } n \text{C} (n/2)) = O(n^{2} \text{ x } n \text{C} (n/2)) \]
 Time complexity of $O(n^{2} \text{ x } n \text{C} (n/2))$ has polynomial component of $O(n^{2})$. Further, when considering $O(n \text{C} (n/2))$ component, it is observed that, for large $n$ values, 
 \[ O(n \text{C} (n/2)) \approx O(2^{n}) \]
-Time complexity of $O(2^{n})$ is considered as an exponential time complexity. Since exponential time complexity is non-polynomial (NP), it is eligible to use a heuristic or an existing library, when implementing above algorithm for execution with inputs. Because, there is no specific standard methodology defined, for creating combinations, as included in above algorithm.\\ \\
+Time complexity of $O(2^{n})$ is considered as a non-polynomial time complexity, because $n$ is not a constant value (\cite{pfleeger1996chapter3}). Since non-polynomial time complexity of $O(2^{n})$ increases exponentially with increase of $n$, it is eligible to use a heuristic or an existing library, when implementing above algorithm for execution with inputs. Because, there is no specific standard methodology defined, for creating combinations, as included in above algorithm.\\ \\
 Figure below depicts the corresponding boolean circuit for above algorithm.\\ \\
 
 \begin{figure}[H]
@@ -390,7 +461,7 @@ Figure below depicts the corresponding boolean circuit for above algorithm.\\ \\
 
 % Earliest time slot selection
 \subsection{Selection of earliest, meeting quorum satisfying time slot}
-Selecting the earliest, meeting quorum satisfying time slot is not required to find a solution for our research problem. Because, after identifying the quorum satisfying time slots by above algorithm, our next objective associated with research problem is to, analyze the privacy-preserving meeting mode for each meeting quorum satisfying time slot. Therefore, we introduce this step of selecting the earliest, meeting quorum satisfying time slot, as an additional step provided by us. Since privacy-preserved meeting organization is a real world problem, when implementing a usable system for that purpose, this additional step can be helpful to identify the ealiest, eligible time slot for conducting the privacy-preserved meeting, rather than suggesting numerous eligible time slots.\\ \\
+Selecting the earliest, meeting quorum satisfying time slot is not required to find a solution for our research problem. Because, after identifying the quorum satisfying time slots by above algorithm, our next objective associated with research problem is to, analyze the privacy-preserving meeting mode for each meeting quorum satisfying time slot. Therefore, we introduce this step of selecting the earliest, meeting quorum satisfying time slot, as an additional step provided by us. Since privacy-preserved meeting organization is a real world problem, when implementing a usable system for that purpose, this additional step can be helpful to identify the earliest, eligible time slot for conducting the privacy-preserved meeting, rather than suggesting numerous eligible time slots.\\ \\
 Algorithm for selecting the earliest, meeting quorum satisfying time slot is explained below.\\ \\
 \begin{algorithm}[H]
     \caption{Selection of earliest, meeting quorum satisfying time slot}
@@ -400,14 +471,14 @@ Algorithm for selecting the earliest, meeting quorum satisfying time slot is exp
         \State \textbf{Output:} Earliest, meeting quorum satisfying time slot \\
         \State union of time slots with quorum satisfiability = quorum satisfiability of each time slot, in \((availability(i\_1) \cup \dots \cup availability(i\_n))\), in the order of precedence
         \State earliest eligible time slot = initialization of an empty list type structure, to store whether each slot is earliest eligible slot or no
-        \For{each slot\(x\) and \(meeting\_quorum\_satisfiability\) in (union of time slots with quorum satisfiability)}
-            \If{slot\(x\) is earliest slot in (union of time slots with quorum satisfiability)}
-                \State store slot\(x\) and its \(meeting\_quorum\_satisfiability\), in (earliest eligible time slot) list     
+        \For{each slot\_\(x\) and \(meeting\_quorum\_satisfiability\) in (union of time slots with quorum satisfiability)}
+            \If{slot\_\(x\) is earliest slot in (union of time slots with quorum satisfiability)}
+                \State store slot\_\(x\) and its \(meeting\_quorum\_satisfiability\), in (earliest eligible time slot) list     
             \Else
                 \State previous condition = list to store result of, NOT operation (for each slot currently stored in (earliest eligible time slot) list)
                 \State previous condition integrated = AND operation (for all slots in (previous condition) list) 
-                \State whether slot\(x\) is earliest meeting quorum satisfying time slot = ((\(meeting\_quorum\_satisfiability\) of slot\(x\) = true) AND ((previous condition integrated) = true))
-                \State store slot\(x\) and (whether slot\(x\) is earliest meeting quorum satisfying time slot), in (earliest eligible time slot) list                
+                \State whether slot\_\(x\) is earliest meeting quorum satisfying time slot = ((\(meeting\_quorum\_satisfiability\) of slot\_\(x\) = true) AND ((previous condition integrated) = true))
+                \State store slot\_\(x\) and (whether slot\_\(x\) is earliest meeting quorum satisfying time slot), in (earliest eligible time slot) list                
             \EndIf
         \EndFor
         \State \textbf{Return} (earliest eligible time slot) list 
@@ -420,15 +491,15 @@ In above algorithm, there is a reason to apply a different process on the earlie
 \indent earliest slot is the earliest, meeting quorum satisfying time slot \\
 \textbf{Else}\\
 \indent earliest slot is \textbf{not} the earliest, meeting quorum satisfying time slot \\
-\textbf{EndIf}  \\ \\
-Above condition block is the meaning implied by "If" block, in the condition of the algorithm. But, if any time slot other than the earliest time slot of union, satisfies the meetng quorum, then it is needed to check an additional condition as well, to identify whether it is the \textbf{earliest} meeting quorum satisfying time slot or no. Accordingly, following condition block elaborates the meaning implied by "Else" block of the condition, in above algorithm. \\ \\             
+\textbf{End If}  \\ \\
+Above condition block is the meaning implied by "If" block, in the condition of the algorithm. But, if any time slot other than the earliest time slot of union, satisfies the meeting quorum, then it is needed to check an additional condition as well, to identify whether it is the \textbf{earliest} meeting quorum satisfying time slot or no. Accordingly, following condition block elaborates the meaning implied by "Else" block of the condition, in above algorithm. \\ \\             
 \textbf{If} any slot$x$ which is \textbf{not} the earliest slot in union of time slots, satisfies the meeting quorum, \textbf{Then} \\
 \indent \textbf{If} any earlier slot than slot$x$ does \textbf{not} satisfy the meeting quorum, \textbf{Then} \\
 \indent \indent slot$x$ is the earliest, meeting quorum satisfying time slot \\
-\indent \textbf{EndIf}\\
+\indent \textbf{End If}\\
 \textbf{Else}\\
 \indent slot$x$ is \textbf{not} the earliest, meeting quorum satisfying time slot \\
-\textbf{EndIf}  \\ \\
+\textbf{End If}  \\ \\
 It is observed that, there is a nested "If" condition in "If" block, in above condition block. Requirement to check this additional condition, is the reason for treating earliest time slot in union of time slots in a different manner, than other time slots, when identifying the earliest meeting quorum satisfying time slot.\\ \\
 Above algorithm utilizes the meeting quorum satisfiability of each time slot, obtained by processing previous algorithm. Therefore, When we calculate the time complexity of above algorithm, we consider that meeting quorum satisfiability information is stored in an eligible data structure after processing previous algorithm. Otherwise, if we consider these both algorithms together, time complexity of above algorithm and previous algorithm collectively becomes, $O(2^{n})$ at maximum, as explained in time complexity description of previous algorithm.\\ \\
 But, when meeting quorum satisfiability information obtained from previous algorithm is stored in an eligible data structure and provided to above algorithm, time complexity of above algorithm is dominated by "for" loop, and its content. Number of iteration in this loop can be any positive integer. There is no inner loop, in the "for" loop. But, in "Else" block of each iteration, "NOT" operation is applied on each time slot, until the slot which is currently being iterated by "for" loop. Therefore, it is observed that, time complexity of above algorithm can be $O(n^{2})$, at maximum. Even though there is an "AND" operation applied on all time slots, in the "Else" block, it can be neglected, when calculating time complexity. Because, it is in the parallel level to "NOT" operation, which is already considered. All other operations within above algorithm are considered as operations having constant time complexity.\\ \\
@@ -440,6 +511,332 @@ Circuit diagram corresponding to above algorithm is depicted below.\\ \\
     \caption{Selection of earliest, meeting quorum satisfying time slot}
     \label{fig:selecting earliest, meeting quorum satisfying time slot}
 \end{figure} 
+
+% Meeting mode selection
+\subsection{Meeting mode selection}\label{sec:logic_for_selecting_the_meeting_mode}
+After identifying the quorum satisfying time slots, meeting mode of each time slot should be decided, based on locations of eligible participants. In real world scenario, participants can be present at numerous locations. However in our research, as it is already mentioned earlier, only three location types are considered (onsite, remote\_private and remote\_public locations). It is observed that three meeting modes are possible, based on those three locations, as onsite mode, hybrid mode and online mode. Logic for deciding the meeting mode is depicted by the flow chart below.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{./image/meeting_mode_selection.png}
+    \caption{Logic for selecting the meeting mode}
+    \label{fig:logic for selecting the meeting mode}
+\end{figure} 
+According to the logic, initially we check whether at least two eligible participants are at onsite locations, during the quorum satisfying time slot. If only one participant is at onsite location (i.e. onsite office location of meeting organization), or no one is at onsite location, it means that obviously meeting will be in online mode. But, if at least two participants are available at onsite location, it is required to check whether at least one participant is not at the onsite location. If at least one participant is at a remote location in the considered time slot, meeting will obviously be in hybrid mode. Unless, if at least two participants are onsite and, at least one participant is \textbf{not} at a remote location (remote\_private or remote\_public), it means that all available participants are at onsite location. It implies that meeting is in onsite mode.\\ \\
+The algorithm for deciding the meeting mode of quorum satisfying time slot is explained below.\\ \\
+\begin{algorithm}[H]
+    \caption{Meeting mode selection}
+    \begin{algorithmic}
+        \State \textbf{Input 1:} Eligibility of each participant for meeting, in each time slot
+        \State \textbf{Note:} \textbf{Input 1} is produced by processing algorithm 1
+        \State \textbf{Input 2:} Meeting quorum satisfiability of each time slot, in union of time slots
+        \State \textbf{Note:} \textbf{Input 2} is produced by processing algorithm 3
+        \State \textbf{Input 3:} Whether each meeting participant is at onsite location, in each time slot
+        \State \textbf{Output:} Whether meeting mode is onsite or hybrid or online \\
+
+        \For{each slot\_\(x\) in (union of time slots)}
+            \State slot\_\(x\) onsite = initialize an empty list
+            \State slot\_\(x\) online = initialize an empty list
+            \For{each participant\_\(y\) with \(eligibility\ for\ meeting\) status in slot\_\(x\)}
+                \State participant\_\(y\)\_slot\_\(x\)\_onsite = whether participant\_\(y\) is onsite in slot\_\(x\)
+                \State append to (slot\_\(x\) onsite) list: (\(eligibility\ for\ meeting\) for participant\_\(y\)) AND (participant\_\(y\)\_slot\_\(x\)\_onsite)
+                \State append to (slot\_\(x\) online) list: (\(eligibility\ for\ meeting\) for participant\_\(y\)) AND NOT(participant\_\(y\)\_slot\_\(x\)\_onsite)
+            \EndFor
+            \State slot\_\(x\) is onsite or hybrid = false
+            \State onsite combinations of slot\_\(x\) = create all possible combinations of size 2, with items in (slot\_\(x\) onsite) list
+            \For{each combination\_\(z\) in (onsite combinations of slot\_\(x\))}
+                \State combination\_\(z\) is onsite = apply AND operation between 2 items in combination\_\(z\)
+                \State slot\_\(x\) is onsite or hybrid = (slot\_\(x\) is onsite or hybrid) OR (combination\_\(z\) is onsite)
+            \EndFor
+            \State \textbf{eligibility of slot\_\(x\) for online mode} = (NOT(slot\_\(x\) is onsite or hybrid)) AND (meeting quorum satisfiability of slot\_\(x\))
+            \State slot\_\(x\) is hybrid = false
+            \For{each participant \(p\) in (slot\_\(x\) online) list}
+                \State slot\_\(x\) is hybrid = (slot\_\(x\) is hybrid) OR (whether participant \(p\) is online)
+            \EndFor
+            \State \textbf{eligibility of slot\_\(x\) for hybrid mode} = (slot\_\(x\) is hybrid) AND \{(meeting quorum satisfiability of slot\_\(x\)) AND (slot\_\(x\) is onsite or hybrid)\}
+            \State \textbf{eligibility of slot\_\(x\) for onsite mode} = (NOT(slot\_\(x\) is hybrid)) AND \{(meeting quorum satisfiability of slot\_\(x\)) AND (slot\_\(x\) is onsite or hybrid)\}
+            \State \textbf{Return} eligibility of slot\_\(x\) for online mode, eligibility of slot\_\(x\) for hybrid mode, eligibility of slot\_\(x\) for onsite mode
+            \State \textbf{Note:} At \textbf{Return} point, depending on whether eligible meeting mode is online or hybrid or onsite, respective variable will be \textbf{true}, and other two variables will be \textbf{false}.
+        \EndFor
+    \end{algorithmic}
+\end{algorithm}
+When considering the algorithm above, it is observed that it obtains multiple outputs from previous algorithms. In other words, it is impossible to provide inputs required by this algorithm, without processing previous algorithms. However, since it is not mandatory to execute this algorithm in parallel with previous algorithms, it is possible to calculate the the time complexity of this algorithm, as below.\\ \\
+In above algorithm, it is observed that there is a nested "for" loop structure. There are some separate"for" loops, inside the outer loop. Among those "for" loops, the loop iterating through all possible combinations of two individuals has $n \text{C} r$ number of iterations, where $n$ = number of individuals in union of individuals, and r = 2. Therefore, maximum possible number of iterations in that particular inner loop can be mathematically calculated as below. 
+\[ n \text{C} 2 = \binom{n}{2} = \frac{n!}{2!(n-2)!} \]
+\[ \frac{n!}{2!(n-2)!} = \frac{n!}{2 \text{ x } (n-2)!} \]
+\[ \frac{n!}{2 \text{ x } (n-2)!} = \frac{{(n-2)! \text{ x } (n-1) \text{ x } n}}{2 \text{ x } (n-2)!} \]
+\[ \frac{{(n-2)! \text{ x } (n-1) \text{ x } n}}{2 \text{ x } (n-2)!} = \frac{(n-1) \text{ x } n}{2} \]
+\[ \therefore n \text{C} 2 = \frac{(n-1) \text{ x } n}{2} = \frac{n^2}{2} - \frac{n}{2} \]
+Maximum possible time complexity of "for" loop, which iterates through all possible combinations of two individuals is $O(n \text{C} r)$. Since value of r = 2, and depending on above calculation, time complexity of this "for" loop can be depicted as below.\\ \\
+\[ O(n \text{C} 2) = O(\frac{n^2}{2} - \frac{n}{2}) \]
+In addition, when considering the outer "for" loop together with the inner "for" loop, that iterates through all possible combinations of two individuals, total time complexity can be calculated as below. Because, outer loop can iterate through $n$ number of iterations, where $n$ can be any positive integer.\\ \\
+\[ O(n) \text{ x } O(n \text{C} 2) = O(n \text{ x } (n \text{C} 2)) \]
+\[ O(n \text{ x } (n \text{C} 2)) = O(n \text{ x } (\frac{n^2}{2} - \frac{n}{2})) \]
+\[ O(n \text{ x } (\frac{n^2}{2} - \frac{n}{2})) = O(\frac{n^3}{2} - \frac{n^2}{2}) \]
+\[ O(\frac{n^3}{2} - \frac{n^2}{2}) = O(\frac{n^2(n - 1)}{2}) \]
+Except above discussed inner "for" loop that iterates through combinations, every other inner "for" loop can iterate through $n$ number of iterations, where $n$ is any positive integer. When such a "for" loop is considered together with the outer "for" loop, which also can iterate thorugh $n$ number of iterations, combined time complexity becomes $O(n \text{ x } n)$. It can be simplified as below.\\ \\
+\[ O(n \text{ x } n) = O(n^2) \] 
+Accordingly, maximum possible time complexity of above algorithm can be either $O(\frac{n^2(n - 1)}{2})$ or $O(n^2)$, depending on situation. When $n > 3$, maximum time complexity of above algorithm is $O(\frac{n^2(n - 1)}{2})$. When $n = 3$, $O(\frac{n^2(n - 1)}{2}) = O(n^2)$. In addition to those two cases, when positive integer $n$ satisfies $n < 3$ condition, maximum time complexity is $O(n^2)$.\\ \\
+The circuit diagram corresponding to the above algorithm is depicted by figure below.\\ \\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{./image/circuit_diagram/5_meeting_mode_selection.png}
+    \caption{Circuit diagram for selecting the meeting mode}
+    \label{fig:circuit diagram for selecting the meeting mode}
+\end{figure}
+
+% Complexity if the problem
+\section{Complexity of the problem}
+\subsection{Analysis based on time complexity}
+When above all algorithms are considered, it is observed that they don't have to be executed in parallel to each other. But, since there is an order of proceeding in operations, five algorithms are supposed to be executed from $algorithm\ 1$ to $algorithm\ 5$, sequentially. Therefore, when calculating the maximum possible time complexity of the overall problem, which has been divided into sub-problems, time complexities of those sub-problems should be compared. Following table depicts the maximum possible time complexity of each algorithm, described above.
+\begin{table}[H]
+    \renewcommand{\arraystretch}{1.5}
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Algorithm} & \textbf{Maximum time complexity} \\
+    \hline
+    Algorithm 1 & $O(n^2)$ \\
+    \hline
+    Algorithm 2 & $O(n^3)$ \\
+    \hline
+    Algorithm 3 & $O(n \text{C} (n/2))$ \\
+    \  & [ $O(n \text{C} (n/2)) \approx O(2^n)$ ] \\
+    \hline
+    Algorithm 4 & $O(n^2)$ \\
+    \hline
+    Algorithm 5 & $O(n^2)$ or $O(\frac{n^2(n - 1)}{2})$ \\
+    \hline
+    \end{tabular}
+    \caption{Maximum time complexities of algorithms in boolean circuit mapping}
+    \label{tab:maximum time complexities of algorithms in boolean circuit mapping}
+\end{table}
+
+Above time complexities are calculated for generating the boolean circuit dynamically, for a particular scenario, based on inputs provided. After generating the boolean circuit dynamically based on inputs provided, output can be obtained within a constant time. When above time complexities are considered, it can be observed that $algorithm\ 1$, $algorithm\ 2$, $algorithm\ 4$ and $algorithm\ 5$ have polynomial time complexities. Because, they have constant values such as 2, 3, as the power of base $n$. But, in $algorithm\ 3$, maximum possible time complexity is approximately $O(2^n)$. This is a non-polynomial time complexity. Because, $2^n$ increases exponentially, when value of $n$ increases, with constant base 2. Accordingly, maximum time complexity among these algorithms is $O(2^n)$.\\ \\
+\textbf{Due to presence of $O(2^n)$ time complexity in problem mapping, it can be concluded that our research problem is a non-polynomial (NP) time solvable problem}  (\cite{pfleeger1996chapter3}). There is no specific algorithm identified to solve NP problems. Therefore, it is recommended to use an eligible heuristic or a greedy algorithm to solve such problems. \\ \\
+
+\subsection{Analysis on NP-completeness of problem}
+When related work associated with meeting scheduling problems are considered, most of them are introduced as NP-complete problems (\cite{bofill2022}). NP-complete problems are problems belonging to both, NP and NP-hard categories (\cite{britannica_np}). NP problems are problems that cannot be solved within a polynomial time duration, like explained earlier.\\ \\ 
+On the other hand, NP-hard problems cannot be solved during a polynomial time, as well as usually involve an optimization of variables. Graph edge coloring problem is a famous NP-hard problem. Graph edge coloring problem is, finding the number of colors required for coloring all edges of a graph, such that no two adjacent edges get the same color. Bofill et al have mapped the Business-to-Business meeting scheduling problem to edge coloring problem, for showing that it is NP-hard (\cite{bofill2022}).\\ \\
+Satisfiability problems such as traveling salesman problem, knapsack problem, circuit satisfiability problem, are considered as famous NP-complete problems. Therefore, it is possible to prove that any problem is NP-complete, by mapping it to one of those already known NP-complete problems (\cite{britannica_np}). Even though our research problem which was mapped to a boolean circuit successfully as explained earlier, for analyzing the problem complexity, this problem was not mapped to any NP-complete problem. When this circuit mapping itself is considered, obviously our requirement is to find whether privacy preserved meeting is possible or no, when inputs are known. But, our requirement is not to adjust the inputs of circuit for conducting a privacy preserved meeting as the output. \textbf{Therefore, it is concluded that our problem does not belong to NP-complete category.}\\ \\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{./image/np_p_problems.png}
+    \caption{Problem domains based on complexity}
+    \label{fig:problem domains based on complexity}
+\end{figure}
+In above diagram, NP, NP-hard and NP-complete regions represent the non-polynomial time solvable problem categories explained earlier. P region represents the polynomial time solvable problems. Accordingly, based on our problem analysis, our research problem that was mapped to a boolean circuit, resides in NP region.\\ \\
+
+% Implementation of boolean circuit
+\section{Implementation of boolean circuit}
+\subsection{Choice of technology}
+As explained earlier, our research problem was mapped to a boolean circuit. And, that circuit was elaborated as five sequential algorithms, representing consecutive sub-sections of the entire boolean circuit. Since it is required to show that, those algorithms are convertible to a practical application in real world, a program was developed in our research.\\ \\
+After analyzing potentially eligible programming languages and technologies, Python was selected as the programming language for implementing the program, representing five algorithms explained ealier. Because, in our analysis, it was noticed that Python has libraries containing built-in functions, executing the behavior of logic gates. In algorithms explained above, $AND, OR$ and $NOT$ logic gates are utilized. Therefore, when Python is used to implement above algorithms, it is not required to simulate the behavior of logic gates by us, since there are built-in Python functions. When developing the program as proof of concept, we used hard coded inputs. When executing the program for a new scenario, those inputs can be updated by editing the Python code.\\ \\
+In addition, it is required to create mathematical combinations in $algorithm\ 3$, as explained earlier. In Python, there are libraries contaning functions that support to create such combinations. Because, creating combinations is a problem of non-polynomial time complexity.\\
+After compiling the Python code with a compiler, execution can be done in a console environment, such as Linux terminal or the console of a suitable Integrated Development Environment (IDE).\\
+
+\subsection{Details on technology used for implementation}
+Following table depicts the the version numbers and other specific details, regarding the technologies used to implement the program, as proof of concept.\\
+\begin{table}[H]
+    \renewcommand{\arraystretch}{1.5}
+    \centering
+    \begin{tabular}{|l|l|}
+    \hline
+    \textbf{Technology} & \textbf{Name and version} \\
+    \hline
+    Programming language & Python 3.7.0 \\
+    \hline
+    Compiler & GCC 7.2.0 \\
+    \hline
+    Library for logic gates & Sympy 1.2 \\
+    \hline
+    Library for mathematical combinations & Itertools bundled with Python 3.7.0 \\
+    \hline
+    Output console & Terminal of Ubuntu 22.04.4 LTS \\
+    \hline
+    \end{tabular}
+    \caption{Technologies used to implement the proof of concept for algorithms}
+    \label{tab:technologies used to implement the proof of concept for algorithms}
+\end{table}
+
+\subsection{Overview of the Python program}
+This Python code has been designed to align with the definitions defined by us, earlier in this research, regarding concepts such as documents, groups of individuals, access control lists, classification of locations into three groups, time slots, meeting quorum etc. Therefore, it is recommended to be familiar with those definitions, before analyzing the Python code.\\ \\
+Above algorithms are designed to accept the \textbf{individuals} present in \textbf{groups} in access control lists of documents, including the agenda, as input. Therefore, in this Python program, when defining the access control lists of documents, they should be defined in terms of singleton groups (i.e. individual person), instead of aggregate groups containing multiple individuals. But, $public$ group present in access control list of any document should not be resolved, since it is required to decide the eligible location for conducting the meeting. Following example depicts how access control lists should be defined in the Python program, for documents including the meeting agenda.\\ 
+\begin{figure}[H] 
+    \centering
+    \begin{verbatim}
+        doc1 = {"public"}
+        doc2 = {"i_2", "i_3", "i_4", "i_5", "i_6"}
+        agenda = {"public", "i_1", "i_2", "i_3", "i_4", "i_5"}
+    \end{verbatim}
+    \caption{Sample code snippet for defining access control lists of documents}
+    \label{fig:sample code snippet for defining access control lists of documents}
+\end{figure}
+In addition, availability of individuals in different time slots, at different locations is stored in program using a dictionary. Sample section from this dictionary is depicted in the code snippet below.\\ 
+\begin{figure}[H]  
+    \centering
+    \begin{verbatim}
+        availability_dictionary = [
+            {"person": "i_1", "slot": "slot1", "location": "onsite"},
+            {"person": "i_1", "slot": "slot2", "location": "remote_private"},
+            {"person": "i_2", "slot": "slot1", "location": "remote_public"}
+        ]
+    \end{verbatim}
+    \caption{Sample code snippet for availability dictionary}
+    \label{fig:sample code snippet for availability dictionary}
+\end{figure}
+
+Further, meeting quorum also should be defined as an input variable of integer type, in the program. Following example depicts how to define it, to mention the minimum number of participants required for conducting the meeting.\\ 
+\begin{figure}[H]  
+    \centering
+    \begin{verbatim}
+        meeting_quorum = 3
+    \end{verbatim}
+    \caption{Sample code snippet for defining meeting quorum}
+    \label{fig:sample code snippet for defining meeting quorum}
+\end{figure}    
+
+When above mentioned inputs are defined by user, in the Python program, all required inputs are present in the code. There are five functions corresponding to five algorithms explained earlier. Each function has parameterized inputs. Some of those inputs are from inputs defined by user as explained above. In the program, these five functions are executed in sequential order, such that some outputs from initial functions are provided to later functions, as parameterized inputs. Following table depicts the name of Python function in code, corresponding to each algorithm explained earlier. In addition, output expected from execution of each function is also mentioned in the table.\\ 
+
+\begin{table}[H]
+    \renewcommand{\arraystretch}{1.5}  % Adjust row height for better readability
+    \centering
+    \begin{tabular}{|>{\centering\arraybackslash}p{0.5cm}|l|p{6cm}|}  % Use 'p{8cm}' for the right column to allow text wrapping
+    \hline
+    \textbf{\#} & \textbf{Function name in code} & \textbf{Output of the function} \\
+    \hline
+    1 & \texttt{doc\_analysis\_validation} & Validity of each individual for meeting, by document analysis \\
+    \hline
+    2 & \texttt{time\_slot\_and\_participant\_analysis} & Validity of each individual, in each time slot, by analyzing locations with expected privacy level for documents \\
+    \hline
+    3 & \texttt{meeting\_quorum\_analysis} & Meeting quorum satisfiability of each time slot, by validated participants \\
+    \hline
+    4 & \texttt{find\_earliest\_eligible\_slot} & Earliest privacy preserving time slot for the meeting \\
+    \hline
+    5 & \texttt{select\_meeting\_mode} & Meeting mode for each privacy preserving time slot identified \\
+    \hline
+    \end{tabular}
+    \caption{Python functions corresponding to algorithms representing the boolean circuit (\# column represents the algorithm number)}
+    \label{tab:python functions corresponding to algorithms representing the boolean circuit}
+\end{table}
+As it is described in problem analysis section, $algorithm\ 3$ contains an operation to create mathematical combinations. Since that operation has non-polynomial time complexity of $O(2^n)$, it has been implemented using $combinations$ function of $itertools$ library in Python. Because, there is no specific standard method to create combinations within polynomial time. Accordingly, it can be stated that, $itertools$ library was used by us, as an existing heuristic approach to create mathematical combinations.\\ 
+
+When the program is compiled and executed, above mentioned outputs are displayed in the console, as boolean outputs. Some examples of such outputs are depicted in figures below.\\ 
+\begin{figure}[H]  
+    \centering
+    \begin{verbatim}
+        Participant validity by doc analysis:
+        {'i_2': True, 'i_4': True, 'i_6': False, 'i_1': False, 
+        'i_5': True, 'i_3': True}
+    \end{verbatim}
+    \caption{Output depicting participants validated by document analysis}
+    \label{fig:output depicting participants validated by document analysis}
+\end{figure} 
+In above output, $true$ or $false$ states whether each individual is validated by analyzing access control lists of documents, including the agenda document as well. If an individual has no access to all the documents discussed in the meeting, particular individual will be marked as $false$.\\ 
+
+\begin{figure}[H]  
+    \centering
+    \begin{verbatim}
+        Time Slot: slot1
+            slot1_i_2_eligibility: True
+            slot1_i_4_eligibility: True
+            slot1_i_6_eligibility: False
+            slot1_i_1_eligibility: False
+            slot1_i_5_eligibility: False
+            slot1_i_3_eligibility: True
+    \end{verbatim}
+    \caption{Output depicting eligibility of each participant in a time slot, based on analysis of location with required level of privacy for documents}
+    \label{fig:output depicting eligibility of each participant in a time slot, based on analysis of location with required level of privacy for documents}
+\end{figure} 
+Above section of output displays the eligibility of each individual to attend the meeting, in each time slot. To decide the eligibility of an individual, in a certain time slot, algorithm analyzes the location of that individual, with the expected level of privacy for documents in the meeting.\\ 
+
+\begin{figure}[H]  
+    \centering
+    \begin{verbatim}
+        Slot: slot1 - Quorum Satisfiability: True
+        Slot: slot2 - Quorum Satisfiability: True
+        Slot: slot3 - Quorum Satisfiability: True
+        Slot: slot4 - Quorum Satisfiability: False
+    \end{verbatim}
+    \caption{Output depicting meeting quorum satisfiability of each time slot}
+    \label{fig:output depicting meeting quorum satisfiability of each time slot}
+\end{figure} 
+Above section of output states whether each time slot satisfies the meeting quorum, by having enough number of participants at privacy preserving locations, according to the expected level of privacy for documents in the meeting.\\ 
+
+\begin{figure}[H]  
+    \centering
+    \begin{verbatim}
+        Slot 1 eligibility as earliest slot: True
+        Slot 2 eligibility as earliest slot: False
+        Slot 3 eligibility as earliest slot: False
+        Slot 4 eligibility as earliest slot: False
+    \end{verbatim}
+    \caption{Output depicting earliest privacy preserving time slot for the meeting}
+    \label{fig:output depicting earliest privacy preserving time slot for the meeting}
+\end{figure} 
+In above section of output, that depicts the earliest quorum satisfying time slot for meeting, only one slot is supposed to have $true$ value. Because, once after identifying a quorum satisfying time slot, among all the time slots arranged in sequential order, algorithm marks all other time slots after the identified time slot as, $false$. If no quorum satisfying time slot is present, all time slots will be marked as $false$, since it is impossible to identify an earliest eligible time slot.\\ 
+
+\begin{figure}[H]  
+    \centering
+    \begin{verbatim}
+        Slot1:
+            Eligibility online: False
+            Eligibility hybrid: False
+            Eligibility onsite: True
+    \end{verbatim}
+    \caption{Output depicting meeting mode for each privacy preserving time slot identified}
+    \label{fig:output depicting meeting mode for each privacy preserving time slot identified}
+\end{figure} 
+Above section of output depicts the eligible meeting mode for conducting the meeting, in each time slot. Algorithm is designed such that more than one meeting mode cannot be activated (cannot be $true$) for a particular time slot. If a time slot is not suitable to conduct a privacy preserving meeting with equal or more number of particpants than the meeting quorum value, all three meeting modes will get $false$ for that time slot, to display that meeting should not be conducted in particular time slot.\\ \\
+In overall, above overview describes the inputs, outputs and behavior of the Python program, implemented as proof of concept, associated with algorithms explained earlier. In our research, those algorithms are converted to the Python code such that maximum possible time complexities identified do not get exceeded.\\ \\
+
+% Result of pragram execution
+\section{Result of program execution}
+\subsection{Overview of the result}
+As explained in code overview, program contains three inputs including the access control lists of documents, availability details of individuals in time slots (availability dictionary) and the meeting quorum. When these inputs are edited and program is executed, it can be observed that output changes. Possible outputs of five algorithms contained in the program can be summarized as below.\\ 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{./image/workflow_execution_result.png}
+    \caption{Possible results of program execution}
+    \label{fig:possible results of program execution}
+\end{figure}
+
+In addition, though each negative output shows the end of process in above diagram for simplicity, when considering the boolean circuit, processing does not stop abruptly in that manner. Instead of stopping, after a reaching a certain negative output, all remaing outputs also become negative ($false$), in boolean circuit. Three negative outputs identified in the program execution are listed below.
+\begin{itemize}
+    \item $Algorithm\ 1$: Only one or no valid participants
+    \item $Algorithm\ 2$: No time slot with 2 or more valid participants
+    \item $Algorithm\ 3$: No quorum satisfying time slot is present
+\end{itemize}
+Accordingly, for reaching a positive output which means that meeting can be conducted, none of above three negative outputs should be encountered in program execution. In other words, if program approches at least one negative output among above three, then it is impossible to conduct the particular meeting as a privacy preserving meeting.\\ \\
+In our research, we have considered variation of output with changes in input, to check whether they validate our hypothesis. After breaking down possible outputs of five algorithms as depicted above, sections of output supporting to validate the hypothesis were analyzed. Here, it is needed to note that, some sections of output are not required to validate the hypothesis. Such sections were introduced by us, as additional contributions, to enhance the quality of research outcome.\\ \\
+
+\subsection{Analytical investigtion of the result}
+When $algorithm\ 1$ is considered, its output shows whether each individual is allowed to discuss all documents included in the meeting. In this case, we consider having at least two valid participants as the positive output, since at least two participants are required for conducting a meeting. This decision is made by analyzing the access control lists of doucments associated with the meeting, including the meeting agenda. Follwoing flow chart depicts the process within $algorithm\ 1$, to generate the expected output.\\ \\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{./image/algo01_result_analysis.png}
+    \caption{Participant validation by document analysis in $algorithm\ 1$}
+    \label{fig:Participant validation by document analysis in algorithm 1}
+\end{figure}
+Output of $algorithm\ 2$ shows whether each individual is allowed to discuss all documents of the meeting, in each time slot. As discussed in problem analysis section, to make this decision, program checks whether at least one private document is present in meeting. If at least one private document is present, an individual present at a public location in a certain time slot is not allowed to attend this meeting, in that time slot. However, whether a document is private or public (by presence of $"public"$ group), is stated in the access control list of the document. Following flow chart depicts the process within $algorithm\ 2$, to generate the expected output.\\ \\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{./image/algo02_result_analysis.drawio.png}
+    \caption{Deciding eligibility of each individual in $algorithm\ 2$}
+    \label{fig:Deciding eligibility of each individual in algorithm 2}
+\end{figure}
+By observing these two segments of flow chart connected by a connector, it can be understood that access control lists of documents play a vital role as an essential input, to decide the eligible meeting participants. It means that, \textbf{"Meeting participant selection is primarily dominated by the access control lists of the documents presented including meeting agenda"} expression is validated by analyzing the process within $algorithm\ 1$ and $algorithm\ 2$ collectively, as in above flow chart segements.\\ \\ 
+After identifying the eligibility of each individual to attend the meeting in each time slot, next result expected from the program is whether each time slot satisfies the meeting quorum. Though meeting quorum is not relevant to privacy of meeting data, it is an important feature in meeting domain, to determine whether minimum required number of participnats is present in meeting. In our research, $algorithm\ 3$ enhances the quality of research outcome, by checking whether each time slot satisfies the meeting quorum, with enough eligible meeting participants, for a privacy-preserved meeting. In other words, our requirement is to satisfy the meeting quorum, without violating the privacy of meeting data. Accordingly, identification of quorum satisfying time slots as well, depends on access control lists of documents of the meeting. Meeting quorum value should be be defined by user as an input, in program.\\ \\
+After identifying quorum satisfying time slots, it is required to identify the earliest one among them. If there are more than one quorum satisfying time slots, $algorithm\ 4$ selects the earliest one among them. If only one time slot satisfies the meeting quorum, it becomes the earliest one. However, since $algorithm\ 4$ depens on $algorithm\ 3$, it can be stated that, outcome of $algorithm\ 4$ indirectly depends on access control lists of documents. Result of $algorithm\ 3$ and $alogorithm\ 4$ do not support to validate the hypothesis, since these two algorithms focus on quality related attributes, rather than privacy of meeting data. \\ \\
+After quorum satisfying time slots are identified by $algorithm\ 3$, $algorithm\ 5$ decides the privacy-preserving meeting mode for each of such time slots, by analyzing the locations of eligible participants. Every quorum satisfying time slot belongs to one meeting mode out of three modes---onsite, online and hybrid. Essential input required to generate the meeting mode of a time slot as output, is the available location of every eligible participant, in the particular time slot. The logic for selecting the meeting mode is dicussed in "meeting mode selection" (\ref{sec:logic_for_selecting_the_meeting_mode}) section of problem analysis. \\ \\
+Accordingly, since program decides the meeting mode of a quorum satisfying time slot by analyzing locations of eligible meeting partiticpants, \textbf{"the choice of meeting mode depends on the participants’ locations."} phrase of hypothesis is validated by $algorithm\ 5$.
+\subsection{Relationship between input and the result}
+
+
+%List of References 
+\newpage
+\addcontentsline{toc}{section}{List of References }
+\section*{\begin{LARGE} List of References  \end{LARGE} }
+\printbibliography
 
 \end{document}
 
