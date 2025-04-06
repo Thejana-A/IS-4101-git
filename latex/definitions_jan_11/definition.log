@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.1.11)  7 FEB 2025 21:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.1.11)  29 MAR 2025 15:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -335,62 +335,80 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip59
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count294
+\output=\toks27
+\linenoprevgraf=\count295
+\linenumbersep=\dimen165
+\linenumberwidth=\dimen166
+\c@linenumber=\count296
+\c@pagewiselinenumber=\count297
+\c@LN@truepage=\count298
+\c@internallinenumber=\count299
+\c@internallinenumbers=\count300
+\quotelinenumbersep=\dimen167
+\bframerule=\dimen168
+\bframesep=\dimen169
+\bframebox=\box56
+LaTeX Info: Redefining \\ on input line 3056.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2022/02/02 v3.17 programmable bibliographies (PK/MW)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count294
+\etb@tempcnta=\count301
 )
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count295
+\lrq@indent=\count302
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count296
-\c@listtotal=\count297
-\c@listcount=\count298
-\c@liststart=\count299
-\c@liststop=\count300
-\c@citecount=\count301
-\c@citetotal=\count302
-\c@multicitecount=\count303
-\c@multicitetotal=\count304
-\c@instcount=\count305
-\c@maxnames=\count306
-\c@minnames=\count307
-\c@maxitems=\count308
-\c@minitems=\count309
-\c@citecounter=\count310
-\c@maxcitecounter=\count311
-\c@savedcitecounter=\count312
-\c@uniquelist=\count313
-\c@uniquename=\count314
-\c@refsection=\count315
-\c@refsegment=\count316
-\c@maxextratitle=\count317
-\c@maxextratitleyear=\count318
-\c@maxextraname=\count319
-\c@maxextradate=\count320
-\c@maxextraalpha=\count321
-\c@abbrvpenalty=\count322
-\c@highnamepenalty=\count323
-\c@lownamepenalty=\count324
-\c@maxparens=\count325
-\c@parenlevel=\count326
-\blx@tempcnta=\count327
-\blx@tempcntb=\count328
-\blx@tempcntc=\count329
-\c@blx@maxsection=\count330
-\c@blx@maxsegment@0=\count331
-\blx@notetype=\count332
-\blx@parenlevel@text=\count333
-\blx@parenlevel@foot=\count334
-\c@blx@sectionciteorder@0=\count335
-\blx@entrysetcounter=\count336
-\blx@biblioinstance=\count337
+\c@tabx@nest=\count303
+\c@listtotal=\count304
+\c@listcount=\count305
+\c@liststart=\count306
+\c@liststop=\count307
+\c@citecount=\count308
+\c@citetotal=\count309
+\c@multicitecount=\count310
+\c@multicitetotal=\count311
+\c@instcount=\count312
+\c@maxnames=\count313
+\c@minnames=\count314
+\c@maxitems=\count315
+\c@minitems=\count316
+\c@citecounter=\count317
+\c@maxcitecounter=\count318
+\c@savedcitecounter=\count319
+\c@uniquelist=\count320
+\c@uniquename=\count321
+\c@refsection=\count322
+\c@refsegment=\count323
+\c@maxextratitle=\count324
+\c@maxextratitleyear=\count325
+\c@maxextraname=\count326
+\c@maxextradate=\count327
+\c@maxextraalpha=\count328
+\c@abbrvpenalty=\count329
+\c@highnamepenalty=\count330
+\c@lownamepenalty=\count331
+\c@maxparens=\count332
+\c@parenlevel=\count333
+\blx@tempcnta=\count334
+\blx@tempcntb=\count335
+\blx@tempcntc=\count336
+\c@blx@maxsection=\count337
+\c@blx@maxsegment@0=\count338
+\blx@notetype=\count339
+\blx@parenlevel@text=\count340
+\blx@parenlevel@foot=\count341
+\c@blx@sectionciteorder@0=\count342
+\blx@entrysetcounter=\count343
+\blx@biblioinstance=\count344
 \labelnumberwidth=\skip60
 \labelalphawidth=\skip61
 \biblabelsep=\skip62
@@ -402,9 +420,9 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@bcfin=\read2
 \blx@bcfout=\write3
 \blx@langwohyphens=\language7
-\c@mincomprange=\count338
-\c@maxcomprange=\count339
-\c@mincompwidth=\count340
+\c@mincomprange=\count345
+\c@maxcomprange=\count346
+\c@mincompwidth=\count347
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -415,74 +433,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count341
-\c@savedafterword=\count342
-\c@annotator=\count343
-\c@savedannotator=\count344
-\c@author=\count345
-\c@savedauthor=\count346
-\c@bookauthor=\count347
-\c@savedbookauthor=\count348
-\c@commentator=\count349
-\c@savedcommentator=\count350
-\c@editor=\count351
-\c@savededitor=\count352
-\c@editora=\count353
-\c@savededitora=\count354
-\c@editorb=\count355
-\c@savededitorb=\count356
-\c@editorc=\count357
-\c@savededitorc=\count358
-\c@foreword=\count359
-\c@savedforeword=\count360
-\c@holder=\count361
-\c@savedholder=\count362
-\c@introduction=\count363
-\c@savedintroduction=\count364
-\c@namea=\count365
-\c@savednamea=\count366
-\c@nameb=\count367
-\c@savednameb=\count368
-\c@namec=\count369
-\c@savednamec=\count370
-\c@translator=\count371
-\c@savedtranslator=\count372
-\c@shortauthor=\count373
-\c@savedshortauthor=\count374
-\c@shorteditor=\count375
-\c@savedshorteditor=\count376
-\c@labelname=\count377
-\c@savedlabelname=\count378
-\c@institution=\count379
-\c@savedinstitution=\count380
-\c@lista=\count381
-\c@savedlista=\count382
-\c@listb=\count383
-\c@savedlistb=\count384
-\c@listc=\count385
-\c@savedlistc=\count386
-\c@listd=\count387
-\c@savedlistd=\count388
-\c@liste=\count389
-\c@savedliste=\count390
-\c@listf=\count391
-\c@savedlistf=\count392
-\c@location=\count393
-\c@savedlocation=\count394
-\c@organization=\count395
-\c@savedorganization=\count396
-\c@origlocation=\count397
-\c@savedoriglocation=\count398
-\c@origpublisher=\count399
-\c@savedorigpublisher=\count400
-\c@publisher=\count401
-\c@savedpublisher=\count402
-\c@language=\count403
-\c@savedlanguage=\count404
-\c@origlanguage=\count405
-\c@savedoriglanguage=\count406
-\c@pageref=\count407
-\c@savedpageref=\count408
+\c@afterword=\count348
+\c@savedafterword=\count349
+\c@annotator=\count350
+\c@savedannotator=\count351
+\c@author=\count352
+\c@savedauthor=\count353
+\c@bookauthor=\count354
+\c@savedbookauthor=\count355
+\c@commentator=\count356
+\c@savedcommentator=\count357
+\c@editor=\count358
+\c@savededitor=\count359
+\c@editora=\count360
+\c@savededitora=\count361
+\c@editorb=\count362
+\c@savededitorb=\count363
+\c@editorc=\count364
+\c@savededitorc=\count365
+\c@foreword=\count366
+\c@savedforeword=\count367
+\c@holder=\count368
+\c@savedholder=\count369
+\c@introduction=\count370
+\c@savedintroduction=\count371
+\c@namea=\count372
+\c@savednamea=\count373
+\c@nameb=\count374
+\c@savednameb=\count375
+\c@namec=\count376
+\c@savednamec=\count377
+\c@translator=\count378
+\c@savedtranslator=\count379
+\c@shortauthor=\count380
+\c@savedshortauthor=\count381
+\c@shorteditor=\count382
+\c@savedshorteditor=\count383
+\c@labelname=\count384
+\c@savedlabelname=\count385
+\c@institution=\count386
+\c@savedinstitution=\count387
+\c@lista=\count388
+\c@savedlista=\count389
+\c@listb=\count390
+\c@savedlistb=\count391
+\c@listc=\count392
+\c@savedlistc=\count393
+\c@listd=\count394
+\c@savedlistd=\count395
+\c@liste=\count396
+\c@savedliste=\count397
+\c@listf=\count398
+\c@savedlistf=\count399
+\c@location=\count400
+\c@savedlocation=\count401
+\c@organization=\count402
+\c@savedorganization=\count403
+\c@origlocation=\count404
+\c@savedoriglocation=\count405
+\c@origpublisher=\count406
+\c@savedorigpublisher=\count407
+\c@publisher=\count408
+\c@savedpublisher=\count409
+\c@language=\count410
+\c@savedlanguage=\count411
+\c@origlanguage=\count412
+\c@savedoriglanguage=\count413
+\c@pageref=\count414
+\c@savedpageref=\count415
 \shorthandwidth=\skip68
 \shortjournalwidth=\skip69
 \shortserieswidth=\skip70
@@ -508,19 +526,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
-\c@textcitecount=\count409
-\c@textcitetotal=\count410
-\c@textcitemaxnames=\count411
-\c@biburlbigbreakpenalty=\count412
-\c@biburlbreakpenalty=\count413
-\c@biburlnumpenalty=\count414
-\c@biburlucpenalty=\count415
-\c@biburllcpenalty=\count416
+\c@textcitecount=\count416
+\c@textcitetotal=\count417
+\c@textcitemaxnames=\count418
+\c@biburlbigbreakpenalty=\count419
+\c@biburlbreakpenalty=\count420
+\c@biburlnumpenalty=\count421
+\c@biburlucpenalty=\count422
+\c@biburllcpenalty=\count423
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count417
+\c@smartand=\count424
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
@@ -532,8 +550,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count418
-\c@bbx:relatedtotal=\count419
+\c@bbx:relatedcount=\count425
+\c@bbx:relatedtotal=\count426
 ))
 Package biblatex Info: Trying to load citation style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.cbx' found.
@@ -562,8 +580,8 @@ Package: expl3 2022-01-21 L3 programming layer (loader)
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count420
-\l__pdf_internal_box=\box56
+\l__color_backend_stack_int=\count427
+\l__pdf_internal_box=\box57
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2022-01-21 L3 programming layer (loader) 
@@ -581,29 +599,29 @@ Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
 
 
 Writing index file definition.idx
-\@quotelevel=\count421
-\@quotereset=\count422
+\@quotelevel=\count428
+\@quotereset=\count429
 (./definition.aux)
 \openout1 = `definition.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -641,17 +659,17 @@ LaTeX Font Info:    ... okay on input line 66.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count423
-\scratchdimen=\dimen165
-\scratchbox=\box57
-\nofMPsegments=\count424
-\nofMParguments=\count425
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count426
-\MPscratchDim=\dimen166
-\MPnumerator=\count427
-\makeMPintoPDFobject=\count428
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count430
+\scratchdimen=\dimen170
+\scratchbox=\box58
+\nofMPsegments=\count431
+\nofMParguments=\count432
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count433
+\MPscratchDim=\dimen171
+\MPnumerator=\count434
+\makeMPintoPDFobject=\count435
+\everyMPtoPDFconversion=\toks29
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -661,7 +679,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 66.
+Package hyperref Info: Link coloring OFF on input line 117.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -672,11 +690,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count429
+\c@section@level=\count436
 )
-LaTeX Info: Redefining \ref on input line 66.
-LaTeX Info: Redefining \pageref on input line 66.
-LaTeX Info: Redefining \nameref on input line 66.
+LaTeX Info: Redefining \ref on input line 117.
+LaTeX Info: Redefining \pageref on input line 117.
+LaTeX Info: Redefining \nameref on input line 117.
 
 (./definition.out) (./definition.out)
 \@outlinefile=\write5
@@ -697,152 +715,152 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'definition.bbl' found.
 
 (./definition.bbl)
-Package biblatex Info: Reference section=0 on input line 66.
-Package biblatex Info: Reference segment=0 on input line 66.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 71
-.
+Package biblatex Info: Reference section=0 on input line 117.
+Package biblatex Info: Reference segment=0 on input line 117.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 12
+2.
  (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 71.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 122
+.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 71.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 122
+.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 72--80
+Underfull \hbox (badness 10000) in paragraph at lines 123--131
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--80
+Underfull \hbox (badness 10000) in paragraph at lines 123--131
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--80
+Underfull \hbox (badness 10000) in paragraph at lines 123--131
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--80
+Underfull \hbox (badness 10000) in paragraph at lines 123--131
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--80
+Underfull \hbox (badness 10000) in paragraph at lines 123--131
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--80
+Underfull \hbox (badness 10000) in paragraph at lines 123--131
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--80
+Underfull \hbox (badness 10000) in paragraph at lines 123--131
 
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 83--90
+Underfull \hbox (badness 10000) in paragraph at lines 134--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--90
+Underfull \hbox (badness 10000) in paragraph at lines 134--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--98
+Underfull \hbox (badness 10000) in paragraph at lines 142--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--98
+Underfull \hbox (badness 10000) in paragraph at lines 142--149
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 118--121
+Underfull \hbox (badness 10000) in paragraph at lines 169--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--132
+Underfull \hbox (badness 10000) in paragraph at lines 179--183
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 133--135
+Underfull \hbox (badness 10000) in paragraph at lines 184--186
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--135
+Underfull \hbox (badness 10000) in paragraph at lines 184--186
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--142
+Underfull \hbox (badness 10000) in paragraph at lines 189--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--142
+Underfull \hbox (badness 10000) in paragraph at lines 189--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--142
+Underfull \hbox (badness 10000) in paragraph at lines 189--193
 
  []
 
 [4]
-<./image/document_puclic_vs_private_classification.png, id=159, 563.10374pt x 5
+<./image/document_puclic_vs_private_classification.png, id=195, 563.10374pt x 5
 73.14125pt>
 File: ./image/document_puclic_vs_private_classification.png Graphic file (type 
 png)
 <use ./image/document_puclic_vs_private_classification.png>
 Package pdftex.def Info: ./image/document_puclic_vs_private_classification.png 
- used on input line 154.
+ used on input line 205.
 (pdftex.def)             Requested size: 333.46758pt x 339.40974pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--163
+Underfull \hbox (badness 10000) in paragraph at lines 210--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--175
+Underfull \hbox (badness 10000) in paragraph at lines 218--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--175
+Underfull \hbox (badness 10000) in paragraph at lines 218--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--175
+Underfull \hbox (badness 10000) in paragraph at lines 218--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--175
+Underfull \hbox (badness 10000) in paragraph at lines 218--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--175
+Underfull \hbox (badness 10000) in paragraph at lines 218--226
 
  []
 
@@ -850,133 +868,133 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--175
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.175     \[
+l.226     \[
              M = < D, I, L, t > \] <./image/document_puclic_vs_private_classifi
 cation.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 185--200
+Underfull \hbox (badness 10000) in paragraph at lines 236--251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--200
+Underfull \hbox (badness 10000) in paragraph at lines 236--251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--200
+Underfull \hbox (badness 10000) in paragraph at lines 236--251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--200
+Underfull \hbox (badness 10000) in paragraph at lines 236--251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--200
+Underfull \hbox (badness 10000) in paragraph at lines 236--251
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 200--203
+Underfull \hbox (badness 10000) in paragraph at lines 251--254
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--203
+Underfull \hbox (badness 10000) in paragraph at lines 251--254
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--212
+Underfull \hbox (badness 10000) in paragraph at lines 259--263
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--221
+Underfull \hbox (badness 10000) in paragraph at lines 268--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--229
+Underfull \hbox (badness 10000) in paragraph at lines 275--280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--229
+Underfull \hbox (badness 10000) in paragraph at lines 275--280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--229
+Underfull \hbox (badness 10000) in paragraph at lines 275--280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--229
+Underfull \hbox (badness 10000) in paragraph at lines 275--280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--235
+Underfull \hbox (badness 10000) in paragraph at lines 283--286
 
  []
 
 
-Overfull \hbox (33.32391pt too wide) in paragraph at lines 232--235
+Overfull \hbox (33.32391pt too wide) in paragraph at lines 283--286
 \OT1/cmr/m/n/12 On the other hand, if meet-ing agenda in-cludes group la-beled 
 as \OT1/cmr/bx/n/12 pub-lic \OT1/cmr/m/n/12 in $\OML/cmm/m/it/12 access\OT1/cmr
 /m/n/12 (\OML/cmm/m/it/12 agenda\OT1/cmr/m/n/12 )$,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--235
+Underfull \hbox (badness 10000) in paragraph at lines 283--286
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--235
+Underfull \hbox (badness 10000) in paragraph at lines 283--286
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 238--260
+Underfull \hbox (badness 10000) in paragraph at lines 289--311
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--265
+Underfull \hbox (badness 10000) in paragraph at lines 313--316
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--265
+Underfull \hbox (badness 10000) in paragraph at lines 313--316
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--265
+Underfull \hbox (badness 10000) in paragraph at lines 313--316
 
  []
 
-<./image/d1_intersection_d2.png, id=182, 412.54124pt x 231.86626pt>
+<./image/d1_intersection_d2.png, id=217, 412.54124pt x 231.86626pt>
 File: ./image/d1_intersection_d2.png Graphic file (type png)
 <use ./image/d1_intersection_d2.png>
-Package pdftex.def Info: ./image/d1_intersection_d2.png  used on input line 275
+Package pdftex.def Info: ./image/d1_intersection_d2.png  used on input line 326
 .
 (pdftex.def)             Requested size: 291.78174pt x 163.99641pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--278
+Underfull \hbox (badness 10000) in paragraph at lines 320--329
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--278
+Underfull \hbox (badness 10000) in paragraph at lines 320--329
 
  []
 
@@ -984,101 +1002,101 @@ Underfull \hbox (badness 10000) in paragraph at lines 269--278
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.278 \end{figure}
+l.329 \end{figure}
                   ] [10pdfTeX warning (ext4): destination with the same identif
 ier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.285 \[
+l.336 \[
          access(agenda) \subseteq \{access(d_{1}) \cap access(d_{2}) \cap .....
  <./image/d1_intersection_d2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 289--293
+Underfull \hbox (badness 10000) in paragraph at lines 340--344
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--298
+Underfull \hbox (badness 10000) in paragraph at lines 347--349
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--306
+Underfull \hbox (badness 10000) in paragraph at lines 354--357
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--318
+Underfull \hbox (badness 10000) in paragraph at lines 361--369
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--318
+Underfull \hbox (badness 10000) in paragraph at lines 361--369
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--318
+Underfull \hbox (badness 10000) in paragraph at lines 361--369
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--318
+Underfull \hbox (badness 10000) in paragraph at lines 361--369
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--318
+Underfull \hbox (badness 10000) in paragraph at lines 361--369
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--318
+Underfull \hbox (badness 10000) in paragraph at lines 361--369
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--318
+Underfull \hbox (badness 10000) in paragraph at lines 361--369
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 321--323
+Underfull \hbox (badness 10000) in paragraph at lines 372--374
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--323
+Underfull \hbox (badness 10000) in paragraph at lines 372--374
 
  []
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 327.
+put line 378.
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--347
+Underfull \hbox (badness 10000) in paragraph at lines 375--398
 
  []
 
 [12]
-<./image/circuit_diagram/1_participant_validation.png.png, id=204, 853.1875pt x
+<./image/circuit_diagram/1_participant_validation.png.png, id=239, 853.1875pt x
  723.70375pt>
 File: ./image/circuit_diagram/1_participant_validation.png.png Graphic file (ty
 pe png)
 <use ./image/circuit_diagram/1_participant_validation.png.png>
 Package pdftex.def Info: ./image/circuit_diagram/1_participant_validation.png.p
-ng  used on input line 354.
+ng  used on input line 405.
 (pdftex.def)             Requested size: 375.14705pt x 318.22081pt.
  [13]
-Underfull \hbox (badness 10000) in paragraph at lines 362--383
+Underfull \hbox (badness 10000) in paragraph at lines 413--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--383
+Underfull \hbox (badness 10000) in paragraph at lines 413--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--383
+Underfull \hbox (badness 10000) in paragraph at lines 413--434
 
  []
 
@@ -1086,21 +1104,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 362--383
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.383 \end{table}
+l.434 \end{table}
                   <./image/circuit_diagram/1_participant_validation.png.png>]
-Underfull \hbox (badness 5726) in paragraph at lines 399--400
+Underfull \hbox (badness 3158) in paragraph at lines 450--451
 [] \OT1/cmr/m/n/12 pub-lic-ity of meet-ing = $(\OML/cmm/m/it/12 doc[]\OT1/cmr/m
 /n/12 1 \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 public\OT1/cmr/m/n/12 )[]\OML/cmm
 /m/it/12 :::[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 doc[]n \OMS/cmsy/m/n/12 ^^@
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--410
+Underfull \hbox (badness 10000) in paragraph at lines 436--461
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--410
+Underfull \hbox (badness 10000) in paragraph at lines 436--461
 
  []
 
@@ -1108,24 +1126,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 385--410
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.411 I
+l.462 I
        n above algorithm, time complexity of $union\ of\ time\ slots$ operat...
 ]
-<./image/circuit_diagram/2_slot_n_i_n_eligibility.png, id=222, 934.49126pt x 42
+<./image/circuit_diagram/2_slot_n_i_n_eligibility.png, id=258, 934.49126pt x 42
 7.5975pt>
 File: ./image/circuit_diagram/2_slot_n_i_n_eligibility.png Graphic file (type p
 ng)
 <use ./image/circuit_diagram/2_slot_n_i_n_eligibility.png>
 Package pdftex.def Info: ./image/circuit_diagram/2_slot_n_i_n_eligibility.png  
-used on input line 415.
+used on input line 466.
 (pdftex.def)             Requested size: 375.14705pt x 171.6558pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--418
+Underfull \hbox (badness 10000) in paragraph at lines 462--469
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 421--443
+Underfull \hbox (badness 10000) in paragraph at lines 472--494
 
  []
 
@@ -1133,156 +1151,166 @@ Underfull \hbox (badness 10000) in paragraph at lines 421--443
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.444 S
+l.495 S
        imilar to previous algorithm, in above algorithm also, time complexit...
  <./image/circuit_diagram/2_slot_n_i_n_eligibility.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 445--449
+Underfull \hbox (badness 10000) in paragraph at lines 496--500
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 445--449
+Underfull \hbox (badness 10000) in paragraph at lines 496--500
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 451--454
+Overfull \hbox (5.83421pt too wide) detected at line 502
+\OML/cmm/m/it/12 O\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n[]n[][]\OT1/cmr/m/n/12 ) =
+ \OML/cmm/m/it/12 O\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n[][][]\OT1/cmr/m/n/12 )[]
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 451--454
+Underfull \hbox (badness 10000) in paragraph at lines 502--503
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 451--454
+Underfull \hbox (badness 10000) in paragraph at lines 507--509
 
  []
 
-<./image/circuit_diagram/3_quorum_satisfying_slot_selection.png, id=241, 934.49
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--512
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--512
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--512
+
+ []
+
+<./image/circuit_diagram/3_quorum_satisfying_slot_selection.png, id=283, 934.49
 126pt x 639.38875pt>
 File: ./image/circuit_diagram/3_quorum_satisfying_slot_selection.png Graphic fi
 le (type png)
 <use ./image/circuit_diagram/3_quorum_satisfying_slot_selection.png>
 Package pdftex.def Info: ./image/circuit_diagram/3_quorum_satisfying_slot_selec
-tion.png  used on input line 457.
+tion.png  used on input line 515.
 (pdftex.def)             Requested size: 375.14705pt x 256.67781pt.
-
-Underfull \hbox (badness 1253) in paragraph at lines 480--481
-[] \OT1/cmr/m/n/12 whether slot[]$\OML/cmm/m/it/12 x$ \OT1/cmr/m/n/12 is ear-li
--est meet-ing quo-rum sat-is-fy-ing time slot =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 464--487
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 522--545
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 464--487
+Underfull \hbox (badness 10000) in paragraph at lines 522--545
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 464--487
+Underfull \hbox (badness 10000) in paragraph at lines 522--545
 
  []
 
-[19pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+[20pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.487 \end{algorithm}
-                      <./image/circuit_diagram/3_quorum_satisfying_slot_selecti
-on.png>] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 489--507
+l.546 
+       <./image/circuit_diagram/3_quorum_satisfying_slot_selection.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 547--565
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--507
+Underfull \hbox (badness 10000) in paragraph at lines 547--565
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--507
+Underfull \hbox (badness 10000) in paragraph at lines 547--565
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--507
+Underfull \hbox (badness 10000) in paragraph at lines 547--565
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--507
+Underfull \hbox (badness 10000) in paragraph at lines 547--565
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--507
+Underfull \hbox (badness 10000) in paragraph at lines 547--565
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--507
+Underfull \hbox (badness 10000) in paragraph at lines 547--565
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--507
+Underfull \hbox (badness 10000) in paragraph at lines 547--565
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--507
+Underfull \hbox (badness 10000) in paragraph at lines 547--565
 
  []
 
 [21]
-<./image/circuit_diagram/4_earliest_slot_selection.png, id=259, 581.17125pt x 7
+<./image/circuit_diagram/4_earliest_slot_selection.png, id=301, 581.17125pt x 7
 03.62875pt>
 File: ./image/circuit_diagram/4_earliest_slot_selection.png Graphic file (type 
 png)
 <use ./image/circuit_diagram/4_earliest_slot_selection.png>
 Package pdftex.def Info: ./image/circuit_diagram/4_earliest_slot_selection.png 
- used on input line 510.
+ used on input line 568.
 (pdftex.def)             Requested size: 375.14705pt x 454.19673pt.
  [22]
-<./image/meeting_mode_selection.png, id=264, 743.77875pt x 653.44125pt>
+<./image/meeting_mode_selection.png, id=306, 743.77875pt x 653.44125pt>
 File: ./image/meeting_mode_selection.png Graphic file (type png)
 <use ./image/meeting_mode_selection.png>
 Package pdftex.def Info: ./image/meeting_mode_selection.png  used on input line
- 520.
+ 578.
 (pdftex.def)             Requested size: 375.14705pt x 329.59138pt.
  [23pdfTeX warning (ext4): destination with the same identifier (name{figure.6}
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.524 A
+l.582 A
        ccording to the logic, initially we check whether at least two eligib...
  <./image/circuit_diagram/4_earliest_slot_selection.png>]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 5
-55.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 6
+13.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 555.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 613.
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--561
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 524--561
+Underfull \hbox (badness 10000) in paragraph at lines 582--619
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--561
+Underfull \hbox (badness 10000) in paragraph at lines 582--619
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 582--619
 
  []
 
@@ -1290,64 +1318,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 524--561
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.562 W
+l.620 W
        hen considering the algorithm above, it is observed that it obtains m...
  <./image/meeting_mode_selection.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 562--564
+Underfull \hbox (badness 10000) in paragraph at lines 620--622
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 568--570
+Underfull \hbox (badness 10000) in paragraph at lines 626--628
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 568--570
+Underfull \hbox (badness 10000) in paragraph at lines 626--628
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 570--572
+Underfull \hbox (badness 10000) in paragraph at lines 628--630
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 570--572
+Underfull \hbox (badness 10000) in paragraph at lines 628--630
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 575--577
+Underfull \hbox (badness 10000) in paragraph at lines 633--635
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 575--577
+Underfull \hbox (badness 10000) in paragraph at lines 633--635
 
  []
 
 [26]
-<./image/circuit_diagram/5_meeting_mode_selection.png, id=288, 944.52875pt x 90
+<./image/circuit_diagram/5_meeting_mode_selection.png, id=331, 944.52875pt x 90
 4.37875pt>
 File: ./image/circuit_diagram/5_meeting_mode_selection.png Graphic file (type p
 ng)
 <use ./image/circuit_diagram/5_meeting_mode_selection.png>
 Package pdftex.def Info: ./image/circuit_diagram/5_meeting_mode_selection.png  
-used on input line 582.
+used on input line 640.
 (pdftex.def)             Requested size: 375.14705pt x 359.20595pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 577--585
+Underfull \hbox (badness 10000) in paragraph at lines 635--643
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 577--585
+Underfull \hbox (badness 10000) in paragraph at lines 635--643
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 577--585
+Underfull \hbox (badness 10000) in paragraph at lines 635--643
 
  []
 
@@ -1355,44 +1383,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 577--585
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.612 \end{table}
+l.670 \end{table}
                   <./image/circuit_diagram/5_meeting_mode_selection.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 614--616
+Underfull \hbox (badness 10000) in paragraph at lines 672--674
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 614--616
+Underfull \hbox (badness 10000) in paragraph at lines 672--674
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 614--616
+Underfull \hbox (badness 10000) in paragraph at lines 672--674
 
  []
 
-<./image/np_p_problems.png, id=301, 432.61626pt x 201.75375pt>
+<./image/np_p_problems.png, id=343, 432.61626pt x 201.75375pt>
 File: ./image/np_p_problems.png Graphic file (type png)
 <use ./image/np_p_problems.png>
-Package pdftex.def Info: ./image/np_p_problems.png  used on input line 623.
+Package pdftex.def Info: ./image/np_p_problems.png  used on input line 681.
 (pdftex.def)             Requested size: 375.14705pt x 174.96097pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 618--626
+Underfull \hbox (badness 10000) in paragraph at lines 676--684
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 618--626
+Underfull \hbox (badness 10000) in paragraph at lines 676--684
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 618--626
+Underfull \hbox (badness 10000) in paragraph at lines 676--684
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 618--626
+Underfull \hbox (badness 10000) in paragraph at lines 676--684
 
  []
 
@@ -1400,14 +1428,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 618--626
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.626 \end{figure}
+l.684 \end{figure}
                   ]
-Underfull \hbox (badness 10000) in paragraph at lines 627--628
+Underfull \hbox (badness 10000) in paragraph at lines 685--686
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 627--628
+Underfull \hbox (badness 10000) in paragraph at lines 685--686
 
  []
 
@@ -1415,63 +1443,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 627--628
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.628 
+l.686 
        <./image/np_p_problems.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 632--636
+Underfull \hbox (badness 10000) in paragraph at lines 690--694
 
  []
 
 
-Overfull \hbox (10.62796pt too wide) in paragraph at lines 632--636
+Overfull \hbox (10.62796pt too wide) in paragraph at lines 690--694
 \OT1/cmr/m/n/12 After an-a-lyz-ing po-ten-tially el-i-gi-ble pro-gram-ming lan-
 guages and tech-nolo-gies, Python
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 632--636
+Underfull \hbox (badness 10000) in paragraph at lines 690--694
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 632--636
+Underfull \hbox (badness 10000) in paragraph at lines 690--694
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 638--659
+Underfull \hbox (badness 10000) in paragraph at lines 696--717
 
  []
 
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 662--673
+Underfull \hbox (badness 10000) in paragraph at lines 720--731
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 662--673
+Underfull \hbox (badness 10000) in paragraph at lines 720--731
 
  []
 
 
-Overfull \hbox (9.24232pt too wide) in paragraph at lines 683--683
+Overfull \hbox (9.24232pt too wide) in paragraph at lines 741--741
 []            \OT1/cmtt/m/n/12 {"person": "i_1", "slot": "slot1", "location": "
 onsite"},[] 
  []
 
 
-Overfull \hbox (58.64235pt too wide) in paragraph at lines 683--683
+Overfull \hbox (58.64235pt too wide) in paragraph at lines 741--741
 []            \OT1/cmtt/m/n/12 {"person": "i_1", "slot": "slot2", "location": "
 remote_private"},[] 
  []
 
 
-Overfull \hbox (46.29234pt too wide) in paragraph at lines 683--683
+Overfull \hbox (46.29234pt too wide) in paragraph at lines 741--741
 []            \OT1/cmtt/m/n/12 {"person": "i_2", "slot": "slot1", "location": "
 remote_public"}[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 674--686
+Underfull \hbox (badness 10000) in paragraph at lines 732--744
 
  []
 
@@ -1479,34 +1507,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 674--686
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.687 
+l.745 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.687 
+l.745 
       ]
-Underfull \hbox (badness 10000) in paragraph at lines 688--696
+Underfull \hbox (badness 10000) in paragraph at lines 746--754
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 698--699
+Underfull \hbox (badness 10000) in paragraph at lines 756--757
 
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 707--708
+Underfull \hbox (badness 1077) in paragraph at lines 765--766
 []|\OT1/cmr/m/n/12 Validity of each in-di-vid-ual for
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 709--710
+Underfull \hbox (badness 1057) in paragraph at lines 767--768
 []|\OT1/cmr/m/n/12 Validity of each in-di-vid-ual, in
  []
 
 
-Overfull \hbox (8.74408pt too wide) in paragraph at lines 703--718
+Overfull \hbox (8.74408pt too wide) in paragraph at lines 761--776
  [][] 
  []
 
@@ -1514,26 +1542,26 @@ Overfull \hbox (8.74408pt too wide) in paragraph at lines 703--718
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.721 A
+l.779 A
        s it is described in problem analysis section, $algorithm\ 3$ contain...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.721 A
+l.779 A
        s it is described in problem analysis section, $algorithm\ 3$ contain...
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 721--722
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 723--733
+Underfull \hbox (badness 10000) in paragraph at lines 781--791
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 734--735
+Underfull \hbox (badness 10000) in paragraph at lines 792--793
 
  []
 
@@ -1541,26 +1569,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 734--735
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.750 A
+l.808 A
        bove section of output displays the eligibility of each individual to...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.750 A
+l.808 A
        bove section of output displays the eligibility of each individual to...
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 750--751
+Underfull \hbox (badness 10000) in paragraph at lines 808--809
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 763--764
+Underfull \hbox (badness 10000) in paragraph at lines 821--822
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 776--777
+Underfull \hbox (badness 10000) in paragraph at lines 834--835
 
  []
 
@@ -1568,43 +1596,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 776--777
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.789 A
+l.847 A
        bove section of output depicts the eligible meeting mode for conducti...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.789 A
+l.847 A
        bove section of output depicts the eligible meeting mode for conducti...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.789 A
+l.847 A
        bove section of output depicts the eligible meeting mode for conducti...
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 789--791
+Underfull \hbox (badness 10000) in paragraph at lines 847--849
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 789--791
+Underfull \hbox (badness 10000) in paragraph at lines 847--849
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 789--791
+Underfull \hbox (badness 10000) in paragraph at lines 847--849
 
  []
 
-<./image/workflow_execution_result.png, id=347, 753.81625pt x 633.36626pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 851--852
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 851--852
+
+ []
+
+<./image/workflow_execution_result.png, id=389, 753.81625pt x 633.36626pt>
 File: ./image/workflow_execution_result.png Graphic file (type png)
 <use ./image/workflow_execution_result.png>
 Package pdftex.def Info: ./image/workflow_execution_result.png  used on input l
-ine 798.
+ine 859.
 (pdftex.def)             Requested size: 375.14705pt x 315.2037pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 795--801
+Underfull \hbox (badness 10000) in paragraph at lines 856--862
 
  []
 
@@ -1612,19 +1650,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 795--801
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.802 
+l.863 
       ]
-Underfull \hbox (badness 10000) in paragraph at lines 809--811
+Underfull \hbox (badness 10000) in paragraph at lines 870--872
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 809--811
+Underfull \hbox (badness 10000) in paragraph at lines 870--872
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 809--811
+Underfull \hbox (badness 10000) in paragraph at lines 870--872
 
  []
 
@@ -1632,38 +1670,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 809--811
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.811 
+l.872 
        <./image/workflow_execution_result.png>]
-<./image/algo01_result_analysis.png, id=359, 633.36626pt x 763.85374pt>
+<./image/algo01_result_analysis.png, id=402, 633.36626pt x 763.85374pt>
 File: ./image/algo01_result_analysis.png Graphic file (type png)
 <use ./image/algo01_result_analysis.png>
 Package pdftex.def Info: ./image/algo01_result_analysis.png  used on input line
- 816.
+ 877.
 (pdftex.def)             Requested size: 375.14705pt x 452.44142pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 813--819
+Underfull \hbox (badness 10000) in paragraph at lines 874--880
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 813--819
+Underfull \hbox (badness 10000) in paragraph at lines 874--880
 
  []
 
 [37]
-<./image/algo02_result_analysis.drawio.png, id=365, 643.40375pt x 743.77875pt>
-File: ./image/algo02_result_analysis.drawio.png Graphic file (type png)
-<use ./image/algo02_result_analysis.drawio.png>
-Package pdftex.def Info: ./image/algo02_result_analysis.drawio.png  used on inp
-ut line 823.
+<./image/algo02_result_analysis.png, id=408, 643.40375pt x 743.77875pt>
+File: ./image/algo02_result_analysis.png Graphic file (type png)
+<use ./image/algo02_result_analysis.png>
+Package pdftex.def Info: ./image/algo02_result_analysis.png  used on input line
+ 884.
 (pdftex.def)             Requested size: 375.14705pt x 433.6845pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 820--826
+Underfull \hbox (badness 10000) in paragraph at lines 881--887
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 820--826
+Underfull \hbox (badness 10000) in paragraph at lines 881--887
 
  []
 
@@ -1671,25 +1709,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 820--826
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.827 B
+l.888 B
        y observing these two segments of flow chart connected by a connector...
  <./image/algo01_result_analysis.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 827--832
+Underfull \hbox (badness 10000) in paragraph at lines 888--893
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 827--832
+Underfull \hbox (badness 10000) in paragraph at lines 888--893
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 827--832
+Underfull \hbox (badness 10000) in paragraph at lines 888--893
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 827--832
+Underfull \hbox (badness 10000) in paragraph at lines 888--893
 
  []
 
@@ -1697,53 +1735,332 @@ Underfull \hbox (badness 10000) in paragraph at lines 827--832
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.832 \subsection
-                 {Relationship between input and the result} <./image/algo02_re
-sult_analysis.drawio.png>] [40]
+l.893 
+       <./image/algo02_result_analysis.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 895--896
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 895--896
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 900--901
+
+ []
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 901--902
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 902--903
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 903--904
+
+ []
+
+<./image/evaluation_flow.png, id=428, 673.51625pt x 804.00375pt>
+File: ./image/evaluation_flow.png Graphic file (type png)
+<use ./image/evaluation_flow.png>
+Package pdftex.def Info: ./image/evaluation_flow.png  used on input line 907.
+(pdftex.def)             Requested size: 375.14705pt x 447.83449pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 904--910
+
+ []
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 914--915
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 915--916
+
+ []
+
+[42pdfTeX warning (ext4): destination with the same identifier (name{figure.21}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.916 
+       <./image/evaluation_flow.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 919--920
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 920--921
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 921--922
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 922--923
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 923--924
+
+ []
+
+[43]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 928.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 928.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 940--941
+
+ []
+
+<./image/ncr_for_odd_n.png, id=447, 283.0575pt x 182.6825pt>
+File: ./image/ncr_for_odd_n.png Graphic file (type png)
+<use ./image/ncr_for_odd_n.png>
+Package pdftex.def Info: ./image/ncr_for_odd_n.png  used on input line 957.
+(pdftex.def)             Requested size: 291.78174pt x 188.32951pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 952--960
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 952--960
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 952--960
+
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 961--963
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 961--963
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 965--966
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--970
+
+ []
+
+[45pdfTeX warning (ext4): destination with the same identifier (name{figure.22}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.971 ...2 = \binom{n}{2} = \frac{n!}{(n-2)!2!} \]
+                                                   <./image/ncr_for_odd_n.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 973--974
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 975--976
+
+ []
+
+<./image/ncr_for_even_n.png, id=462, 283.0575pt x 181.67876pt>
+File: ./image/ncr_for_even_n.png Graphic file (type png)
+<use ./image/ncr_for_even_n.png>
+Package pdftex.def Info: ./image/ncr_for_even_n.png  used on input line 990.
+(pdftex.def)             Requested size: 291.78174pt x 187.29475pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 986--993
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 986--993
+
+ []
+
+[46]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 996.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 996.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempa' on input line 996.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 996.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempb' on input line 996.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 996.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 996.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endgroup' on input line 996.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@@over' on input line 996.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 996.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 996.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 996.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1008.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1008.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempa' on input line 1008.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1008.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempb' on input line 1008.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 1008.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 1008.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endgroup' on input line 1008.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@@over' on input line 1008.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1008.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1008.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1008.
+
+[47pdfTeX warning (ext4): destination with the same identifier (name{figure.23}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1011 ...m{n}{\frac{n-1}{2}} = \binom{2m+1}{m} \]
+                                                   <./image/ncr_for_even_n.png>
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1019--1020
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1026--1027
+
+ []
+
+[48]
 
 Package biblatex Warning: Name format 'last-first' deprecated.
 (biblatex)                Please use 'family-given' instead.
 (biblatex)                Using 'family-given' now.
 
-[41] (./definition.aux)
-
-Package rerunfilecheck Warning: File `definition.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `definition.out':
-(rerunfilecheck)             Before: 8CC7E3ECA6E8346444BD835685B51252;6898
-(rerunfilecheck)             After:  5966069CBC0E81A67B9B473CC768A3C1;7184.
+[49] (./definition.aux)
+Package rerunfilecheck Info: File `definition.out' has not changed.
+(rerunfilecheck)             Checksum: C27EFCC5BBDBECAD81CA22E0046A508C;8689.
 Package logreq Info: Writing requests to 'definition.run.xml'.
 \openout1 = `definition.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18525 strings out of 480171
- 323549 string characters out of 5894489
- 1025473 words of memory out of 5000000
- 36132 multiletter control sequences out of 15000+600000
- 481094 words of font info for 75 fonts, out of 8000000 for 9000
+ 18840 strings out of 480171
+ 329504 string characters out of 5894489
+ 1029017 words of memory out of 5000000
+ 36414 multiletter control sequences out of 15000+600000
+ 481712 words of font info for 77 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  60i,14n,68p,1236b,1272s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/thejana/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.6
 00pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on definition.pdf (41 pages, 722690 bytes).
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/symbols/msbm10.pfb>
+Output written on definition.pdf (49 pages, 879375 bytes).
 PDF statistics:
- 487 PDF objects out of 1000 (max. 8388607)
- 387 compressed objects within 4 object streams
- 110 named destinations out of 1000 (max. 500000)
- 325 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 640 PDF objects out of 1000 (max. 8388607)
+ 505 compressed objects within 6 object streams
+ 134 named destinations out of 1000 (max. 500000)
+ 412 words of extra memory for PDF output out of 10000 (max. 10000000)
 

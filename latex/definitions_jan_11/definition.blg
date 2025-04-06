@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'definition.blg'
-[164] biber:340> INFO - === සි පෙබ  7, 2025, 09:39:58
-[410] Biber.pm:418> INFO - Reading 'definition.bcf'
-[537] Biber.pm:972> INFO - Found 3 citekeys in bib section 0
-[561] Biber.pm:4383> INFO - Processing section 0
-[738] Biber.pm:4574> INFO - Looking for bibtex file 'definition.bib' for section 0
-[739] bibtex.pm:1713> INFO - LaTeX decoding ...
-[748] bibtex.pm:1518> INFO - Found BibTeX data source 'definition.bib'
-[962] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[962] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[962] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[962] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[978] bbl.pm:654> INFO - Writing 'definition.bbl' with encoding 'UTF-8'
-[983] bbl.pm:757> INFO - Output to definition.bbl
+[150] biber:340> INFO - === බ මාර්  5, 2025, 10:25:52
+[176] Biber.pm:418> INFO - Reading 'definition.bcf'
+[302] Biber.pm:972> INFO - Found 8 citekeys in bib section 0
+[327] Biber.pm:4383> INFO - Processing section 0
+[346] Biber.pm:4574> INFO - Looking for bibtex file 'definition.bib' for section 0
+[348] bibtex.pm:1713> INFO - LaTeX decoding ...
+[365] bibtex.pm:1518> INFO - Found BibTeX data source 'definition.bib'
+[523] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[524] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[524] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[524] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[546] bbl.pm:654> INFO - Writing 'definition.bbl' with encoding 'UTF-8'
+[555] bbl.pm:757> INFO - Output to definition.bbl

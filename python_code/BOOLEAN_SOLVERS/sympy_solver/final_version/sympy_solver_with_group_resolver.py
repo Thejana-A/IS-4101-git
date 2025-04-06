@@ -244,28 +244,48 @@ def execute_meeting_organizer():
     doc_list = [doc1, doc2, doc3, agenda] # !! PASS AGENDA AS LAST ELEMENT !!
     meeting_quorum = 3
 
+    # Exception for defining meeting quorum, when it is not defined by user
+    try:
+        meeting_quorum
+    except NameError:
+        expanded_doc = expand_group_in_doc(agenda, participant_groups)
+        # Check if 'public' is in agenda
+        if 'public' in expanded_doc:
+            meeting_quorum = len(expanded_doc) - 1
+        else:
+            meeting_quorum = len(expanded_doc)
+        print("Meeting quorum: ", meeting_quorum, "\n")
+    else:
+        meeting_quorum = meeting_quorum
+        print("Meeting quorum: ", meeting_quorum, "\n")
+        
     # Participant validation by doc analysis
+    print("Algorithm 01")
     participant_validity_doc_analysis = doc_analysis_validation(doc_list)
     print("Participant validity by doc analysis: ", participant_validity_doc_analysis)
 
     # Time slot and participant analysis
+    print("\nAlgorithm 02")
     time_slots_and_participants = time_slot_and_participant_analysis(doc_list, participant_validity_doc_analysis, availability_dictionary, meeting_quorum) 
     for time_slot, individuals in time_slots_and_participants.items(): # Print the result
         print(f"Time Slot: {time_slot}")
         for individual, eligibility in individuals.items():
             print(f"  {individual}: {eligibility}")
     
-    
     # Meeting quorum analysis
+    print("\nAlgorithm 03")
     quorum_satisfiability_of_slots, quorum_satisfiability_for_meeting = meeting_quorum_analysis(time_slots_and_participants, meeting_quorum)
     for slot, satisfiable in quorum_satisfiability_of_slots.items(): # Print the result
         print(f"Slot: {slot} - Quorum Satisfiability: {satisfiable}")
     print("Quorum satisfiability of slots: ", quorum_satisfiability_of_slots)
     print("Quorum satisfiability for meeting: ", quorum_satisfiability_for_meeting)
 
+    print("\nAlgorithm 04")
     find_earliest_eligible_slot(quorum_satisfiability_of_slots)
 
+    print("\nAlgorithm 05")
     select_meeting_mode(time_slots_and_participants, quorum_satisfiability_of_slots)
+
 
 execute_meeting_organizer()
 

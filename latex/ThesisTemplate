@@ -1,0 +1,37 @@
+- - - Thesis template - - -
+
+Abstract
+
+Introduction (section which includes motivations, scope, research problem, questions, aims and objectives)
+
+Background/ literature review
+
+Methodology:
+-Mention the stpes followed in research
+(Remove) 1) Definition of the problem and its scope
+   ?? Overview of the research approach ??
+2) Formal definition of entities in privacy-preserved meeting context
+ - The mathematical definitions
+3) Problem mapping and analysis
+ - Mapping problem to circuit
+ - Analysis of problem (Complexity)
+(Remove) 4) Implementation
+(Remove) - Python code implementation
+(Remove) - Google based implementation
+(Remove) 5) Result and discussion
+(Remove) - Result of Python program and discussion
+(Remove) - Result of Google based implementation to prove that this concept is practically viable and possible to improve further
+(Remove)6) Evaluation
+
+	
+
+
+Implementation
+
+Result and discussion
+
+Evaluation
+
+Discussion and conclusions
+
+Limitations and future directions

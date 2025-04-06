@@ -6,4 +6,9 @@ makeindex definition.idx
 pdflatex definition.tex
 
 
+pdflatex paper_critic.tex
+biber paper_critic
+makeindex paper_critic.tex
+pdflatex paper_critic.tex
+
 

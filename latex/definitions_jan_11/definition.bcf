@@ -2351,9 +2351,23 @@
     <bcf:citekey order="4">britannica_np</bcf:citekey>
     <bcf:citekey order="5">bofill2022</bcf:citekey>
     <bcf:citekey order="6">britannica_np</bcf:citekey>
-    <bcf:citekey order="7">pfleeger1996chapter3</bcf:citekey>
-    <bcf:citekey order="8">bofill2022</bcf:citekey>
-    <bcf:citekey order="9">britannica_np</bcf:citekey>
+    <bcf:citekey order="7">Thejana2025sympy_solver</bcf:citekey>
+    <bcf:citekey order="8">Thejana2025CircuitResultAnalysis</bcf:citekey>
+    <bcf:citekey order="9">bofill2022</bcf:citekey>
+    <bcf:citekey order="10">uow168693</bcf:citekey>
+    <bcf:citekey order="11">newcastle_permutations_combinations</bcf:citekey>
+    <bcf:citekey order="12">hosch2025stirlings</bcf:citekey>
+    <bcf:citekey order="12">hosch2025stirlings</bcf:citekey>
+    <bcf:citekey order="12">hosch2025stirlings</bcf:citekey>
+    <bcf:citekey order="12">hosch2025stirlings</bcf:citekey>
+    <bcf:citekey order="13">pfleeger1996chapter3</bcf:citekey>
+    <bcf:citekey order="14">bofill2022</bcf:citekey>
+    <bcf:citekey order="15">britannica_np</bcf:citekey>
+    <bcf:citekey order="16">Thejana2025sympy_solver</bcf:citekey>
+    <bcf:citekey order="17">Thejana2025CircuitResultAnalysis</bcf:citekey>
+    <bcf:citekey order="18">uow168693</bcf:citekey>
+    <bcf:citekey order="19">newcastle_permutations_combinations</bcf:citekey>
+    <bcf:citekey order="20">hosch2025stirlings</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

@@ -1,0 +1,146 @@
+--- Proof that ncr is maximum when r = n/2 or r IS APPROXIMATELY n/2.
+Following proof shows that ncr is maximum when r = n/2 or r IS APPROXIMATELY n/2.
+
+ncr = n!/(n-r)!r!
+nc(r+1) = n!/(r+1)!(n-r-1)!
+ncr/nc(r+1) = (n!/(n-r)!r!)/(n!/(r+1)!(n-r-1)!)
+ncr/nc(r+1) = (n!/(n-r-1)!(n-r)r!)/(n!/r!(r+1)(n-r-1)!)
+ncr/nc(r+1) = (n!/(n-r-1)!(n-r)r!)/(n!/r!(r+1)(n-r-1)!) = r+1/n-r
+
+Therfore, when ncr/nc(r+1) < 1, 
+r+1/n-r < 1
+r+1 < n-r
+r < (n-1)/2
+
+when ncr/nc(r+1) = 1, 
+r+1/n-r = 1
+r+1 = n-r
+r = (n-1)/2
+
+when ncr/nc(r+1) > 1, 
+r+1/n-r > 1
+r+1 > n-r
+r > (n-1)/2
+
+According to defintion of ncr in mathematics, n must be a positive integers (n is an element of set of positive integers), r must be 0 or a positive integer (r is an element of set of positive integers or 0), and n >= r (Reference: https://documents.uow.edu.au/content/groups/public/@web/@eis/@maas/documents/mm/uow168693.pdf & https://www.newcastle.edu.au/__data/assets/pdf_file/0004/819139/Permutations-and-Combinations.pdf). According to that, for r = (n-1)/2 to be satisfied, n must be an odd integer.
+
+When n is an odd integer, variation of magnitude of ncr can be graphically depicted as below, based on above calculations.
+
+(Draw the middle high graph, with 2 ends lower than the middle.)
+
+By analyzing that graph, it can be proven that, ncr is maximum when r IS APPROXIMATELY EQUAL TO n/2. Because, n/2 is not an integer, when n is odd. (n/2 \approx (n-1)/2 and n/2 \approx ((n-1)/2)+1)
+
+When considering values from 1 to n for r, in ncr, following pattern is observed.
+
+nc1 = n!/(n-1)!1! 
+nc(n-1) = n!/(n-1)!(n-(n-1))! = n!/(n-1)!1!
+Therefore, nc1 = nc(n-1)
+ 
+nc2 = n!/(n-2)!2! 
+nc(n-2) = n!/(n-2)!(n-(n-2))! = n!/(n-2)!2!
+Therefore, nc2 = nc(n-2)  
+
+It means that, ncr = nc(n-r). But, in that pattern, when r = n/2 is reached (where n is an even number),
+nc(n/2) = n!/(n/2)!(n/2)!
+nc((n/2)+1) = n!/(n-(n/2+1))!(n/2+1)! = n!/((n/2)-1)!((n/2)+1)!
+nc(n/2) / nc((n/2)+1) = n!/(n/2)!(n/2)! / n!/((n/2)-1)!((n/2)+1)!
+nc(n/2) / nc((n/2)+1) = ((n/2)-1)!(n/2)!((n/2)+1) / (n/2)-1)!(n/2)(n/2)!
+nc(n/2) / nc((n/2)+1) = ((n/2)+1) / (n/2)
+
+nc(n/2) = n!/(n/2)!(n/2)!
+nc(n-(n/2)) = n!/(n-(n/2))!(n-(n-(n/2)))!
+nc(n-(n/2)) = n!/(n/2)!(n-n+n/2)!
+nc(n-(n/2)) = n!/(n/2)!(n/2)!
+
+r = n/2
+n-r = n - n/2 = n/2
+therefore, nc(n/2) = nc(n - n/2)
+
+It means that, value of ncr when r = n/2 is available only for r = n/2. Because, r = n - r.
+
+Since ((n/2)+1) / (n/2) > 1, it can be proven that, ncr is maximum when r = n/2, where n is an even number.
+
+Based on previous inequlaities, following relationships are present.\\
+when ncr/nc(r+1) < 1, 
+r < (n-1)/2
+Since (n-1)/2 < n/2
+r < (n-1)/2 < n/2
+
+when ncr/nc(r+1) > 1, 
+r > (n-1)/2
+
+
+In ensemble, it can be concluded that, ncr is maximum when r = n/2 or r IS APRROXIMATELY EQUAL TO n/2.
+
+--- Proof that nc(n/2) IS APPROXIMATELY 2^n, for large n values ---
+Value of nc(n/2) for large n values
+(Use binomial theorem at reference: https://www.whitman.edu/mathematics/cgt_online/cgt.pdf)
+
+(1+1)^n=r=0∑n​(rn​) (By binomial theorem)
+2^n = ...
+n sigma r=0 ncr = nc0 + nc1 + nc2 + ... + nc(n/2) + ... + nc(n-2) + nc(n-1) + ncn
+As shown earlier graphically, when n is an even integer, nc0 = ncn, nc1 = nc(n-1) etc are present symmetrically, on either side of nc(n/2).
+Accordingly, since nc(n/2) is the dominantly term among terms in n sigma r, in nc(n/2) \approx 2^n (Because, by binomial theorem, n sigma r=0 ncr = 2^n)
+Therefore, nc(n/2) IS APPROXIMATELY 2^n (For even n values)
+
+n sigma r=0 ncr = nc0 + nc1 + nc2 + ... + nc((n-1)/2) + nc(((n-1)/2)+1) + ... + nc(n-2) + nc(n-1) + ncn
+As shown graphically, if n is odd, nc0 = ncn, nc1 = nc(n-1) etc are present symmetrically, on either side of nc((n-1)/2) + nc(((n-1)/2)+1), such that nc((n-1)/2) = nc(((n-1)/2)+1). Accordingly, as nc((n-1)/2) is one out of 2 dominant terms regarding the magnitude, 
+nc((n-1)/2) IS APPROXIMATELY 2^n/2 (Because, by binomial theorem, n sigma r=0 ncr = 2^n)
+when n >>>> 1, n - 1 IS APPROXIMATELY n
+Hence, 2^n/2 = 2^n/2^1 = 2^(n-1) IS APPROXIMATELY 2^n
+Therefore,  2^n/2 IS APPROXIMATELY 2^n (for large n values)
+Finally, nc((n-1)/2) IS APPROXIMATELY 2^n (For odd n values)
+
+In overall, it is concluded that, value of nc(n/2) (when n is even) or nc((n-1)/2) (when n is odd) can be 2^n, for large values of n.
+
+
+--- Evaluation ---
+
+After defining the entities in privacy-preserving meeting context formally, problem was mapped to a boolean circuit.
+
+Boolean circuit was depicted in pictorial representation and algorithmic representation both. Pictorial representation can be understood by readers easily. Algorithmic representation is to analyze the complexity of problem.
+
+Analyzed the time complexity of the problem, using algorithmic representation of boolean circuit, by considering quantities of inputs and loops present in the algorithmic representation
+
+Implemented algorithmic representation using Python, to show that algorithm is valid and applicable for a scenario related to privacy preserved meeting context
+
+Discussed possible results of the execution of Python program, including selection of eligible meeting mode for a particular meeting. And,  highlighted when a negative output showing that a privacy-preserved meeting is not possible will be delivered. These results were discussed, considering the segments of the algorithm, for aligning with the algorithmic level analysis of the problem.
+
+Conducted an analytical investigation on results obtained by execution of Python program. This investigation is for showing how the segments of algorithm contribute to validate the hypothesis built in the beginning of research.
+
+Introduced a sample data set to observe the variation in results of program execution. So, since we have published our Python implementation and this sample dataset in GitHub, anyone can test by himself/herself, to check the validity.
+
+Using existing public platforms such as Google, implemented a simple system to prove that privacy-preserved meeting organization is practically viable. Therefore, it can be confirmed that, this is not a bare theoretical concept. But, this is a practical approach which can be improved further in future, to organize privacy-preserved meetings.
+
+By observing the causal flow of the research, which started from a simple, invariant set of definitions, and developed until a practical application that can be tested by anyone, it can be determined that, there is no any mismatchment in intermediate steps.
+
+Accordingly, since this research started from a basic set of definitions, and was developed in a causal flow of interrelated steps, it can be stated that, contribution by this research is valid and acceptable.
+
+--- Conclusion ---
+
+When cosnidering the research, it can be perceived that, research question was developed depednding on a hypothesis. Factors included in the hypothesis affect the privacy of meeting data.
+
+After that, above explained flow of interrelated steps was followed, to prove that hypothesis is correct.
+
+As validity of the research approach can be proven by causal nature of steps starting from initial basic defintions, as discussed in "Evaluation" section, it can be concluded that, this research has contributed to privacy-preserved meeting organization.
+
+And, since this is only an initiative approach to concern the privacy of meeting data, more research can be conducted in future, via the future paths highlighted in future work of the research.
+
+--- Future work ---
+
+Since this research considers only a provided set of documents to organize a meeting, it is not possible to suggest how those documents can be divided to discuss in two or more meetings, in case they cannot be discussed in same meeting. It is an optimization problem, for which a heuristic approach will be required, after a sophisticate analysis. That research path is one future work. 
+
+Another future work is to consider privacy preserved meeting organization problem with various additional constarints such as meeting procedence, number of onsite physical locations available. Because, in related work, there are constraint optimization research that have concerned such additional constriaints other than the main research problem. (Bofill et al 2022)
+
+In our research, meeting quorum has been considered as an additional constraint, in which it was checked whether required minimum number of participants can attend the meeting, in a particular time slot. But, this constraint can be improved further to consider the minimum number of participants including essentially required participants as well, such that minimum number must definitely contain those participants. It is another possible future work in our research.
+
+And, we have developed a Google based simple application to prove the usability and practical applicability of a solution for privacy-preserved meeting organization. In future, someone can develop a more sophisticated application with advance features, for organizing privacy preserved meetings.
+
+Therefore, it can be expressed that, our research is an initiative basic stage in a less-observed research area, associated with privacy-preserved meeting organization.
+
+
+\begin{appendices}
+    \renewcommand{\thesection}{\Alph{section}}  % Set appendix sections to be A, B, C, etc.
+    \input{content/appendices/index}
+\end{appendices}
+

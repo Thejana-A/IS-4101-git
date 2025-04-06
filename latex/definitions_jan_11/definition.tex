@@ -32,6 +32,56 @@
         pages = {69--76},
         isbn = {9780133374865}
     }
+    % (\cite{Thejana2025CircuitResultAnalysis})
+    @misc{Thejana2025CircuitResultAnalysis,
+        author = {Thejana Akmeemana},
+        title = {Circuit Result Analysis Data Set},
+        year = {2025},
+        url = {https://github.com/Thejana-A/IS-4101-git/blob/master/latex/CircuitResultAnalysis_DataSet},
+        note = {Accessed: 2025-02-07}
+    }
+    % (\cite{Thejana2025sympy_solver})
+    @misc{Thejana2025sympy_solver,
+        author = {Thejana Akmeemana},
+        title = {sympy\_solver.py},
+        year = {2025},
+        url = {https://github.com/Thejana-A/IS-4101-git/blob/master/python_code/BOOLEAN_SOLVERS/sympy_solver/final_version/sympy_solver.py},
+        note = {Accessed: 2025-02-07}
+    }
+    % (\cite{uow168693})
+    @misc{uow168693,
+        author = {University of Wollongong},
+        title = {Permutations \& Combinations HSC Revision},
+        year = {2025},
+        url = {https://documents.uow.edu.au/content/groups/public/@web/@eis/@maas/documents/mm/uow168693.pdf},
+        note = {Accessed: 2025-02-26}
+    }
+    % (\cite{newcastle_permutations_combinations})
+    @misc{newcastle_permutations_combinations,
+        author = {University of Newcastle},
+        title = {Permutations and Combinations},
+        year = {2021},
+        url = {https://www.newcastle.edu.au/__data/assets/pdf_file/0004/819139/Permutations-and-Combinations.pdf},
+        note = {Accessed: 2025-02-26}
+    }
+    % (\cite{guichard2025combinatorics})
+    @misc{guichard2025combinatorics,
+        author = {David Guichard},
+        title = {An Introduction to Combinatorics and Graph Theory},
+        year = {2025},
+        url = {https://www.whitman.edu/mathematics/cgt_online/cgt.pdf}
+    }
+    % (\cite{hosch2025stirlings})
+    @online{hosch2025stirlings,
+        author    = {William L. Hosch},
+        title     = {Stirling's formula},
+        year      = {2025},
+        url       = {https://www.britannica.com/science/Stirlings-formula},
+        note      = {Encyclopædia Britannica},
+        publisher = {Encyclopædia Britannica, Inc.},
+        lastupdate= {2025-02-17}
+    }
+  
 \end{filecontents}
 
 \documentclass[a4paper, 12pt]{article}
@@ -52,6 +102,7 @@
 \usepackage{float}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
+\usepackage{lineno}
 \usepackage[backend=biber,style=authoryear,autocite=inline, maxbibnames=9 ]{biblatex}
 \DeclareNameAlias{sortname}{last-first}
 \addbibresource{\jobname.bib}
@@ -321,11 +372,11 @@ $2 \leq |meeting\ quorum| \leq |access(agenda)| \leq |\mathcal{I}|$  \\ \\
 Our problem focused in organizing privacy-preserved meetings has few distinct steps, that can be clearly identified within it. Based on decision making points identified within the problem, this problem was mapped into a boolean circuit, following a union operation. Here, union operation can be introduced as a set related pre-processing operation, applied on the $access(d)$ sets of all documents of the meeting, including the $agenda$. Before applying this union operation, it is needed to make sure that, all groups except the $public$ group in those $access(d)$ sets are converted to singleton groups. Distinct sections of the problems are analyzed below, considering the circuit diagrams produced for them.\\ \\
 % Participant validation based on documents
 \subsection{Participant validation based on documents}
-After calculating the union of $access(d)$ sets of all documents to be discussed in the meeting, as $access(doc\_1) \cup ... \cup access(doc\_n) \cup access(agenda)$, $public$ group is subtracted, since our initial requirement is to identify all the individuals having access to at least one document. In addition, we identify all documents associated with meeting as $doc\_1, ..., doc\_n, agenda$, since we need to check whether each individual in the union of individuals identified, has access to all the documents, for discussing them in a meeting. In example depicted in the diagram, consider that there are only 3 individuals as $i\_1, i\_2, i\_3$ and only 4 documents as $doc\_1, doc\_2, doc\_3, agenda$.\\ \\
+After calculating the union of $access(d)$ sets of all documents to be discussed in the meeting, as $access(doc\_1) \cup ... \cup access(doc\_n)\} \cup access(agenda)$, $public$ group is subtracted, since our initial requirement is to identify all the individuals having access to at least one document. In addition, we identify all documents associated with meeting as $doc\_1, ..., doc\_n, agenda$, since we need to check whether each individual in the union of individuals identified, has access to all the documents, for discussing them in a meeting. In example depicted in the diagram, consider that there are only 3 individuals as $i\_1, i\_2, i\_3$ and only 4 documents as $doc\_1, doc\_2, doc\_3, agenda$.\\ \\
 Algorithm for participant validation section is explained below.
 \begin{algorithm}[H]
     \caption{Participant validation based on documents}
-    \begin{algorithmic}
+    \begin{algorithmic}[1]
         \State \textbf{Input:} Access control lists (access(d)) of documents \(doc\_1\), ... , \(doc\_n\), \(agenda\)
         \State \textbf{Output:} Eligibility of each individual for meeting by document analysis \\
         \State union of \(access(d)\) = \(access(doc\_1) \cup \dots \cup access(doc\_n) \cup access(agenda)\)
@@ -385,7 +436,7 @@ For deciding the eligibility of each individual, to discuss set of documents, in
 Algorithm for deciding the eligibility of each individual, to discuss the set of documents of meeting, in different time slots, is described below.\\ \\
 \begin{algorithm}[H]
     \caption{Deciding eligibility of each individual for meeting, in each time slot}
-    \begin{algorithmic}
+    \begin{algorithmic}[1]
         \State \textbf{Input 1:} Validity of each individual \(i\_1\), ... , \(i\_n\) by doc analysis
         \State \textbf{Note:} Individuals \(i\_1\), ... , \(i\_n\) mean union of individuals of previous algorithm, and \textbf{input 1} is obtained from output of previous algorithm
         \State \textbf{Input 2:} Availability of each individual in each time slot (at any location) 
@@ -422,7 +473,7 @@ Eligibility of each individual to discuss the set of documents, in each time slo
 Algorithm for checking the quorum satisfiability of time slots is explained below.
 \begin{algorithm}[H]
     \caption{Identifying meeting quorum satisfiability of time slots}
-    \begin{algorithmic}
+    \begin{algorithmic}[1]
         \State \textbf{Input 1:} Eligibility of each individual for meeting, in each time slot
         \State \textbf{Note:} \textbf{Input 1} is obtained from output of previous algorithm
         \State \textbf{Input 2:} Numerical meeting quorum value 
@@ -444,12 +495,19 @@ Algorithm for checking the quorum satisfiability of time slots is explained belo
 Similar to previous algorithm, in above algorithm also, time complexity of $union\ of\ time\ slots$ operation is, $O(|availability(i\_1)| + \dots + |availability(i\_n)|)$, at maximum. It is observed that, in loop structure, outer loop iterates through all time slots in union of time slots. That number of time slots can be any positive integer. Inner loop contains a $combination$ operation, which is intended to create combinations of magnitude of meeting quorum size, out of individuals of the union of individuals. Mathematically, number of such possible combinations can be calculated as,
 \[ n \text{C} r = \binom{n}{r} = \frac{n!}{r!(n-r)!} \]
 when n = number of individuals in union of individuals, and r = meeting quorum size.\\ \\
-Regarding $combination$ operation, highest number of combinations is obtained when $r = \frac{n}{2}$ or $r \approx \frac{n}{2}$. Number of possible combinations reduces, when $r$ is considerably small ($r \approx 1$), or when $r$ is approximately equal to $n$ ($r \approx n$). Due to this nature of $combination$ operation, maximum possible time complexity for creating $n \text{C} r$ number of combinations is $O(n \text{C} (n/2))$.\\ \\
-In the inner loop of above algorithm, since AND operation is applied for all individuals, in each $combination$ created, maximum time complexity associated with inner loop is $O(n \text{ x } n \text{C} (n/2))$. Because the number of individuals in each combination created, or the meeting quorum size, can be any positive integer. In addition, since inner loop is repeated by outer loop, where number of time slots also can be any positive integer, maximum possible time complexity of above algorithm is, 
-\[O(n \text{ x } n \text{ x } n \text{C} (n/2)) = O(n^{2} \text{ x } n \text{C} (n/2)) \]
-Time complexity of $O(n^{2} \text{ x } n \text{C} (n/2))$ has polynomial component of $O(n^{2})$. Further, when considering $O(n \text{C} (n/2))$ component, it is observed that, for large $n$ values, 
-\[ O(n \text{C} (n/2)) \approx O(2^{n}) \]
-Time complexity of $O(2^{n})$ is considered as a non-polynomial time complexity, because $n$ is not a constant value (\cite{pfleeger1996chapter3}). Since non-polynomial time complexity of $O(2^{n})$ increases exponentially with increase of $n$, it is eligible to use a heuristic or an existing library, when implementing above algorithm for execution with inputs. Because, there is no specific standard methodology defined, for creating combinations, as included in above algorithm.\\ \\
+Regarding $combination$ operation, highest number of combinations is obtained when $r = \frac{n}{2}$ or $r \approx \frac{n}{2}$ (\ref{proof: maximum value of ncr when n is n/2}). Number of possible combinations reduces, when $r$ is considerably small ($r \approx 0$), or when $r$ is close to $n$ ($r \approx n$). Due to this nature of $combination$ operation, maximum possible time complexity for creating $n \text{C} r$ number of combinations is $O\binom{n}{\frac{n}{2}}$ or $O\binom{n}{\frac{n-1}{2}}$, depending on whether $n$ is even or odd.\\ \\
+In the inner loop of above algorithm, since AND operation is applied for all individuals, in each $combination$ created, maximum time complexity associated with inner loop is $O(n \text{ x } \binom{n}{\frac{n}{2}})$ or $O(n \text{ x } \binom{n}{\frac{n-1}{2}})$. Because the number of individuals in each combination created, or the meeting quorum size, can be any positive integer. In addition, since inner loop is repeated by outer loop, where number of time slots also can be any positive integer, maximum possible time complexity of above algorithm is, 
+\[O(n \text{ x } n \text{ x } \binom{n}{\frac{n}{2}}) = O(n^{2} \text{ x } \binom{n}{\frac{n}{2}}) \text{ ,when union has even number of individuals} \]
+\[ \text{or} \]
+\[O(n \text{ x } n \text{ x } \binom{n}{\frac{n-1}{2}}) = O(n^{2} \text{ x } \binom{n}{\frac{n-1}{2}}) \text{ ,when union has odd number of individuals.} \]\\
+
+Time complexity of $O(n^{2} \text{ x } \binom{n}{\frac{n}{2}})$ or $O(n^{2} \text{ x } \binom{n}{\frac{n-1}{2}})$ has polynomial component of $O(n^{2})$. Further, when considering $O\binom{n}{\frac{n}{2}}$ or $O\binom{n}{\frac{n-1}{2}}$ component, it is observed that, for large $n$ values, 
+\[ O\binom{n}{\frac{n}{2}} \approx O(\frac{2^{n}}{\sqrt{n}}) \ \ \ \ \ \ref{proof: time complexity of nc(n/2)} \] 
+\[ \text{or} \]
+\[ O\binom{n}{\frac{n-1}{2}} \approx O(\frac{2^{n}}{\sqrt{n}}) \ \ \ \ \ \ref{proof: time complexity of nc((n-1)/2)} \] 
+depending on whether union has an even number of individuals, or an odd number of individuals.\\
+
+Time complexity of $O(\frac{2^{n}}{\sqrt{n}})$ has $O(2^{n})$ as the dominant term, for large values of $n$. Time complexity $O(2^{n})$ is considered as a non-polynomial time complexity, because $n$ is not a constant value (\cite{pfleeger1996chapter3}). Since non-polynomial time complexity of $O(2^{n})$ increases exponentially with increase of $n$, it is eligible to use a heuristic or an existing library, when implementing above algorithm for execution with inputs. Because, there is no specific standard methodology defined, for creating combinations, as included in above algorithm.\\ \\
 Figure below depicts the corresponding boolean circuit for above algorithm.\\ \\
 
 \begin{figure}[H]
@@ -465,7 +523,7 @@ Selecting the earliest, meeting quorum satisfying time slot is not required to f
 Algorithm for selecting the earliest, meeting quorum satisfying time slot is explained below.\\ \\
 \begin{algorithm}[H]
     \caption{Selection of earliest, meeting quorum satisfying time slot}
-    \begin{algorithmic}
+    \begin{algorithmic}[1]
         \State \textbf{Input:} Meeting quorum satisfiability of time slots, in union of time slots
         \State \textbf{Note:} \textbf{Input} is produced by processing previous algorithm
         \State \textbf{Output:} Earliest, meeting quorum satisfying time slot \\
@@ -513,7 +571,7 @@ Circuit diagram corresponding to above algorithm is depicted below.\\ \\
 \end{figure} 
 
 % Meeting mode selection
-\subsection{Meeting mode selection}\label{sec:logic_for_selecting_the_meeting_mode}
+\subsection{Meeting mode selection} \label{sec:logic_for_selecting_the_meeting_mode}
 After identifying the quorum satisfying time slots, meeting mode of each time slot should be decided, based on locations of eligible participants. In real world scenario, participants can be present at numerous locations. However in our research, as it is already mentioned earlier, only three location types are considered (onsite, remote\_private and remote\_public locations). It is observed that three meeting modes are possible, based on those three locations, as onsite mode, hybrid mode and online mode. Logic for deciding the meeting mode is depicted by the flow chart below.
 \begin{figure}[H]
     \centering
@@ -525,7 +583,7 @@ According to the logic, initially we check whether at least two eligible partici
 The algorithm for deciding the meeting mode of quorum satisfying time slot is explained below.\\ \\
 \begin{algorithm}[H]
     \caption{Meeting mode selection}
-    \begin{algorithmic}
+    \begin{algorithmic}[1]
         \State \textbf{Input 1:} Eligibility of each participant for meeting, in each time slot
         \State \textbf{Note:} \textbf{Input 1} is produced by processing algorithm 1
         \State \textbf{Input 2:} Meeting quorum satisfiability of each time slot, in union of time slots
@@ -630,8 +688,8 @@ In above diagram, NP, NP-hard and NP-complete regions represent the non-polynomi
 \section{Implementation of boolean circuit}
 \subsection{Choice of technology}
 As explained earlier, our research problem was mapped to a boolean circuit. And, that circuit was elaborated as five sequential algorithms, representing consecutive sub-sections of the entire boolean circuit. Since it is required to show that, those algorithms are convertible to a practical application in real world, a program was developed in our research.\\ \\
-After analyzing potentially eligible programming languages and technologies, Python was selected as the programming language for implementing the program, representing five algorithms explained ealier. Because, in our analysis, it was noticed that Python has libraries containing built-in functions, executing the behavior of logic gates. In algorithms explained above, $AND, OR$ and $NOT$ logic gates are utilized. Therefore, when Python is used to implement above algorithms, it is not required to simulate the behavior of logic gates by us, since there are built-in Python functions. When developing the program as proof of concept, we used hard coded inputs. When executing the program for a new scenario, those inputs can be updated by editing the Python code.\\ \\
-In addition, it is required to create mathematical combinations in $algorithm\ 3$, as explained earlier. In Python, there are libraries contaning functions that support to create such combinations. Because, creating combinations is a problem of non-polynomial time complexity.\\
+After analyzing potentially eligible programming languages and technologies, Python was selected as the programming language for implementing the program, representing five algorithms explained earlier. Because, in our analysis, it was noticed that Python has libraries containing built-in functions, executing the behavior of logic gates. In algorithms explained above, $AND, OR$ and $NOT$ logic gates are utilized. Therefore, when Python is used to implement above algorithms, it is not required to simulate the behavior of logic gates by us, since there are built-in Python functions. When developing the program as proof of concept, we used hard coded inputs. When executing the program for a new scenario, those inputs can be updated by editing the Python code.\\ \\
+In addition, it is required to create mathematical combinations in $algorithm\ 3$, as explained earlier. In Python, there are libraries containing functions that support to create such combinations. Because, creating combinations is a problem of non-polynomial time complexity.\\
 After compiling the Python code with a compiler, execution can be done in a console environment, such as Linux terminal or the console of a suitable Integrated Development Environment (IDE).\\
 
 \subsection{Details on technology used for implementation}
@@ -786,8 +844,11 @@ In above section of output, that depicts the earliest quorum satisfying time slo
     \caption{Output depicting meeting mode for each privacy preserving time slot identified}
     \label{fig:output depicting meeting mode for each privacy preserving time slot identified}
 \end{figure} 
-Above section of output depicts the eligible meeting mode for conducting the meeting, in each time slot. Algorithm is designed such that more than one meeting mode cannot be activated (cannot be $true$) for a particular time slot. If a time slot is not suitable to conduct a privacy preserving meeting with equal or more number of particpants than the meeting quorum value, all three meeting modes will get $false$ for that time slot, to display that meeting should not be conducted in particular time slot.\\ \\
+Above section of output depicts the eligible meeting mode for conducting the meeting, in each time slot. Algorithm is designed such that more than one meeting mode cannot be activated (cannot be $true$) for a particular time slot. If a time slot is not suitable to conduct a privacy preserving meeting with equal or more number of participants than the meeting quorum value, all three meeting modes will get $false$ for that time slot, to display that meeting should not be conducted in particular time slot.\\ \\
 In overall, above overview describes the inputs, outputs and behavior of the Python program, implemented as proof of concept, associated with algorithms explained earlier. In our research, those algorithms are converted to the Python code such that maximum possible time complexities identified do not get exceeded.\\ \\
+
+\subsection{Application of the Python program}
+Python program developed by us to implement the boolean circuit is available in GitHub (\cite{Thejana2025sympy_solver}). There are comments in the program, for easily understanding its content. It can be cloned and executed by anyone in an environment supporting Python 3.7.0 version. Input sections can be edited during execution, to observe the variation of result. Variation of results in different scenarios is explained with more details in the section below. \\ \\
 
 % Result of pragram execution
 \section{Result of program execution}
@@ -800,17 +861,17 @@ As explained in code overview, program contains three inputs including the acces
     \label{fig:possible results of program execution}
 \end{figure}
 
-In addition, though each negative output shows the end of process in above diagram for simplicity, when considering the boolean circuit, processing does not stop abruptly in that manner. Instead of stopping, after a reaching a certain negative output, all remaing outputs also become negative ($false$), in boolean circuit. Three negative outputs identified in the program execution are listed below.
+In addition, though each negative output shows the end of process in above diagram for simplicity, when considering the boolean circuit, processing does not stop abruptly in that manner. Instead of stopping, after a reaching a certain negative output, all remaining outputs also become negative ($false$), in boolean circuit. Three negative outputs identified in the program execution are listed below.
 \begin{itemize}
     \item $Algorithm\ 1$: Only one or no valid participants
     \item $Algorithm\ 2$: No time slot with 2 or more valid participants
     \item $Algorithm\ 3$: No quorum satisfying time slot is present
 \end{itemize}
-Accordingly, for reaching a positive output which means that meeting can be conducted, none of above three negative outputs should be encountered in program execution. In other words, if program approches at least one negative output among above three, then it is impossible to conduct the particular meeting as a privacy preserving meeting.\\ \\
+Accordingly, for reaching a positive output which means that meeting can be conducted, none of above three negative outputs should be encountered in program execution. In other words, if program approaches at least one negative output among above three, then it is impossible to conduct the particular meeting as a privacy preserving meeting.\\ \\
 In our research, we have considered variation of output with changes in input, to check whether they validate our hypothesis. After breaking down possible outputs of five algorithms as depicted above, sections of output supporting to validate the hypothesis were analyzed. Here, it is needed to note that, some sections of output are not required to validate the hypothesis. Such sections were introduced by us, as additional contributions, to enhance the quality of research outcome.\\ \\
 
-\subsection{Analytical investigtion of the result}
-When $algorithm\ 1$ is considered, its output shows whether each individual is allowed to discuss all documents included in the meeting. In this case, we consider having at least two valid participants as the positive output, since at least two participants are required for conducting a meeting. This decision is made by analyzing the access control lists of doucments associated with the meeting, including the meeting agenda. Follwoing flow chart depicts the process within $algorithm\ 1$, to generate the expected output.\\ \\
+\subsection{Analytical investigation of the result}
+When $algorithm\ 1$ is considered, its output shows whether each individual is allowed to discuss all documents included in the meeting. In this case, we consider having at least two valid participants as the positive output, since at least two participants are required for conducting a meeting. This decision is made by analyzing the access control lists of documents associated with the meeting, including the meeting agenda. Following flow chart depicts the process within $algorithm\ 1$, to generate the expected output.\\ \\
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{./image/algo01_result_analysis.png}
@@ -820,16 +881,156 @@ When $algorithm\ 1$ is considered, its output shows whether each individual is a
 Output of $algorithm\ 2$ shows whether each individual is allowed to discuss all documents of the meeting, in each time slot. As discussed in problem analysis section, to make this decision, program checks whether at least one private document is present in meeting. If at least one private document is present, an individual present at a public location in a certain time slot is not allowed to attend this meeting, in that time slot. However, whether a document is private or public (by presence of $"public"$ group), is stated in the access control list of the document. Following flow chart depicts the process within $algorithm\ 2$, to generate the expected output.\\ \\
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{./image/algo02_result_analysis.drawio.png}
+    \includegraphics[width=0.9\textwidth]{./image/algo02_result_analysis.png}
     \caption{Deciding eligibility of each individual in $algorithm\ 2$}
     \label{fig:Deciding eligibility of each individual in algorithm 2}
 \end{figure}
-By observing these two segments of flow chart connected by a connector, it can be understood that access control lists of documents play a vital role as an essential input, to decide the eligible meeting participants. It means that, \textbf{"Meeting participant selection is primarily dominated by the access control lists of the documents presented including meeting agenda"} expression is validated by analyzing the process within $algorithm\ 1$ and $algorithm\ 2$ collectively, as in above flow chart segements.\\ \\ 
-After identifying the eligibility of each individual to attend the meeting in each time slot, next result expected from the program is whether each time slot satisfies the meeting quorum. Though meeting quorum is not relevant to privacy of meeting data, it is an important feature in meeting domain, to determine whether minimum required number of participnats is present in meeting. In our research, $algorithm\ 3$ enhances the quality of research outcome, by checking whether each time slot satisfies the meeting quorum, with enough eligible meeting participants, for a privacy-preserved meeting. In other words, our requirement is to satisfy the meeting quorum, without violating the privacy of meeting data. Accordingly, identification of quorum satisfying time slots as well, depends on access control lists of documents of the meeting. Meeting quorum value should be be defined by user as an input, in program.\\ \\
-After identifying quorum satisfying time slots, it is required to identify the earliest one among them. If there are more than one quorum satisfying time slots, $algorithm\ 4$ selects the earliest one among them. If only one time slot satisfies the meeting quorum, it becomes the earliest one. However, since $algorithm\ 4$ depens on $algorithm\ 3$, it can be stated that, outcome of $algorithm\ 4$ indirectly depends on access control lists of documents. Result of $algorithm\ 3$ and $alogorithm\ 4$ do not support to validate the hypothesis, since these two algorithms focus on quality related attributes, rather than privacy of meeting data. \\ \\
-After quorum satisfying time slots are identified by $algorithm\ 3$, $algorithm\ 5$ decides the privacy-preserving meeting mode for each of such time slots, by analyzing the locations of eligible participants. Every quorum satisfying time slot belongs to one meeting mode out of three modes---onsite, online and hybrid. Essential input required to generate the meeting mode of a time slot as output, is the available location of every eligible participant, in the particular time slot. The logic for selecting the meeting mode is dicussed in "meeting mode selection" (\ref{sec:logic_for_selecting_the_meeting_mode}) section of problem analysis. \\ \\
-Accordingly, since program decides the meeting mode of a quorum satisfying time slot by analyzing locations of eligible meeting partiticpants, \textbf{"the choice of meeting mode depends on the participants’ locations."} phrase of hypothesis is validated by $algorithm\ 5$.
+By observing these two segments of flow chart connected by a connector, it can be understood that access control lists of documents play a vital role as an essential input, to decide the eligible meeting participants. It means that, \textbf{"Meeting participant selection is primarily dominated by the access control lists of the documents presented including meeting agenda"} expression is validated by analyzing the process within $algorithm\ 1$ and $algorithm\ 2$ collectively, as in above flow chart segments.\\ \\ 
+After identifying the eligibility of each individual to attend the meeting in each time slot, next result expected from the program is whether each time slot satisfies the meeting quorum. Though meeting quorum is not relevant to privacy of meeting data, it is an important feature in meeting domain, to determine whether minimum required number of participants is present in meeting. In our research, $algorithm\ 3$ enhances the quality of research outcome, by checking whether each time slot satisfies the meeting quorum, with enough eligible meeting participants, for a privacy-preserved meeting. In other words, our requirement is to satisfy the meeting quorum, without violating the privacy of meeting data. Accordingly, identification of quorum satisfying time slots as well, depends on access control lists of documents of the meeting. Meeting quorum value should be be defined by user as an input, in program.\\ \\
+After identifying quorum satisfying time slots, it is required to identify the earliest one among them. If there are more than one quorum satisfying time slots, $algorithm\ 4$ selects the earliest one among them. If only one time slot satisfies the meeting quorum, it becomes the earliest one. However, since $algorithm\ 4$ depends on $algorithm\ 3$, it can be stated that, outcome of $algorithm\ 4$ indirectly depends on access control lists of documents. Result of $algorithm\ 3$ and $alogorithm\ 4$ do not support to validate the hypothesis, since these two algorithms focus on quality related attributes, rather than privacy of meeting data. \\ \\
+After quorum satisfying time slots are identified by $algorithm\ 3$, $algorithm\ 5$ decides the privacy-preserving meeting mode for each of such time slots, by analyzing the locations of eligible participants. Every quorum satisfying time slot belongs to one meeting mode out of three modes---onsite, online and hybrid. Essential input required to generate the meeting mode of a time slot as output, is the available location of every eligible participant, in the particular time slot. The logic for selecting the meeting mode is discussed in "meeting mode selection" (\ref{sec:logic_for_selecting_the_meeting_mode}) section of problem analysis. \\ \\
+Accordingly, since program decides the meeting mode of a quorum satisfying time slot by analyzing locations of eligible meeting participants, \textbf{"the choice of meeting mode depends on the participants’ locations."} phrase of hypothesis is validated by $algorithm\ 5$.
+
 \subsection{Relationship between input and the result}
+To observe the way how relationship between input and output supports the hypothesis as explained above, a sample data set has been designed. That sample data set is available in GitHub (\cite{Thejana2025CircuitResultAnalysis}). The data set has been designed such that availability dictionary is same for all scenarios. Only access control lists of documents and meeting quorum are changed, for observing the variation of output. There are comments in the data set, for applying data in the program conveniently, by a user. However, since our data set is not an exhaustively large data set, anyone can extend this data set to include more scenarios, and execute the program to observe how result changes from scenario to scenario. To validate the analytical investigation of result presented by us above, it is required to observe whether results align with the hypothesis, in each execution. \\ \\
+
+
+% Evaluation
+\section{Evaluation}
+\indent \par In our research, initially entities in privacy-preserving meeting context were defined formally, using standard notations. After that, using those formal definitions as the foundation, research problem was mapped to a boolean circuit for analyzing it easily. Specially for analyzing the complexity of the problem, boolean circuit was depicted in algorithmic representation. Time complexity of the problem was calculated by considering the quantity of input variables and loops present in that algorithmic representation.\\
+\par As the evaluation procedure, we implemented algorithmic representation of circuit using Python. And then output of the Python program was manually checked, by setting the inputs. Those results were cross-validated with the output of algorithm, to ensure that implemented Python program aligns with the algorithm. Then possible results of the execution of Python program regarding selection of eligible participants, eligible time slot and eligible meeting mode, were discussed. And, we highlighted when a negative output showing that a privacy-preserved meeting is not possible will be delivered. These results were discussed, considering the segments of the algorithm, for aligning with the algorithmic level analysis of the problem.\\
+\par Later, an analytical investigation was conducted on results obtained by execution of Python program. This investigation is for showing how segments of algorithm contribute to validate the hypothesis built in the beginning of research. Further a sample data set was introduced to observe the variation of results in Python program execution. Since we have published our Python program implementation and this sample dataset in GitHub, anyone can test to check the validity.\\
+\par Using existing public platforms such as Google-API, a simple system was implemented to prove that privacy-preserved meeting organization is practically viable. Therefore, it can be confirmed that, this is not limited to a theoretical concept. But, this is a practical approach, which can be improved further in future, to organize privacy-preserved meetings in practical context.\\
+\par Accordingly, it is observed that there is a flow of logically related steps in this research, which started from basic set of definitions, and was developed up to a practical application that can be tested by anyone. Therefore, it can be determined that, there is no mismatch in intermediate steps. Hence, in overall, it can be concluded that, contribution by this research is valid and acceptable.\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{./image/evaluation_flow.png}
+    \caption{Flow of logically related steps in research}
+    \label{fig:Flow of logically related steps in research}
+\end{figure}
+
+% Conclusion
+\section{Conclusion}
+\indent \par The research question was developed based on a hypothesis. Hypothesis was developed including the factors affecting the privacy of meeting. After that, above explained flow of interrelated steps was followed, to prove that hypothesis is correct.\\
+\par As validity of the research approach can be proven by logically related nature of steps, which started from initial fundamental definitions, it can be concluded that, this research has contributed to privacy-preserved meeting organization successfully. And, since this is only an initiative approach to concern the privacy of meeting data, more research can be conducted in future, via the future paths highlighted as future work.\\
+
+% Limitations and future work
+\section{Limitations and future work}
+\indent \par Since this research considers only a provided set of documents to organize a meeting, it is not possible to suggest how those documents can be divided to discuss in two or more meetings, in case they cannot be discussed in same meeting. It is an optimization problem, for which a heuristic approach will be required, after a thorough analysis. That research path is one future work.\\
+\par Another future work is to consider privacy preserved meeting organization problem with various additional constraints such as meeting precedence, number of onsite physical locations available. Because, in related work, there are constraint optimization research that have concerned such additional constraints other than the main research problem (\cite{bofill2022}).\\
+\par In our research, meeting quorum is considered as an additional constraint, in which it is checked whether minimum required number of participants can attend the meeting, in a particular time slot. But, this constraint can be improved further to consider the minimum number of participants including essentially required participants as well, such that minimum number must definitely contain those participants. It is another possible future work in our research.\\
+\par And, we have developed a Google-APIs based simple application to prove the usability and practical applicability of a solution for privacy-preserved meeting organization. In future, someone can develop a more advanced application with advanced features, for organizing privacy preserved meetings.\\
+\par Therefore, it can be said that, our research is an initiative in a less-observed research area, associated with privacy-preserved meeting organization.\\
+
+%Appendix
+\newpage
+\section{Appendix}
+\subsection{Maximum value of $n \text{C} r$} \label{proof: maximum value of ncr when n is n/2}
+\text{The following proof shows that } $n \text{C} r$ \text{ is maximum when } $r = \frac{n}{2}$ \text{ or } $r \approx \frac{n}{2}$.
+
+\[ \binom{n}{r} = \frac{n!}{(n-r)!r!} \]
+\[ \binom{n}{r+1} = \frac{n!}{(r+1)!(n-r-1)!} \]
+\[ \frac{\binom{n}{r}}{\binom{n}{r+1}} = \frac{\frac{n!}{(n-r)!r!}}{\frac{n!}{(r+1)!(n-r-1)!}} \]
+\[ \frac{\binom{n}{r}}{\binom{n}{r+1}} = \frac{\frac{n!}{(n-r-1)!(n-r)r!}}{\frac{n!}{r!(r+1)(n-r-1)!}} \]
+\[ \frac{\binom{n}{r}}{\binom{n}{r+1}} = \frac{\frac{n!}{(n-r-1)!(n-r)r!}}{\frac{n!}{r!(r+1)(n-r-1)!}} = \frac{r+1}{n-r} \]
+
+\text{Therefore, when } $\frac{\binom{n}{r}}{\binom{n}{r+1}} < 1$, 
+\[ \quad \frac{r+1}{n-r} < 1 \]
+\[ \quad r+1 < n-r \]
+\[ \quad r < \frac{n-1}{2} \]\\
+
+ \text{When } $\frac{\binom{n}{r}}{\binom{n}{r+1}} = 1$, 
+\[ \quad \frac{r+1}{n-r} = 1 \]
+\[ \quad r+1 = n-r \]
+\[ \quad r = \frac{n-1}{2} \]
+
+\text{When } $\frac{\binom{n}{r}}{\binom{n}{r+1}} > 1$, 
+\[ \quad \frac{r+1}{n-r} > 1 \]
+\[ \quad r+1 > n-r \]
+\[ \quad r > \frac{n-1}{2} \]
+
+According to definition of $n \text{C} r$ in mathematics, $n$ is a positive integer $(n \in \mathbb{Z}^+)$, $r$ is a non-negative integer $(r \in (\mathbb{Z}^+ \cup \{0\}))$, and $n \geq r$ (\cite{uow168693}, \cite{newcastle_permutations_combinations}).\\
+$\therefore$ For $r = \frac{n-1}{2}$ to be satisfied, $n$ must be an odd integer.\\ \\
+When $n$ is an odd integer, the variation of the magnitude of $n \text{C} r$ can be graphically depicted as below, based on the above calculations.\\ \\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{./image/ncr_for_odd_n.png}
+    \caption{Variation of $n \text{C} r$ for different $r$ values, when $n$ is an odd integer}
+    \label{fig:Variation of nCr for different r values, when n is an odd integer}
+\end{figure}
+By analyzing that graph, it can be proven that $n \text{C} r$ is maximum when $r \approx \, \frac{n}{2}$. Because, $\frac{n}{2}$ is not an integer, when $n$ is odd. ($\frac{n}{2} \approx \frac{n-1}{2}$ and $\frac{n}{2} \approx \left(\frac{n-1}{2}\right) + 1$)\\ \\
+When considering values from 0 to $n$ for $r$, in $n \text{C} r$, the following symmetric pattern is observed.\\
+\[ n \text{C} 0 = \binom{n}{0} = \frac{n!}{(n-0)!0!} \]
+\[ \binom{n}{n-0} = \frac{n!}{(n-0)!(n-(n-0))!} = \frac{n!}{(n-0)!0!} \]
+\[ \therefore \binom{n}{0} = \binom{n}{n-0} \]\\
+
+\[ n \text{C} 1 = \binom{n}{1} = \frac{n!}{(n-1)!1!} \]
+\[ \binom{n}{n-1} = \frac{n!}{(n-1)!(n-(n-1))!} = \frac{n!}{(n-1)!1!} \]
+\[ \therefore \binom{n}{1} = \binom{n}{n-1} \]\\
+
+\[ n \text{C} 2 = \binom{n}{2} = \frac{n!}{(n-2)!2!} \]
+\[ \binom{n}{n-2} = \frac{n!}{(n-2)!(n-(n-2))!} = \frac{n!}{(n-2)!2!} \]
+\[ \therefore \binom{n}{2} = \binom{n}{n-2} \]\\
+
+It means that, $\binom{n}{r} = \binom{n}{n-r}$. But, in that pattern, when $n$ is an even number, and $r = \frac{n}{2}$ is reached, following observation is noticed.\\
+\[ r = \frac{n}{2} \]
+\[ n - r = n - \frac{n}{2} = \frac{n}{2} \]
+\[ \therefore \binom{n}{\frac{n}{2}} = \binom{n}{n - \frac{n}{2}} \]
+It means that, value of $\binom{n}{r}$ when $r = \frac{n}{2}$ is available only for $r = \frac{n}{2}$. Because, $r = n - r$.\\
+Based on previous inequalities, following relationships are present for even $n$ values. \\
+When $\frac{\binom{n}{r}}{\binom{n}{r+1}} < 1$, 
+\[ \quad r < \frac{n-1}{2} \]
+Since $\frac{n-1}{2} < \frac{n}{2}$, 
+\[ \quad r < \frac{n-1}{2} < \frac{n}{2} \]\\
+When $\frac{\binom{n}{r}}{\binom{n}{r+1}} > 1$, 
+\[ \quad r > \frac{n-1}{2} \]
+When $n$ is an even integer, the variation of the magnitude of $n \text{C} r$ can be graphically depicted as below, based on the above factors.\\ \\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{./image/ncr_for_even_n.png}
+    \caption{Variation of $n \text{C} r$ for different $r$ values, when $n$ is an even integer}
+    \label{fig:Variation of nCr for different r values, when n is an even integer}
+\end{figure}
+In ensemble, it is concluded that, $\binom{n}{r}$ is maximum when $r = \frac{n}{2}$ or $r \approx \frac{n}{2}$.
+
+\subsection{Value of $\binom{n}{\frac{n}{2}}$ for large $n$ values} \label{proof: time complexity of nc(n/2)}
+
+\[ n! \approx \sqrt{2 \pi n} \left( \frac{n}{e} \right)^n \quad \text{(By Stirling's approximation, \cite{hosch2025stirlings})} \quad \Rightarrow \quad 1 \]
+\[ \therefore \quad \left( \frac{n}{2} \right)! \approx \sqrt{\frac{2 \pi n}{2}} \left( \frac{n}{2e} \right)^{n/2} \quad \Rightarrow \quad 2 \]
+\[ \binom{n}{\frac{n}{2}} = \frac{n!}{(\frac{n}{2})! (n - \frac{n}{2})!} = \frac{n!}{(\frac{n}{2})! (\frac{n}{2})!} \text{ (By nCr combination)} \]
+\[ \frac{n!}{(\frac{n}{2})! (\frac{n}{2})!} \approx \frac{\sqrt{2 \pi n} \left( \frac{n}{e} \right)^n}{\sqrt{\frac{2 \pi n}{2}} \left( \frac{n}{2e} \right)^{\frac{n}{2}} \cdot \sqrt{\frac{2 \pi n}{2}} \left( \frac{n}{2e} \right)^{\frac{n}{2}}} \quad \text{(By 1 and 2)} \]
+\[ \frac{n!}{(\frac{n}{2})! (\frac{n}{2})!} \approx \frac{\sqrt{2 \pi n} \left( \frac{n}{e} \right)^n}{\pi n \left( \frac{n}{2e} \right)^n} \]
+\[ \frac{n!}{(\frac{n}{2})! (\frac{n}{2})!} \approx \sqrt{2 \pi n} \cdot \frac{n^n}{e^n} \cdot \frac{2^n e^n}{\pi n n^n} \]
+\[ \therefore \quad \frac{n!}{(n/2)! (n/2)!} \approx \sqrt{\frac{2}{\pi n}} \cdot 2^n \]
+\[ \text{It means that, } \quad \binom{n}{\frac{n}{2}} \approx \sqrt{\frac{2}{\pi n}} \cdot 2^n \]
+\[ \therefore O\binom{n}{\frac{n}{2}} \approx O(\frac{2^n}{\sqrt{n}}) \]
+
+\subsection{Value of $\binom{n}{\frac{n-1}{2}}$ for large $n$ values} \label{proof: time complexity of nc((n-1)/2)}
+
+In $\binom{n}{\frac{n-1}{2}}$, when $2m+1$ is substituted for $n$, and $m$ is substituted for $\frac{n-1}{2}$,
+\[ \binom{n}{\frac{n-1}{2}} = \binom{2m+1}{m} \]
+\[ \binom{2m+1}{m} = \frac{(2m+1)!}{(m+1)!m!} \text{ (By nCr combination)} \Rightarrow \quad 1 \]
+
+\[ \binom{2m+1}{m+1} = \frac{(2m+1)!}{(m+1)!m!} \text{ (By nCr combination)} \Rightarrow \quad 2 \]
+\[ \frac{(2m+1)!}{(m+1)!m!} = \frac{(2m+1)!(2m+2)}{(m+1)!m!(2m+2)} \]
+\[ \frac{(2m+1)!(2m+2)}{(m+1)!m!(2m+2)} = \frac{(2m+2)!}{(m+1)!m!2(m+1)} \]
+\[ \frac{(2m+2)!}{(m+1)!m!2(m+1)} = \frac{(2m+2)!}{2.(m+1)!(m+1)!} \]
+\[ \frac{(2m+2)!}{2.(m+1)!(m+1)!} = \frac{1}{2}.\frac{(2m+2)!}{(m+1)!(m+1)!} \]
+\[ \frac{1}{2}.\frac{(2m+2)!}{(m+1)!(m+1)!} = \frac{1}{2}.\binom{2m+2}{m+1}  = \frac{1}{2}.\binom{2(m+1)}{m+1} \Rightarrow \quad 3 \] \\
+
+By considering 2 and 3,
+\[ O\binom{2m+1}{m+1} = O\binom{2(m+1)}{m+1} \] \\
+By 1 and 2,
+\[ \binom{2m+1}{m+1} = \frac{(2m+1)!}{(m+1)!m!} = \binom{2m+1}{m} \]
+\[ \therefore O\binom{2m+1}{m+1} = O\binom{2m+1}{m} \]
+\[ O\binom{2m+1}{m} = O\binom{2(m+1)}{m+1} \] \\
+
+By above proof \ref{proof: time complexity of nc(n/2)},
+\[ O\binom{2(m+1)}{m+1} \approx O(\frac{2^{2(m+1)}}{\sqrt{2(m+1)}}) \]
+When 2(m+1) is considered as an integer $n$,
+\[ O(\frac{2^{2(m+1)}}{\sqrt{2(m+1)}}) \approx O(\frac{2^n}{\sqrt{n}}) \]
+
+
 
 
 %List of References 

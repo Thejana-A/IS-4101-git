@@ -19,6 +19,72 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{Thejana2025CircuitResultAnalysis}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=910c9e6725fa556138e08d8f7dea854d}{%
+           family={Akmeemana},
+           familyi={A\bibinitperiod},
+           given={Thejana},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{910c9e6725fa556138e08d8f7dea854d}
+      \strng{fullhash}{910c9e6725fa556138e08d8f7dea854d}
+      \strng{bibnamehash}{910c9e6725fa556138e08d8f7dea854d}
+      \strng{authorbibnamehash}{910c9e6725fa556138e08d8f7dea854d}
+      \strng{authornamehash}{910c9e6725fa556138e08d8f7dea854d}
+      \strng{authorfullhash}{910c9e6725fa556138e08d8f7dea854d}
+      \field{extraname}{1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-02-07}
+      \field{title}{Circuit Result Analysis Data Set}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://github.com/Thejana-A/IS-4101-git/blob/master/latex/CircuitResultAnalysis_DataSet
+      \endverb
+      \verb{url}
+      \verb https://github.com/Thejana-A/IS-4101-git/blob/master/latex/CircuitResultAnalysis_DataSet
+      \endverb
+    \endentry
+    \entry{Thejana2025sympy_solver}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=910c9e6725fa556138e08d8f7dea854d}{%
+           family={Akmeemana},
+           familyi={A\bibinitperiod},
+           given={Thejana},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{910c9e6725fa556138e08d8f7dea854d}
+      \strng{fullhash}{910c9e6725fa556138e08d8f7dea854d}
+      \strng{bibnamehash}{910c9e6725fa556138e08d8f7dea854d}
+      \strng{authorbibnamehash}{910c9e6725fa556138e08d8f7dea854d}
+      \strng{authornamehash}{910c9e6725fa556138e08d8f7dea854d}
+      \strng{authorfullhash}{910c9e6725fa556138e08d8f7dea854d}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-02-07}
+      \field{title}{sympy\_solver.py}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://github.com/Thejana-A/IS-4101-git/blob/master/python_code/BOOLEAN_SOLVERS/sympy_solver/final_version/sympy_solver.py
+      \endverb
+      \verb{url}
+      \verb https://github.com/Thejana-A/IS-4101-git/blob/master/python_code/BOOLEAN_SOLVERS/sympy_solver/final_version/sympy_solver.py
+      \endverb
+    \endentry
     \entry{bofill2022}{article}{}
       \name{author}{7}{}{%
         {{un=0,uniquepart=base,hash=86e80b45ac7dc0994e2ec21841c1370f}{%
@@ -107,6 +173,7 @@
       \strng{authorbibnamehash}{b5b5d41e9deb4fed9ffa108254d8b7ad}
       \strng{authornamehash}{b5b5d41e9deb4fed9ffa108254d8b7ad}
       \strng{authorfullhash}{b5b5d41e9deb4fed9ffa108254d8b7ad}
+      \field{extraname}{1}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{extradatescope}{labelyear}
@@ -121,6 +188,75 @@
       \endverb
       \verb{url}
       \verb %5Curl%7Bhttps://www.britannica.com/science/P-versus-NP-problem%7D
+      \endverb
+    \endentry
+    \entry{hosch2025stirlings}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b5b5d41e9deb4fed9ffa108254d8b7ad}{%
+           family={Hosch},
+           familyi={H\bibinitperiod},
+           given={William\bibnamedelima L.},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Encyclopædia Britannica, Inc.}%
+      }
+      \strng{namehash}{b5b5d41e9deb4fed9ffa108254d8b7ad}
+      \strng{fullhash}{b5b5d41e9deb4fed9ffa108254d8b7ad}
+      \strng{bibnamehash}{b5b5d41e9deb4fed9ffa108254d8b7ad}
+      \strng{authorbibnamehash}{b5b5d41e9deb4fed9ffa108254d8b7ad}
+      \strng{authornamehash}{b5b5d41e9deb4fed9ffa108254d8b7ad}
+      \strng{authorfullhash}{b5b5d41e9deb4fed9ffa108254d8b7ad}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Encyclopædia Britannica}
+      \field{title}{Stirling's formula}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.britannica.com/science/Stirlings-formula
+      \endverb
+      \verb{url}
+      \verb https://www.britannica.com/science/Stirlings-formula
+      \endverb
+    \endentry
+    \entry{newcastle_permutations_combinations}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2a9363a5e1cb02ab6c43f0359aecac84}{%
+           family={Newcastle},
+           familyi={N\bibinitperiod},
+           given={University},
+           giveni={U\bibinitperiod},
+           givenun=0,
+           prefix={of},
+           prefixi={o\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{2a9363a5e1cb02ab6c43f0359aecac84}
+      \strng{fullhash}{2a9363a5e1cb02ab6c43f0359aecac84}
+      \strng{bibnamehash}{2a9363a5e1cb02ab6c43f0359aecac84}
+      \strng{authorbibnamehash}{2a9363a5e1cb02ab6c43f0359aecac84}
+      \strng{authornamehash}{2a9363a5e1cb02ab6c43f0359aecac84}
+      \strng{authorfullhash}{2a9363a5e1cb02ab6c43f0359aecac84}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-02-26}
+      \field{title}{Permutations and Combinations}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.newcastle.edu.au/__data/assets/pdf_file/0004/819139/Permutations-and-Combinations.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.newcastle.edu.au/__data/assets/pdf_file/0004/819139/Permutations-and-Combinations.pdf
       \endverb
     \endentry
     \entry{pfleeger1996chapter3}{incollection}{}
@@ -168,6 +304,40 @@
       \field{year}{1996}
       \field{pages}{69\bibrangedash 76}
       \range{pages}{8}
+    \endentry
+    \entry{uow168693}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=288eb474db278a2a41cdd5002ca0b946}{%
+           family={Wollongong},
+           familyi={W\bibinitperiod},
+           given={University},
+           giveni={U\bibinitperiod},
+           givenun=0,
+           prefix={of},
+           prefixi={o\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{288eb474db278a2a41cdd5002ca0b946}
+      \strng{fullhash}{288eb474db278a2a41cdd5002ca0b946}
+      \strng{bibnamehash}{288eb474db278a2a41cdd5002ca0b946}
+      \strng{authorbibnamehash}{288eb474db278a2a41cdd5002ca0b946}
+      \strng{authornamehash}{288eb474db278a2a41cdd5002ca0b946}
+      \strng{authorfullhash}{288eb474db278a2a41cdd5002ca0b946}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-02-26}
+      \field{title}{Permutations \& Combinations HSC Revision}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://documents.uow.edu.au/content/groups/public/@web/@eis/@maas/documents/mm/uow168693.pdf
+      \endverb
+      \verb{url}
+      \verb https://documents.uow.edu.au/content/groups/public/@web/@eis/@maas/documents/mm/uow168693.pdf
+      \endverb
     \endentry
   \enddatalist
 \endrefsection
