@@ -40,8 +40,7 @@ availability_dictionary = [
     {"person": "i_7", "slot": "slot8", "location": "onsite"},
     {"person": "i_7", "slot": "slot9", "location": "onsite"},
     {"person": "i_7", "slot": "slot10", "location": "onsite"},
-    {"person": "i_7", "slot": "slot11", "location": "onsite"},
-    {"person": "i_8", "slot": "slot11", "location": "onsite"}
+    {"person": "i_7", "slot": "slot11", "location": "onsite"}
 ]
 # End - data set
 
@@ -120,22 +119,16 @@ def meeting_quorum_analysis(time_slots_and_participants, meeting_quorum):
 
     # Iterate over each slot in the time_slots_and_participants dictionary
     for slot, participants in time_slots_and_participants.items():
-        satisfiability_of_slot = False
-        
-        # Get the list of participant eligibility keys (e.g., 'slot1_i_1_eligibility', etc.)
-        participant_keys = list(participants.keys())
 
-        # Iterate through all combinations of meeting_quorum participants
-        for combination in combinations(participant_keys, meeting_quorum):
-            # Create a condition for the current combination (AND for all participants in the combination)
-            eligibility_condition = And(*[participants[participant] for participant in combination])
+        # Count the number of True values representing eligible participants
+        true_count = sum(1 for value in participants.values() if value)
 
-            # If the condition is satisfied (i.e., all participants in the combination are eligible), update the satisfiability
-            satisfiability_of_slot = Or(satisfiability_of_slot, eligibility_condition)
+        if(true_count >= meeting_quorum):
+            satisfiability_of_slot = True
+        else:
+            satisfiability_of_slot = False
 
-        # Add the result for this slot to the quorum_satisfiability_of_slots dictionary
         quorum_satisfiability_of_slots[slot] = satisfiability_of_slot
-        # Mark that there exists a quorum satisfying time slot, if this slot satisfies the quorum
         quorum_satisfiability_for_meeting = Or(quorum_satisfiability_for_meeting, satisfiability_of_slot)
     
     # Return the dictionary containing the satisfiability of each slot
@@ -227,7 +220,7 @@ def select_meeting_mode(time_slots_and_participants, quorum_satisfiability_of_sl
             'eligibility_hybrid': eligibility_hybrid,
             'eligibility_onsite': eligibility_onsite
         }
-    print("Meeting Slot Eligibility:")
+    print("Meeting mode Eligibility:")
     for slot, eligibility in results.items():
         print(f"{slot.capitalize()}:")
         for mode, status in eligibility.items():
@@ -237,8 +230,8 @@ def select_meeting_mode(time_slots_and_participants, quorum_satisfiability_of_sl
 
 def execute_meeting_organizer():
     doc1 = {"public"}
-    doc2 = {"b", "i_5", "i_6"}
-    doc3 = {"public"}
+    doc2 = {"i_2", "i_3", "i_4", "i_5", "i_6"}
+    doc3 = {"public"} 
     agenda = {"public", "i_1", "i_2", "i_3", "i_4", "i_5"}
     doc_list = [doc1, doc2, doc3, agenda] # !! PASS AGENDA AS LAST ELEMENT !!
     meeting_quorum = 3
@@ -257,23 +250,23 @@ def execute_meeting_organizer():
         meeting_quorum = meeting_quorum
 
     print("Meeting quorum: ", meeting_quorum, "\n")  
-    
+
     if meeting_quorum >= 2:
         # Participant validation by doc analysis
         print("Algorithm 01")
         participant_validity_doc_analysis = doc_analysis_validation(doc_list)
         print("Participant validity by doc analysis: ", participant_validity_doc_analysis)
 
-        # Time slot and participant analysis
         print("\nAlgorithm 02")
+        # Time slot and participant analysis
         time_slots_and_participants = time_slot_and_participant_analysis(doc_list, participant_validity_doc_analysis, availability_dictionary, meeting_quorum) 
         for time_slot, individuals in time_slots_and_participants.items(): # Print the result
             print(f"Time Slot: {time_slot}")
             for individual, eligibility in individuals.items():
                 print(f"  {individual}: {eligibility}")
         
-        # Meeting quorum analysis
         print("\nAlgorithm 03")
+        # Meeting quorum analysis
         quorum_satisfiability_of_slots, quorum_satisfiability_for_meeting = meeting_quorum_analysis(time_slots_and_participants, meeting_quorum)
         for slot, satisfiable in quorum_satisfiability_of_slots.items(): # Print the result
             print(f"Slot: {slot} - Quorum Satisfiability: {satisfiable}")
@@ -288,9 +281,12 @@ def execute_meeting_organizer():
     else:
         print("Meeting quorum should be 2 or greater than 2")
 
+
 execute_meeting_organizer()
 
 print("Python version: ", sys.version)
 print("Sympy version: ", sympy.__version__)
+
+
 
 

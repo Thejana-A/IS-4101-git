@@ -99,6 +99,7 @@ def time_slot_and_participant_analysis(doc_list, participant_validity_doc_analys
 def meeting_quorum_analysis(time_slots_and_participants, meeting_quorum):
     # Initialize an empty dictionary to store the quorum satisfiability of each slot
     quorum_satisfiability_of_slots = {}
+    quorum_satisfiability_for_meeting = False
 
     # Iterate over each slot in the time_slots_and_participants dictionary
     for slot, participants in time_slots_and_participants.items():
@@ -117,10 +118,9 @@ def meeting_quorum_analysis(time_slots_and_participants, meeting_quorum):
 
         # Add the result for this slot to the quorum_satisfiability_of_slots dictionary
         quorum_satisfiability_of_slots[slot] = satisfiability_of_slot
+        # Mark that there exists a quorum satisfying time slot, if this slot satisfies the quorum
+        quorum_satisfiability_for_meeting = Or(quorum_satisfiability_for_meeting, satisfiability_of_slot)
 
-    satisfiability_values = list(quorum_satisfiability_of_slots.values()) # Extract satisfiability_of_slot values
-    quorum_satisfiability_for_meeting = Or(*[true if val else false for val in satisfiability_values]) # Convert each boolean value into sympy's boolean constants (true/false)
-    
     # Return the dictionary containing the satisfiability of each slot
     return quorum_satisfiability_of_slots, quorum_satisfiability_for_meeting
 
