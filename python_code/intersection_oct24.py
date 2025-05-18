@@ -187,7 +187,7 @@ def meeting_mode_maxsat_solver(meeting_locations):
 
 # Example usage 1 : document_maxsat_solver(doc_without_agenda) for docuemnts without agenda
 doc1 = {1, 2, 3, 4, 5, 6, 7, 8}
-doc2 = {0, 1, 'a', 4, 7, 11, 'c'} #what is this
+doc2 = {0, 1, 'a', 4, 7, 11, 'c'}
 doc2 = document_acl_group_resolver(doc2)
 doc_without_agenda = [doc1, doc2]
 doc_acl_participants, doc_total_clauses, doc_hard_clauses, doc_soft_clauses = document_maxsat_solver(doc_without_agenda)
