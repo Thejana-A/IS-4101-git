@@ -92,6 +92,30 @@ The system integrates multiple Google services to support privacy-aware scheduli
 
 ---
 
-### 🧰 System Architecture
+### System Architecture
 
 ![System Architecture Diagram](images/architecture_diagram.png)
+
+#### Steps to Run
+
+
+### **1. Clone the Repository**
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>
+
+## **2. Get the `user_secrets` or `credentials.json` File**
+
+Obtain your **Google OAuth 2.0 credentials** (commonly named `credentials.json`, or use Streamlit’s `secrets.toml` when deploying).
+Place it in the **root directory** of the project.
+
+Ensure it includes authorized access for the following APIs:
+- Google Drive API  
+- Google Calendar API  
+- Google Groups API
+
+## **3. Run application**
+streamlit run app.py
+
+## **4. Access the Web App**
+Once running, open the local URL displayed in the terminal (e.g., `http://localhost:8501`).
+Log in with your **Google account** to authorize API access.
