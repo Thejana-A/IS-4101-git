@@ -101,7 +101,7 @@ The system integrates multiple Google services to support privacy-aware scheduli
 
 #### **1. Clone the Repository**
 
-### **2. Get the `user_secrets` or `credentials.json` File**
+#### **2. Get the `user_secrets` or `credentials.json` File**
 
 Obtain your **Google OAuth 2.0 credentials** (commonly named `credentials.json`, or use Streamlit’s `secrets.toml` when deploying).
 Place it in the **root directory** of the project.
